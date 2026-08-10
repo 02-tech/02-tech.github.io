@@ -4,15 +4,65 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#05070b">
-  <meta name="description" content="FAGUITAL — arquivo pessoal de ideias, tecnologia, universo, frequência e experimentos.">
-  <meta property="og:title" content="FAGUITAL — O invisível ganha forma">
-  <meta property="og:description" content="Um portfólio pessoal entre tecnologia, matéria, frequência e imaginação.">
-  <meta property="og:type" content="website">
+  <meta name="author" content="Guilherme Carvalho — FAGUITAL">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="description" content="FAGUITAL é o nome artístico de Guilherme (Gui) Carvalho, criador brasileiro de Petrópolis que explora tecnologia, inteligência artificial, eletrônica, universo e experimentação.">
+  <meta property="og:title" content="FAGUITAL — Nome artístico de Guilherme Carvalho">
+  <meta property="og:description" content="Conheça FAGUITAL, identidade artística e portfólio pessoal de Gui Carvalho: tecnologia, universo, frequência e experimentos.">
+  <meta property="og:type" content="profile">
   <meta property="og:url" content="https://faguital.com.br/">
-  <title>FAGUITAL — Arquivo pessoal</title>
+  <meta property="og:locale" content="pt_BR">
+  <meta property="profile:first_name" content="Guilherme">
+  <meta property="profile:last_name" content="Carvalho">
+  <title>FAGUITAL — Quem é Guilherme “Gui” Carvalho</title>
   <link rel="canonical" href="https://faguital.com.br/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
   <link rel="stylesheet" href="styles.css">
   <script src="app.js" defer></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://faguital.com.br/#website",
+        "url": "https://faguital.com.br/",
+        "name": "FAGUITAL",
+        "alternateName": "Portfólio de Gui Carvalho",
+        "description": "Arquivo pessoal e portfólio artístico de Guilherme Carvalho.",
+        "inLanguage": "pt-BR",
+        "publisher": { "@id": "https://faguital.com.br/#person" }
+      },
+      {
+        "@type": "ProfilePage",
+        "@id": "https://faguital.com.br/#profile",
+        "url": "https://faguital.com.br/",
+        "name": "FAGUITAL — perfil de Guilherme Carvalho",
+        "isPartOf": { "@id": "https://faguital.com.br/#website" },
+        "mainEntity": { "@id": "https://faguital.com.br/#person" },
+        "dateModified": "2026-08-10"
+      },
+      {
+        "@type": "Person",
+        "@id": "https://faguital.com.br/#person",
+        "name": "Guilherme Carvalho",
+        "givenName": "Guilherme",
+        "familyName": "Carvalho",
+        "alternateName": ["Gui Carvalho", "FAGUITAL", "@faguital"],
+        "url": "https://faguital.com.br/",
+        "description": "Criador brasileiro e identidade artística por trás de FAGUITAL. Explora tecnologia, inteligência artificial, automação, eletrônica, NFC, voz, universo e experimentação.",
+        "homeLocation": { "@type": "Place", "name": "Petrópolis, Rio de Janeiro, Brasil" },
+        "knowsAbout": ["Tecnologia", "Inteligência artificial", "Automação", "Eletrônica", "NFC", "Interfaces de voz", "Prototipagem", "Criação digital"],
+        "sameAs": [
+          "https://www.instagram.com/faguital/",
+          "https://www.facebook.com/faguital",
+          "https://github.com/02-tech"
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <canvas id="signal-field" aria-hidden="true"></canvas>
@@ -29,6 +79,7 @@
     </button>
     <nav id="main-nav" aria-label="Navegação principal">
       <a href="#essencia">Essência</a>
+      <a href="sobre.html">Quem sou</a>
       <a href="#universo">Universo</a>
       <a href="#experimentos">Experimentos</a>
       <a class="nav-cta" href="#frequencia">3 · 6 · 9</a>
@@ -72,6 +123,17 @@
           <p>Este espaço é meu arquivo vivo. Aqui registro ideias, códigos, protótipos, símbolos e obsessões. Algumas coisas se tornam projetos. Outras existem apenas para abrir uma nova pergunta.</p>
         </div>
       </div>
+      <article class="identity-card reveal" aria-labelledby="identity-title">
+        <div>
+          <p class="identity-label">IDENTIDADE / PERFIL PÚBLICO</p>
+          <h3 id="identity-title">Quem é FAGUITAL?</h3>
+        </div>
+        <div class="identity-copy">
+          <p><strong>FAGUITAL é o nome artístico de Guilherme “Gui” Carvalho</strong>, criador brasileiro de Petrópolis, Rio de Janeiro.</p>
+          <p>É a identidade que reúne seu portfólio pessoal, suas investigações em tecnologia e sua fascinação por inteligência artificial, eletrônica, universo, frequência e tudo aquilo que ainda não foi completamente explicado.</p>
+          <a href="sobre.html">Conhecer a história e a identidade <span>↗</span></a>
+        </div>
+      </article>
       <div class="signal-line reveal"><span></span><i></i><span></span></div>
     </section>
 
