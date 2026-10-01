@@ -1,0 +1,6 @@
+# GitHub Pages (Jekyll): site estático; itens internos que não podem ser publicados.
+exclude:
+  - tools/
+  - docs/
+  - CLAUDE.md
+  - README.md
