@@ -330,26 +330,66 @@
           <p class="musica-texto">Em 2021, “Pessoas” nasceu como desabafo, uma poesia realista de quem dizia não ser cantor, mas usava a música para passar o próprio pensamento sobre a vida. Em 2026 começou uma nova fase: letras guardadas por anos ganharam voz, em rap e poesia no estilo Boom Bap, com letra e direção de FAGUITAL e produção independente.</p>
           <p class="musica-texto">Disciplina, identidade, as madrugadas e o legado atravessam as faixas. Todas estão no <a href="https://www.youtube.com/@faguital" target="_blank" rel="noopener noreferrer">canal oficial no YouTube</a>.</p>
         </div>
-        <figure class="faixa-destaque reveal" id="tragico-e-grandioso">
-          <figcaption><span>EM DESTAQUE · BOOM BAP</span><strong>O Trágico e Grandioso</strong></figcaption>
-          <audio id="trilha" controls preload="none" src="assets/audio/o-tragico-e-grandioso.mp3">Seu navegador não toca áudio. <a href="assets/audio/o-tragico-e-grandioso.mp3">Baixar a faixa</a>.</audio>
-          <blockquote>
-            <p>Sou o tipo de cara que sorri enquanto sangra.<br>Que com a boca calada é minha alma quem canta.<br>Que se mantém grandioso e calmo.<br>Mesmo caindo em trágicos pedaços.</p>
-            <p class="refrao">De início o pior, mas indestrutível.<br>Mesmo tão só, subindo de nível.<br>Faço da dor, meu combustível.<br>Trágico e grandioso, o incompreensível.</p>
-            <p>Colecionei minhas marcas, mas não comprei tempo,<br>Fiz do erro uma escola, da pressão, movimento.</p>
-            <p>Mas se a cortina fechar e ninguém mais me ouvir,<br>Espero que um dia ouçam o que eu escrevi.</p>
-          </blockquote>
-        </figure>
-        <ol class="faixas reveal">
-          <li><span class="faixa-num">01</span><span class="faixa-corpo"><a href="https://www.youtube.com/watch?v=JAnVp5H33qg" target="_blank" rel="noopener noreferrer">PESSOAS</a><q>Vários anos passaram e vários sonhos ficaram.</q></span><small>2021 · 2026</small></li>
-          <li><span class="faixa-num">02</span><span class="faixa-corpo"><a href="https://www.youtube.com/watch?v=uoc-Bu7vBGg" target="_blank" rel="noopener noreferrer">ESSE NÃO É VOCÊ</a><q>Nem toda queda é fim.</q></span><small>Nasceu de um sonho</small></li>
-          <li><span class="faixa-num">03</span><span class="faixa-corpo"><a href="https://www.youtube.com/watch?v=JxyhuCwVrlY" target="_blank" rel="noopener noreferrer">CÉU NÃO É O LIMITE</a><q>Autoconfiança é a base, tristeza é só fase.</q></span><small>Rap</small></li>
-          <li><span class="faixa-num">04</span><span class="faixa-corpo"><a href="https://www.youtube.com/watch?v=LsmdTp2iFqc" target="_blank" rel="noopener noreferrer">BARULHO</a><q>Cê ouve, mas cê escuta?</q></span><small>Boom Bap sujo</small></li>
-          <li><span class="faixa-num">05</span><span class="faixa-corpo"><a href="https://www.youtube.com/watch?v=BOqqmfuUO_o" target="_blank" rel="noopener noreferrer">PALÁCIO DE FERRUGEM</a></span><small>Poesia Boom Bap</small></li>
-          <li><span class="faixa-num">06</span><span class="faixa-corpo"><a href="https://www.youtube.com/watch?v=HusfN6ER2yA" target="_blank" rel="noopener noreferrer">OLHA QUEM EU ME TORNEI</a><q>Eu não quero parar de construir.</q></span><small>Rap nacional</small></li>
-          <li><span class="faixa-num">07</span><span class="faixa-corpo"><a href="https://www.youtube.com/watch?v=aMKex25x9Wc" target="_blank" rel="noopener noreferrer">MIRAGEM VIROU PAISAGEM</a><q>Tem sonho que virou vida e nem percebeu que chegou.</q></span><small>Rap</small></li>
-          <li><span class="faixa-num">08</span><span class="faixa-corpo"><a href="https://www.youtube.com/watch?v=20ijWtJQz5E" target="_blank" rel="noopener noreferrer">PERGUNTAS QUE FICARAM</a><q>Eu nunca quis ser eterno.</q></span><small>Rap</small></li>
-        </ol>
+        <div class="player reveal" id="player" aria-label="Player de músicas de FAGUITAL">
+          <div class="player-topo">
+            <span class="player-rotulo">OUÇA E BAIXE · TOCANDO AGORA</span>
+            <strong class="player-titulo" id="player-titulo">O Trágico e Grandioso</strong>
+            <audio id="trilha" controls preload="metadata" src="assets/audio/o-tragico-e-grandioso.mp3">Seu navegador não toca áudio. <a href="assets/audio/o-tragico-e-grandioso.mp3" download>Baixar a faixa</a>.</audio>
+          </div>
+          <div class="letra-viva" id="letra-viva" aria-label="Letra sincronizada">
+            <p class="letra-aviso">A letra acompanha a música enquanto ela toca.</p>
+          </div>
+          <ol class="playlist" id="playlist">
+              <li class="pl-item ativa" data-src="assets/audio/o-tragico-e-grandioso.mp3" data-letra="assets/letras/o-tragico-e-grandioso.json" data-titulo="O Trágico e Grandioso">
+                <button class="pl-tocar" type="button" aria-label="Tocar O Trágico e Grandioso"><span class="pl-num">01</span><span class="pl-nome">O Trágico e Grandioso</span><small>Boom Bap · 2:35</small></button>
+                <a class="pl-baixar" href="assets/audio/o-tragico-e-grandioso.mp3" download aria-label="Baixar O Trágico e Grandioso (MP3)">Baixar</a>
+              </li>
+              <li class="pl-item" data-src="assets/audio/perguntas-que-ficaram.mp3" data-letra="assets/letras/perguntas-que-ficaram.json" data-titulo="Perguntas Que Ficaram">
+                <button class="pl-tocar" type="button" aria-label="Tocar Perguntas Que Ficaram"><span class="pl-num">02</span><span class="pl-nome">Perguntas Que Ficaram</span><small>Rap · 5:45</small></button>
+                <a class="pl-baixar" href="assets/audio/perguntas-que-ficaram.mp3" download aria-label="Baixar Perguntas Que Ficaram (MP3)">Baixar</a>
+              </li>
+              <li class="pl-item" data-src="assets/audio/preco.mp3" data-letra="assets/letras/preco.json" data-titulo="Preço">
+                <button class="pl-tocar" type="button" aria-label="Tocar Preço"><span class="pl-num">03</span><span class="pl-nome">Preço</span><small>Rap · inédita</small></button>
+                <a class="pl-baixar" href="assets/audio/preco.mp3" download aria-label="Baixar Preço (MP3)">Baixar</a>
+              </li>
+              <li class="pl-item" data-src="assets/audio/mente-blindada.mp3" data-letra="assets/letras/mente-blindada.json" data-titulo="Mente Blindada (Prontos pra Arena)">
+                <button class="pl-tocar" type="button" aria-label="Tocar Mente Blindada (Prontos pra Arena)"><span class="pl-num">04</span><span class="pl-nome">Mente Blindada (Prontos pra Arena)</span><small>Trap · inédita</small></button>
+                <a class="pl-baixar" href="assets/audio/mente-blindada.mp3" download aria-label="Baixar Mente Blindada (Prontos pra Arena) (MP3)">Baixar</a>
+              </li>
+              <li class="pl-item" data-src="assets/audio/ceu-nao-e-o-limite.mp3" data-letra="assets/letras/ceu-nao-e-o-limite.json" data-titulo="Céu Não é o Limite">
+                <button class="pl-tocar" type="button" aria-label="Tocar Céu Não é o Limite"><span class="pl-num">05</span><span class="pl-nome">Céu Não é o Limite</span><small>Rap · 3:30</small></button>
+                <a class="pl-baixar" href="assets/audio/ceu-nao-e-o-limite.mp3" download aria-label="Baixar Céu Não é o Limite (MP3)">Baixar</a>
+              </li>
+              <li class="pl-item" data-src="assets/audio/esse-nao-e-voce.mp3" data-letra="assets/letras/esse-nao-e-voce.json" data-titulo="Esse Não É Você">
+                <button class="pl-tocar" type="button" aria-label="Tocar Esse Não É Você"><span class="pl-num">06</span><span class="pl-nome">Esse Não É Você</span><small>Nasceu de um sonho · 5:20</small></button>
+                <a class="pl-baixar" href="assets/audio/esse-nao-e-voce.mp3" download aria-label="Baixar Esse Não É Você (MP3)">Baixar</a>
+              </li>
+              <li class="pl-item" data-src="assets/audio/miragem-virou-paisagem.mp3" data-letra="assets/letras/miragem-virou-paisagem.json" data-titulo="Miragem Virou Paisagem">
+                <button class="pl-tocar" type="button" aria-label="Tocar Miragem Virou Paisagem"><span class="pl-num">07</span><span class="pl-nome">Miragem Virou Paisagem</span><small>Rap · 6:00</small></button>
+                <a class="pl-baixar" href="assets/audio/miragem-virou-paisagem.mp3" download aria-label="Baixar Miragem Virou Paisagem (MP3)">Baixar</a>
+              </li>
+              <li class="pl-item" data-src="assets/audio/olha-quem-eu-me-tornei.mp3" data-letra="assets/letras/olha-quem-eu-me-tornei.json" data-titulo="Olha Quem Eu Me Tornei">
+                <button class="pl-tocar" type="button" aria-label="Tocar Olha Quem Eu Me Tornei"><span class="pl-num">08</span><span class="pl-nome">Olha Quem Eu Me Tornei</span><small>Rap nacional · 5:12</small></button>
+                <a class="pl-baixar" href="assets/audio/olha-quem-eu-me-tornei.mp3" download aria-label="Baixar Olha Quem Eu Me Tornei (MP3)">Baixar</a>
+              </li>
+              <li class="pl-item" data-src="assets/audio/palacio-de-ferrugem.mp3" data-letra="assets/letras/palacio-de-ferrugem.json" data-titulo="Palácio de Ferrugem">
+                <button class="pl-tocar" type="button" aria-label="Tocar Palácio de Ferrugem"><span class="pl-num">09</span><span class="pl-nome">Palácio de Ferrugem</span><small>Poesia Boom Bap · 4:59</small></button>
+                <a class="pl-baixar" href="assets/audio/palacio-de-ferrugem.mp3" download aria-label="Baixar Palácio de Ferrugem (MP3)">Baixar</a>
+              </li>
+              <li class="pl-item" data-src="assets/audio/pessoas-parte-2.mp3" data-letra="assets/letras/pessoas-parte-2.json" data-titulo="Pessoas (Parte 2)">
+                <button class="pl-tocar" type="button" aria-label="Tocar Pessoas (Parte 2)"><span class="pl-num">10</span><span class="pl-nome">Pessoas (Parte 2)</span><small>Rap · 2:27</small></button>
+                <a class="pl-baixar" href="assets/audio/pessoas-parte-2.mp3" download aria-label="Baixar Pessoas (Parte 2) (MP3)">Baixar</a>
+              </li>
+              <li class="pl-item" data-src="assets/audio/barulho.mp3" data-letra="assets/letras/barulho.json" data-titulo="Barulho">
+                <button class="pl-tocar" type="button" aria-label="Tocar Barulho"><span class="pl-num">11</span><span class="pl-nome">Barulho</span><small>Boom Bap sujo · 3:21</small></button>
+                <a class="pl-baixar" href="assets/audio/barulho.mp3" download aria-label="Baixar Barulho (MP3)">Baixar</a>
+              </li>
+              <li class="pl-item" data-src="assets/audio/no-escuro.mp3" data-letra="assets/letras/no-escuro.json" data-titulo="No Escuro">
+                <button class="pl-tocar" type="button" aria-label="Tocar No Escuro"><span class="pl-num">12</span><span class="pl-nome">No Escuro</span><small>Boom Bap · inédita</small></button>
+                <a class="pl-baixar" href="assets/audio/no-escuro.mp3" download aria-label="Baixar No Escuro (MP3)">Baixar</a>
+              </li>
+          </ol>
+        </div>
       </div>
       <p class="musica-legado reveal">“Eu nunca quis ser eterno. Mas talvez algumas ideias consigam ir mais longe do que nós.” <span>FAGUITAL, em Perguntas Que Ficaram</span></p>
     </section>

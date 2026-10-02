@@ -1,0 +1,330 @@
+{
+ "duracao": 320.03,
+ "linhas": [
+  {
+   "t": 13.56,
+   "texto": "Eu vi teus olhos perdidos no mar",
+   "estrofe": 0
+  },
+  {
+   "t": 17.74,
+   "texto": "Carregando um mundo que não é teu",
+   "estrofe": 0
+  },
+  {
+   "t": 23.54,
+   "texto": "Teu silêncio tentava gritar",
+   "estrofe": 0
+  },
+  {
+   "t": 27.38,
+   "texto": "Que a dor tomou conta de você",
+   "estrofe": 0
+  },
+  {
+   "t": 33.78,
+   "texto": "Eu vi teu passo tentando correr",
+   "estrofe": 1
+  },
+  {
+   "t": 37.8,
+   "texto": "Mesmo sem saber pra onde ir",
+   "estrofe": 1
+  },
+  {
+   "t": 44.14,
+   "texto": "Mas eu conheço quem vive em você",
+   "estrofe": 1
+  },
+  {
+   "t": 48.06,
+   "texto": "Muito antes de tudo ruir",
+   "estrofe": 1
+  },
+  {
+   "t": 54.84,
+   "texto": "Escuta minha voz na noite",
+   "estrofe": 2
+  },
+  {
+   "t": 57.9,
+   "texto": "Ainda existe um caminho",
+   "estrofe": 2
+  },
+  {
+   "t": 61.54,
+   "texto": "Nem toda queda é fim",
+   "estrofe": 2
+  },
+  {
+   "t": 64.94,
+   "texto": "Ainda existe vida em você",
+   "estrofe": 2
+  },
+  {
+   "t": 70.42,
+   "texto": "Volta antes de se perder",
+   "estrofe": 3
+  },
+  {
+   "t": 73.98,
+   "texto": "Deixa a sombra partir",
+   "estrofe": 3
+  },
+  {
+   "t": 76.82,
+   "texto": "Nada do que aconteceu",
+   "estrofe": 3
+  },
+  {
+   "t": 80.38,
+   "texto": "Pode apagar quem você é",
+   "estrofe": 3
+  },
+  {
+   "t": 84.38,
+   "texto": "Mesmo no fundo da dor",
+   "estrofe": 4
+  },
+  {
+   "t": 87.86,
+   "texto": "Ainda existe uma luz",
+   "estrofe": 4
+  },
+  {
+   "t": 92.68,
+   "texto": "Olhe nos meus olhos agora",
+   "estrofe": 4
+  },
+  {
+   "t": 96.82,
+   "texto": "Esse não é voooocê",
+   "estrofe": 5
+  },
+  {
+   "t": 105.18,
+   "texto": "Eu vi o medo nas tuas mãos",
+   "estrofe": 6
+  },
+  {
+   "t": 109.58,
+   "texto": "Vi a raiva tentar te guiar",
+   "estrofe": 6
+  },
+  {
+   "t": 115.6,
+   "texto": "Mas por trás dessas prisões",
+   "estrofe": 6
+  },
+  {
+   "t": 119.64,
+   "texto": "Ainda existe alguém pra voltar",
+   "estrofe": 6
+  },
+  {
+   "t": 125.82,
+   "texto": "Você não nasceu pra cair",
+   "estrofe": 7
+  },
+  {
+   "t": 129.1,
+   "texto": "Nem pra viver sem perdão",
+   "estrofe": 7
+  },
+  {
+   "t": 133.06,
+   "texto": "Ainda existe um caminho",
+   "estrofe": 7
+  },
+  {
+   "t": 136.26,
+   "texto": "De volta pro teu coração",
+   "estrofe": 7
+  },
+  {
+   "t": 141.88,
+   "texto": "Volta antes de se perder",
+   "estrofe": 8
+  },
+  {
+   "t": 144.5,
+   "texto": "Não deixe a noite vencer",
+   "estrofe": 8
+  },
+  {
+   "t": 148.52,
+   "texto": "Mesmo na estrada mais escura",
+   "estrofe": 8
+  },
+  {
+   "t": 152.06,
+   "texto": "Ainda há manhã pra nascer",
+   "estrofe": 8
+  },
+  {
+   "t": 156.3,
+   "texto": "Mesmo no peso da dor",
+   "estrofe": 9
+  },
+  {
+   "t": 158.98,
+   "texto": "Ainda existe uma luz",
+   "estrofe": 9
+  },
+  {
+   "t": 162.7,
+   "texto": "Escuta minha voz chamando",
+   "estrofe": 9
+  },
+  {
+   "t": 166.64,
+   "texto": "Esse não é voooocê",
+   "estrofe": 10
+  },
+  {
+   "t": 175.82,
+   "texto": "Se o mundo te ensinou a cair",
+   "estrofe": 11
+  },
+  {
+   "t": 179.5,
+   "texto": "Eu te ensino a levantar",
+   "estrofe": 11
+  },
+  {
+   "t": 183.32,
+   "texto": "Se a dor tentou te apagar",
+   "estrofe": 11
+  },
+  {
+   "t": 186.38,
+   "texto": "Eu te lembro quem vai ficar",
+   "estrofe": 11
+  },
+  {
+   "t": 189.86,
+   "texto": "Quem você era antes da guerra",
+   "estrofe": 12
+  },
+  {
+   "t": 193.52,
+   "texto": "Quem você era antes da dor",
+   "estrofe": 12
+  },
+  {
+   "t": 197.36,
+   "texto": "Nada apagou tua história",
+   "estrofe": 12
+  },
+  {
+   "t": 200.88,
+   "texto": "Nem quem vive dentro de você",
+   "estrofe": 12
+  },
+  {
+   "t": 208.81,
+   "texto": "Volta antes de se perder",
+   "estrofe": 13
+  },
+  {
+   "t": 211.88,
+   "texto": "Não deixe o medo vencer",
+   "estrofe": 13
+  },
+  {
+   "t": 215.36,
+   "texto": "Nada do que aconteceu",
+   "estrofe": 13
+  },
+  {
+   "t": 218.36,
+   "texto": "Mudou quem vive em você",
+   "estrofe": 13
+  },
+  {
+   "t": 222.24,
+   "texto": "Mesmo no fundo da dor",
+   "estrofe": 14
+  },
+  {
+   "t": 225.06,
+   "texto": "Ainda existe uma luz",
+   "estrofe": 14
+  },
+  {
+   "t": 228.82,
+   "texto": "Escuta o que estou dizendo",
+   "estrofe": 14
+  },
+  {
+   "t": 232.58,
+   "texto": "Esse não é voooocê",
+   "estrofe": 15
+  },
+  {
+   "t": 242.78,
+   "texto": "Ainda há tempo de voltar",
+   "estrofe": 16
+  },
+  {
+   "t": 245.96,
+   "texto": "Ainda há tempo de viver",
+   "estrofe": 16
+  },
+  {
+   "t": 249.36,
+   "texto": "Mesmo se tudo cair",
+   "estrofe": 16
+  },
+  {
+   "t": 253.12,
+   "texto": "Ainda existe você",
+   "estrofe": 16
+  },
+  {
+   "t": 258.36,
+   "texto": "Olhe pra mim agora",
+   "estrofe": 17
+  },
+  {
+   "t": 262.18,
+   "texto": "Lembre quem sempre foi",
+   "estrofe": 17
+  },
+  {
+   "t": 268.42,
+   "texto": "Esse não é voooocê...",
+   "estrofe": 18
+  },
+  {
+   "t": 277.08,
+   "texto": "Quando a tempestade passar",
+   "estrofe": 19
+  },
+  {
+   "t": 281.08,
+   "texto": "E o silêncio te encontrar",
+   "estrofe": 19
+  },
+  {
+   "t": 284.34,
+   "texto": "Liberte esse refém.",
+   "estrofe": 20
+  },
+  {
+   "t": 290.95,
+   "texto": "Porque no fim...",
+   "estrofe": 21
+  },
+  {
+   "t": 297.56,
+   "texto": "O abalado",
+   "estrofe": 22
+  },
+  {
+   "t": 303.92,
+   "texto": "foi você.",
+   "estrofe": 22
+  }
+ ]
+}

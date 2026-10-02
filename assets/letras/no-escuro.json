@@ -1,0 +1,295 @@
+{
+ "duracao": 232.36,
+ "linhas": [
+  {
+   "t": 3.5,
+   "texto": "Eu não confio em ninguém.",
+   "estrofe": 0
+  },
+  {
+   "t": 5.3,
+   "texto": "E acho que confio demais.",
+   "estrofe": 0
+  },
+  {
+   "t": 9.12,
+   "texto": "Tem coisa que nasce no escuro…",
+   "estrofe": 0
+  },
+  {
+   "t": 10.92,
+   "texto": "E só no escuro fica em paz.",
+   "estrofe": 0
+  },
+  {
+   "t": 19.99,
+   "texto": "(Solta o bloco...)",
+   "estrofe": 0
+  },
+  {
+   "t": 29.06,
+   "texto": "Mente cheia, o dia me cobra.",
+   "estrofe": 1
+  },
+  {
+   "t": 31.4,
+   "texto": "Conta na mesa, ideia que sobra.",
+   "estrofe": 1
+  },
+  {
+   "t": 33.66,
+   "texto": "Tô no automático, frio, calado.",
+   "estrofe": 1
+  },
+  {
+   "t": 36.42,
+   "texto": "Certo por fora, por dentro quebrado.",
+   "estrofe": 1
+  },
+  {
+   "t": 39.24,
+   "texto": "Papo furado que contamina.",
+   "estrofe": 1
+  },
+  {
+   "t": 41.78,
+   "texto": "Abraço que prende, traição na rotina.",
+   "estrofe": 1
+  },
+  {
+   "t": 44.36,
+   "texto": "Minha cara é calma, a mente em chama.",
+   "estrofe": 1
+  },
+  {
+   "t": 46.94,
+   "texto": "Peito faz guerra, minha boca não clama.",
+   "estrofe": 1
+  },
+  {
+   "t": 49.76,
+   "texto": "Não quero conselho, não quero sermão.",
+   "estrofe": 1
+  },
+  {
+   "t": 52.43,
+   "texto": "Falso \"vai passar\", vindo de vacilão.",
+   "estrofe": 1
+  },
+  {
+   "t": 54.9,
+   "texto": "Muita promessa morrendo depois.",
+   "estrofe": 1
+  },
+  {
+   "t": 57.36,
+   "texto": "Muita conversa deixando a sós, nós dois.",
+   "estrofe": 1
+  },
+  {
+   "t": 63.24,
+   "texto": "Tô tão vazio quanto minhas frases.",
+   "estrofe": 2
+  },
+  {
+   "t": 66.98,
+   "texto": "Vivendo e querendo que o mundo desabe.",
+   "estrofe": 2
+  },
+  {
+   "t": 72.22,
+   "texto": "Não ligo pra mim, muito menos pra você.",
+   "estrofe": 2
+  },
+  {
+   "t": 77.34,
+   "texto": "No jogo da vida, todos vão perder.",
+   "estrofe": 2
+  },
+  {
+   "t": 85.22,
+   "texto": "(Todos vão perder...)",
+   "estrofe": 2
+  },
+  {
+   "t": 94.42,
+   "texto": "Chego mais tarde, a casa tá fria.",
+   "estrofe": 3
+  },
+  {
+   "t": 97.18,
+   "texto": "Plano de milhão, e a louça na pia.",
+   "estrofe": 3
+  },
+  {
+   "t": 99.8,
+   "texto": "Rotina pesada, o teto caindo.",
+   "estrofe": 3
+  },
+  {
+   "t": 102.46,
+   "texto": "Eu lavo essa casa com o ódio que sinto.",
+   "estrofe": 3
+  },
+  {
+   "t": 105.04,
+   "texto": "Hoje eu lavo a roupa, lavo louça no gelo.",
+   "estrofe": 3
+  },
+  {
+   "t": 107.76,
+   "texto": "Amanhã, se pá, lavando dinheiro.",
+   "estrofe": 3
+  },
+  {
+   "t": 110.46,
+   "texto": "(Amanhã, se pá...)",
+   "estrofe": 3
+  },
+  {
+   "t": 112.66,
+   "texto": "Boleto na mesa, a vida não para.",
+   "estrofe": 3
+  },
+  {
+   "t": 115.66,
+   "texto": "Rimo com a raiva que a mente dispara.",
+   "estrofe": 3
+  },
+  {
+   "t": 118.32,
+   "texto": "Não visto esse manto de vítima, irmão.",
+   "estrofe": 3
+  },
+  {
+   "t": 120.76,
+   "texto": "A fala tá rouca, mas firme na mão.",
+   "estrofe": 3
+  },
+  {
+   "t": 123.38,
+   "texto": "No veneno eu aprendi o plano de fundo.",
+   "estrofe": 3
+  },
+  {
+   "t": 128.12,
+   "texto": "Muito ator de teatro fingindo no mundo.",
+   "estrofe": 3
+  },
+  {
+   "t": 135.16,
+   "texto": "Tô tão vazio quanto minhas frases.",
+   "estrofe": 4
+  },
+  {
+   "t": 139.12,
+   "texto": "Vivendo e querendo que o mundo desabe.",
+   "estrofe": 4
+  },
+  {
+   "t": 143.36,
+   "texto": "Não ligo pra mim, muito menos pra você.",
+   "estrofe": 4
+  },
+  {
+   "t": 148.26,
+   "texto": "No jogo da vida, todos vão perder.",
+   "estrofe": 4
+  },
+  {
+   "t": 159.32,
+   "texto": "(Todos vão perder...)",
+   "estrofe": 4
+  },
+  {
+   "t": 166.32,
+   "texto": "Eu não confio em ninguém,",
+   "estrofe": 5
+  },
+  {
+   "t": 169.1,
+   "texto": "não viro refém.",
+   "estrofe": 5
+  },
+  {
+   "t": 171.44,
+   "texto": "Se a vida me bate,",
+   "estrofe": 5
+  },
+  {
+   "t": 174.24,
+   "texto": "eu bato também.",
+   "estrofe": 5
+  },
+  {
+   "t": 176.3,
+   "texto": "O bicho sem rosto",
+   "estrofe": 5
+  },
+  {
+   "t": 179.18,
+   "texto": "sussurra no meu ouvido:",
+   "estrofe": 5
+  },
+  {
+   "t": 181.44,
+   "texto": "No escuro, parceiro,",
+   "estrofe": 5
+  },
+  {
+   "t": 184.84,
+   "texto": "ninguém é amigo.",
+   "estrofe": 5
+  },
+  {
+   "t": 187.12,
+   "texto": "Tô tão vazio quanto minhas frases.",
+   "estrofe": 6
+  },
+  {
+   "t": 191.44,
+   "texto": "Vivendo e querendo que o mundo desabe.",
+   "estrofe": 6
+  },
+  {
+   "t": 195.96,
+   "texto": "Não ligo pra mim, muito menos pra você.",
+   "estrofe": 6
+  },
+  {
+   "t": 202.6,
+   "texto": "No jogo da vida, todos vão perder.",
+   "estrofe": 6
+  },
+  {
+   "t": 208.88,
+   "texto": "(Todos vão perder...)",
+   "estrofe": 6
+  },
+  {
+   "t": 217.18,
+   "texto": "Eu não confio em ninguém.",
+   "estrofe": 7
+  },
+  {
+   "t": 220.64,
+   "texto": "Não viro refém.",
+   "estrofe": 7
+  },
+  {
+   "t": 223.32,
+   "texto": "A mente desaba,",
+   "estrofe": 7
+  },
+  {
+   "t": 226.1,
+   "texto": "o corpo mantém.",
+   "estrofe": 7
+  },
+  {
+   "t": 229.23,
+   "texto": "Fui.",
+   "estrofe": 7
+  }
+ ]
+}

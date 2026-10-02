@@ -1,0 +1,410 @@
+{
+ "duracao": 193.76,
+ "linhas": [
+  {
+   "t": 2.58,
+   "texto": "Aí, vagabundo...",
+   "estrofe": 0
+  },
+  {
+   "t": 4.42,
+   "texto": "Se tu ainda tem alguma consideração por mim...",
+   "estrofe": 0
+  },
+  {
+   "t": 8.82,
+   "texto": "Não escuta essa música.",
+   "estrofe": 0
+  },
+  {
+   "t": 25.66,
+   "texto": "Sinta a frieza dos meus olhos",
+   "estrofe": 1
+  },
+  {
+   "t": 27.46,
+   "texto": "Eu sinto sangue na minha boca",
+   "estrofe": 1
+  },
+  {
+   "t": 29.5,
+   "texto": "Não questione a minha cara",
+   "estrofe": 1
+  },
+  {
+   "t": 30.76,
+   "texto": "Porque eu não tenho outra",
+   "estrofe": 1
+  },
+  {
+   "t": 32.12,
+   "texto": "De madrugada, som na estrada",
+   "estrofe": 1
+  },
+  {
+   "t": 33.8,
+   "texto": "Minha face aparece",
+   "estrofe": 1
+  },
+  {
+   "t": 34.74,
+   "texto": "É quando ninguém tá aí",
+   "estrofe": 1
+  },
+  {
+   "t": 36.06,
+   "texto": "Que minha alma escurece",
+   "estrofe": 1
+  },
+  {
+   "t": 37.56,
+   "texto": "Quando cheguei em casa",
+   "estrofe": 1
+  },
+  {
+   "t": 38.45,
+   "texto": "O espelho me olhava",
+   "estrofe": 1
+  },
+  {
+   "t": 40.32,
+   "texto": "Lágrimas escorriam",
+   "estrofe": 1
+  },
+  {
+   "t": 41.46,
+   "texto": "E a raiva me selava",
+   "estrofe": 1
+  },
+  {
+   "t": 42.84,
+   "texto": "Só que eu não tava triste",
+   "estrofe": 1
+  },
+  {
+   "t": 44.12,
+   "texto": "Isso tudo era raiva",
+   "estrofe": 1
+  },
+  {
+   "t": 45.52,
+   "texto": "Um sentimento eterno",
+   "estrofe": 1
+  },
+  {
+   "t": 46.78,
+   "texto": "Que ali me dominava",
+   "estrofe": 1
+  },
+  {
+   "t": 48.18,
+   "texto": "Não veem maldade em mim",
+   "estrofe": 2
+  },
+  {
+   "t": 49.56,
+   "texto": "Eu guardo maldade em mim",
+   "estrofe": 2
+  },
+  {
+   "t": 50.68,
+   "texto": "São lembranças da infância",
+   "estrofe": 2
+  },
+  {
+   "t": 52.06,
+   "texto": "Que me deixaram assim",
+   "estrofe": 2
+  },
+  {
+   "t": 53.42,
+   "texto": "Hoje posso comprar as coisas",
+   "estrofe": 2
+  },
+  {
+   "t": 54.9,
+   "texto": "Que quando moleque sonhava",
+   "estrofe": 2
+  },
+  {
+   "t": 56.42,
+   "texto": "Mas não pude salvar o moleque",
+   "estrofe": 2
+  },
+  {
+   "t": 57.92,
+   "texto": "Que no remorso se afogava",
+   "estrofe": 2
+  },
+  {
+   "t": 59.56,
+   "texto": "Nunca disse ser um cara bom",
+   "estrofe": 2
+  },
+  {
+   "t": 61.5,
+   "texto": "Mesmo com várias ações boas",
+   "estrofe": 2
+  },
+  {
+   "t": 64.26,
+   "texto": "Meu espírito é mais sombrio",
+   "estrofe": 2
+  },
+  {
+   "t": 66.58,
+   "texto": "Do que um poço que ecoa",
+   "estrofe": 2
+  },
+  {
+   "t": 69.1,
+   "texto": "Minha mente não descansa",
+   "estrofe": 2
+  },
+  {
+   "t": 70.82,
+   "texto": "Minha alma não perdoa",
+   "estrofe": 2
+  },
+  {
+   "t": 71.81,
+   "texto": "Eu faço o bem com uma mão",
+   "estrofe": 2
+  },
+  {
+   "t": 73.34,
+   "texto": "Enquanto a outra sangra toda",
+   "estrofe": 2
+  },
+  {
+   "t": 76.1,
+   "texto": "O dia eu luto limpo",
+   "estrofe": 3
+  },
+  {
+   "t": 78.7,
+   "texto": "A noite eu jogo sujo",
+   "estrofe": 3
+  },
+  {
+   "t": 81.34,
+   "texto": "E nessa sujeira",
+   "estrofe": 3
+  },
+  {
+   "t": 84.06,
+   "texto": "Te entrego meu barulho",
+   "estrofe": 3
+  },
+  {
+   "t": 88.82,
+   "texto": "Barulho, barulho",
+   "estrofe": 4
+  },
+  {
+   "t": 90.9,
+   "texto": "Quebra o breu da rua",
+   "estrofe": 4
+  },
+  {
+   "t": 93.02,
+   "texto": "Barulho, barulho",
+   "estrofe": 4
+  },
+  {
+   "t": 95.89,
+   "texto": "Cê ouve, mas cê escuta?",
+   "estrofe": 4
+  },
+  {
+   "t": 104.05,
+   "texto": "Cê escuta?",
+   "estrofe": 4
+  },
+  {
+   "t": 108.58,
+   "texto": "Quem tem alguém tem sorte",
+   "estrofe": 5
+  },
+  {
+   "t": 110.54,
+   "texto": "Eu não tenho sorte",
+   "estrofe": 5
+  },
+  {
+   "t": 111.69,
+   "texto": "Tenho a ambição",
+   "estrofe": 5
+  },
+  {
+   "t": 112.62,
+   "texto": "Que sempre foi meu ponto forte",
+   "estrofe": 5
+  },
+  {
+   "t": 114.2,
+   "texto": "De madrugada sigo mudo",
+   "estrofe": 5
+  },
+  {
+   "t": 115.84,
+   "texto": "Pedal risca a rua crua",
+   "estrofe": 5
+  },
+  {
+   "t": 117.2,
+   "texto": "A cidade sonha leve",
+   "estrofe": 5
+  },
+  {
+   "t": 118.34,
+   "texto": "Enquanto a raiva continua",
+   "estrofe": 5
+  },
+  {
+   "t": 119.35,
+   "texto": "A rua vazia me entende",
+   "estrofe": 5
+  },
+  {
+   "t": 121.32,
+   "texto": "Mais do que muita pessoa",
+   "estrofe": 5
+  },
+  {
+   "t": 122.51,
+   "texto": "O olhar não mente",
+   "estrofe": 5
+  },
+  {
+   "t": 124.02,
+   "texto": "O que a boca poupa",
+   "estrofe": 5
+  },
+  {
+   "t": 125.62,
+   "texto": "Quem quero enganar?",
+   "estrofe": 6
+  },
+  {
+   "t": 126.74,
+   "texto": "Nada vai mudar",
+   "estrofe": 6
+  },
+  {
+   "t": 127.7,
+   "texto": "Eu vejo a rua vazia",
+   "estrofe": 6
+  },
+  {
+   "t": 128.66,
+   "texto": "E sinto que lá é meu lugar",
+   "estrofe": 6
+  },
+  {
+   "t": 130.7,
+   "texto": "Quem pode falar?",
+   "estrofe": 6
+  },
+  {
+   "t": 132.22,
+   "texto": "Ninguém vai questionar",
+   "estrofe": 6
+  },
+  {
+   "t": 133.38,
+   "texto": "Tem coisa que eu nunca disse",
+   "estrofe": 6
+  },
+  {
+   "t": 134.39,
+   "texto": "E nem pretendo contar",
+   "estrofe": 6
+  },
+  {
+   "t": 135.96,
+   "texto": "Tem lembrança que eu enterrei",
+   "estrofe": 6
+  },
+  {
+   "t": 139.14,
+   "texto": "Mas volta pra me visitar",
+   "estrofe": 6
+  },
+  {
+   "t": 142.24,
+   "texto": "Aí, vagabundo...",
+   "estrofe": 6
+  },
+  {
+   "t": 144.32,
+   "texto": "Não me olha não.",
+   "estrofe": 6
+  },
+  {
+   "t": 145.52,
+   "texto": "O dia eu luto limpo",
+   "estrofe": 7
+  },
+  {
+   "t": 148.16,
+   "texto": "A noite eu jogo sujo",
+   "estrofe": 7
+  },
+  {
+   "t": 150.72,
+   "texto": "E nessa sujeira",
+   "estrofe": 7
+  },
+  {
+   "t": 153.42,
+   "texto": "Te entrego meu barulho",
+   "estrofe": 7
+  },
+  {
+   "t": 157.42,
+   "texto": "Barulho, barulho",
+   "estrofe": 8
+  },
+  {
+   "t": 159.5,
+   "texto": "Vira na esquina",
+   "estrofe": 8
+  },
+  {
+   "t": 161.12,
+   "texto": "Barulho, barulho",
+   "estrofe": 8
+  },
+  {
+   "t": 165.19,
+   "texto": "Cê encara ou desvia?",
+   "estrofe": 8
+  },
+  {
+   "t": 167.78,
+   "texto": "Barulho, barulho",
+   "estrofe": 9
+  },
+  {
+   "t": 171.12,
+   "texto": "Quebra o breu da rua",
+   "estrofe": 9
+  },
+  {
+   "t": 173.02,
+   "texto": "Barulho, barulho",
+   "estrofe": 9
+  },
+  {
+   "t": 175.91,
+   "texto": "Cê ouve, mas cê escuta?",
+   "estrofe": 9
+  },
+  {
+   "t": 182.53,
+   "texto": "Cê escuta?",
+   "estrofe": 9
+  }
+ ]
+}

@@ -70,3 +70,22 @@ Legenda: NO SITE = publicado em faguital.com.br · ANALISADO = visto, ainda não
 | NO SITE | Miragem Virou Paisagem (arquivo chegou como "O Que Quero, O Que Busco"; letra oficial enviada) | 6:01 | Duplicado do YouTube aMKex25x9Wc: entrou na lista de Música com link e "Tem sonho que virou vida e nem percebeu que chegou."; áudio não hospedado |
 | NO SITE | Olha Quem Eu Me Tornei (letra oficial enviada) | 5:12 | Já no site via YouTube; ganhou a frase "Eu não quero parar de construir." |
 | (duplicado) | Perguntas Que Ficaram | 5:45 | Já no site via YouTube |
+
+## Player do site (2026-10-02): faixas com áudio hospedado, download e letra sincronizada
+
+| Faixa | Arquivo | Origem | Letra |
+|---|---|---|---|
+| O Trágico e Grandioso | assets/audio/o-tragico-e-grandioso.mp3 | áudio enviado (inédita fora do site) | oficial, sincronizada; toca ao entrar |
+| Perguntas Que Ficaram | assets/audio/perguntas-que-ficaram.mp3 | mesma gravação do YouTube 20ijWtJQz5E (reenvio "(1)" com duração idêntica) | oficial "Se você tá ouvindo isso", sincronizada |
+| Preço | assets/audio/preco.mp3 | áudio enviado, inédita | oficial, sincronizada |
+| Mente Blindada (Prontos pra Arena) | assets/audio/mente-blindada.mp3 | versão "Trap de Arena" (substituiu a "de Estúdio" por pedido) | oficial, sincronizada |
+| Miragem Virou Paisagem | assets/audio/miragem-virou-paisagem.mp3 | mesma do YouTube aMKex25x9Wc (arquivo chegou como "O Que Quero, O Que Busco") | oficial, sincronizada |
+| Olha Quem Eu Me Tornei | assets/audio/olha-quem-eu-me-tornei.mp3 | mesma do YouTube HusfN6ER2yA | oficial, sincronizada |
+| Céu Não é o Limite | assets/audio/ceu-nao-e-o-limite.mp3 | mesma do YouTube JxyhuCwVrlY (enviada 2026-10-02) | oficial (descrição do YouTube), sincronizada; esta gravação começa em "Sei quem me fez cair" (os 14 primeiros versos da descrição não são cantados nela e ficaram fora do player) |
+| Esse Não É Você | assets/audio/esse-nao-e-voce.mp3 | mesma do YouTube uoc-Bu7vBGg (enviada 2026-10-02) | oficial (descrição do YouTube), sincronizada |
+| Palácio de Ferrugem | assets/audio/palacio-de-ferrugem.mp3 | mesma do YouTube BOqqmfuUO_o | oficial (enviada 2026-10-02), sincronizada |
+| Pessoas (Parte 2) | assets/audio/pessoas-parte-2.mp3 | mesma do YouTube JAnVp5H33qg | oficial (enviada 2026-10-02), sincronizada |
+| Barulho | assets/audio/barulho.mp3 | mesma do YouTube LsmdTp2iFqc (enviada 2026-10-02) | oficial, sincronizada |
+| No Escuro (nome provisório; arquivo "No Jogo da Vida 2.0") | assets/audio/no-escuro.mp3 | áudio enviado, inédita; Guilherme liberou trocar o nome | oficial, sincronizada |
+
+Todas as faixas do canal estão no player; a lista "Também no YouTube" foi retirada (o canal segue em Sinais abertos).

@@ -1,0 +1,26 @@
+.musica-grid>.player{grid-column:2}
+.player{margin:0 0 28px;border:1px solid rgba(60,242,228,.4);background:radial-gradient(circle at 90% 0,rgba(60,242,228,.1),transparent 60%),rgba(7,10,14,.94)}
+.player-topo{padding:26px 26px 18px}
+.player-rotulo{display:block;font:.6rem Consolas,"Courier New",monospace;letter-spacing:.2em;color:var(--cyan)}
+.player-titulo{display:block;margin:8px 0 16px;font-size:clamp(1.6rem,3vw,2.4rem);font-weight:600;letter-spacing:-.04em;line-height:1.05}
+.player audio{width:100%;color-scheme:dark}
+.letra-viva{position:relative;height:260px;overflow-y:auto;padding:90px 26px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);scrollbar-width:thin;-webkit-mask-image:linear-gradient(transparent,#000 22%,#000 78%,transparent);mask-image:linear-gradient(transparent,#000 22%,#000 78%,transparent)}
+.letra-linha{margin:0;padding:5px 0;color:#5f6c72;font-size:1.05rem;line-height:1.45;cursor:pointer;transition:color .25s,transform .25s}
+.letra-linha.nova-estrofe{margin-top:16px}
+.letra-linha:hover{color:#9aa7ad}
+.letra-linha.agora{color:#fff;font-weight:600;transform:translateX(4px)}
+.letra-aviso{margin:0;color:#7b888e;font-style:italic}
+.playlist{list-style:none;margin:0;padding:8px 0}
+.pl-item{display:flex;align-items:center;gap:8px;padding:0 14px 0 6px}
+.pl-tocar{flex:1;display:grid;grid-template-columns:40px 1fr;align-items:center;gap:2px 10px;min-height:52px;padding:8px 10px;border:0;background:none;color:#d8dfe2;text-align:left;cursor:pointer;font:inherit}
+.pl-tocar small{grid-column:2;font:.56rem Consolas,"Courier New",monospace;letter-spacing:.16em;text-transform:uppercase;color:#76838a}
+.pl-num{grid-row:span 2;font:.7rem Consolas,"Courier New",monospace;color:var(--cyan);letter-spacing:.14em}
+.pl-nome{font-weight:600}
+.pl-item.ativa .pl-nome{color:var(--cyan)}
+.pl-item.tocando .pl-num:after{content:" ▶"}
+.pl-tocar:hover .pl-nome{color:#fff}
+.pl-tocar:focus-visible,.pl-baixar:focus-visible,.letra-linha:focus-visible{outline:2px solid var(--cyan);outline-offset:2px}
+.pl-baixar{flex:none;padding:9px 12px;border:1px solid var(--line);font:.6rem Consolas,"Courier New",monospace;letter-spacing:.14em;text-transform:uppercase;color:#c8d0d3;text-decoration:none}
+.pl-baixar:hover{border-color:var(--cyan);color:var(--cyan)}
+@media (prefers-reduced-motion:reduce){.letra-linha{transition:none}.letra-linha.agora{transform:none}}
+@media (max-width:900px){.musica-grid>.player{grid-column:auto}.letra-viva{height:220px;padding:80px 20px}}

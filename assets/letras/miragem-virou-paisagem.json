@@ -1,0 +1,575 @@
+{
+ "duracao": 360.56,
+ "linhas": [
+  {
+   "t": 8.86,
+   "texto": "Luz fraca, o quarto me fez de refém",
+   "estrofe": 0
+  },
+  {
+   "t": 16.8,
+   "texto": "Nessa batida eu me perco e me acho também",
+   "estrofe": 0
+  },
+  {
+   "t": 20.06,
+   "texto": "É a minha mente contra o mundo, eu sei",
+   "estrofe": 0
+  },
+  {
+   "t": 23.54,
+   "texto": "O caminho da evolução que tracei",
+   "estrofe": 0
+  },
+  {
+   "t": 26.96,
+   "texto": "Nessa solidão, me conecto com a minha lei",
+   "estrofe": 0
+  },
+  {
+   "t": 30.18,
+   "texto": "Comigo mesmo, no fim, eu sempre estarei.",
+   "estrofe": 0
+  },
+  {
+   "t": 36.0,
+   "texto": "O que eu quero, o que eu busco,",
+   "estrofe": 0
+  },
+  {
+   "t": 38.06,
+   "texto": "o que eu faço e não exponho.",
+   "estrofe": 0
+  },
+  {
+   "t": 39.74,
+   "texto": "Todos que perguntam como",
+   "estrofe": 0
+  },
+  {
+   "t": 41.48,
+   "texto": "Eu só me pergunto quando",
+   "estrofe": 0
+  },
+  {
+   "t": 43.04,
+   "texto": "O que eu quero, o que eu busco,",
+   "estrofe": 0
+  },
+  {
+   "t": 45.0,
+   "texto": "o que eu quero e não exponho.",
+   "estrofe": 0
+  },
+  {
+   "t": 46.58,
+   "texto": "Tem coisa que ainda tá longe,",
+   "estrofe": 0
+  },
+  {
+   "t": 48.3,
+   "texto": "mas já mora onde eu componho.",
+   "estrofe": 0
+  },
+  {
+   "t": 49.98,
+   "texto": "Era longe, era miragem, era dado como escasso,",
+   "estrofe": 1
+  },
+  {
+   "t": 53.46,
+   "texto": "hoje é parte da rotina, é suor em cada passo.",
+   "estrofe": 1
+  },
+  {
+   "t": 56.76,
+   "texto": "Coisa que eu via de fora hoje divide meu espaço,",
+   "estrofe": 1
+  },
+  {
+   "t": 60.06,
+   "texto": "e o que ainda não chegou já reconhece meu traço.",
+   "estrofe": 1
+  },
+  {
+   "t": 63.47,
+   "texto": "Tem desejo pela casa que se tornou tão real",
+   "estrofe": 1
+  },
+  {
+   "t": 66.5,
+   "texto": "Tudo que eu almejava, hoje é tradicional",
+   "estrofe": 1
+  },
+  {
+   "t": 69.88,
+   "texto": "Não me sinto incompleto, mas nunca estou completo",
+   "estrofe": 1
+  },
+  {
+   "t": 72.88,
+   "texto": "Como que vivo disperso? se a ambição tá no processo",
+   "estrofe": 1
+  },
+  {
+   "t": 77.12,
+   "texto": "E eu ainda olho pra frente, mano, eu vejo muito além,",
+   "estrofe": 1
+  },
+  {
+   "t": 79.68,
+   "texto": "tem umas coisa que eu nem falo porque eu sei que ainda vêm.",
+   "estrofe": 1
+  },
+  {
+   "t": 83.18,
+   "texto": "Não confundo ter vontade com não dar valor ao que tem,",
+   "estrofe": 1
+  },
+  {
+   "t": 86.52,
+   "texto": "eu só sei que a minha fome nunca perguntou \"tá tudo bem?\"",
+   "estrofe": 1
+  },
+  {
+   "t": 90.78,
+   "texto": "Tem futuro na vitrine me chamando pelo nome,",
+   "estrofe": 1
+  },
+  {
+   "t": 94.16,
+   "texto": "Tem conquista pela casa, e o sorriso me consome",
+   "estrofe": 1
+  },
+  {
+   "t": 97.58,
+   "texto": "Eu nunca durmo bem e talvez não viva longe",
+   "estrofe": 1
+  },
+  {
+   "t": 100.96,
+   "texto": "Mas tô longe de deixar que a ambição me abandone",
+   "estrofe": 1
+  },
+  {
+   "t": 104.4,
+   "texto": "Quanto mais eu tenho paz, mais minha ambição tem fome,",
+   "estrofe": 1
+  },
+  {
+   "t": 107.78,
+   "texto": "Não basta só ser sagaz, perspicaz se faz o homem",
+   "estrofe": 1
+  },
+  {
+   "t": 111.2,
+   "texto": "É no meio desse cais que eu vejo tudo de longe",
+   "estrofe": 1
+  },
+  {
+   "t": 114.62,
+   "texto": "Mas eu sei que se aproxima e não é mais tão distante",
+   "estrofe": 1
+  },
+  {
+   "t": 118.5,
+   "texto": "O que era miragem virou paisagem,",
+   "estrofe": 2
+  },
+  {
+   "t": 121.62,
+   "texto": "o que era distante hoje anda comigo.",
+   "estrofe": 2
+  },
+  {
+   "t": 124.98,
+   "texto": "Eu ainda tenho fome de outra viagem,",
+   "estrofe": 2
+  },
+  {
+   "t": 128.46,
+   "texto": "mas já fiz do impossível o meu próprio abrigo.",
+   "estrofe": 2
+  },
+  {
+   "t": 131.88,
+   "texto": "Fome de amanhã não apaga o que eu fiz ontem,",
+   "estrofe": 2
+  },
+  {
+   "t": 134.96,
+   "texto": "eu não piso no passado só pra alcançar o horizonte.",
+   "estrofe": 2
+  },
+  {
+   "t": 138.94,
+   "texto": "Se eu quiser muito mais, isso não muda o que eu sou,",
+   "estrofe": 2
+  },
+  {
+   "t": 141.83,
+   "texto": "tem sonho que virou vida e nem percebeu que chegou.",
+   "estrofe": 2
+  },
+  {
+   "t": 145.38,
+   "texto": "Eu já pedi coisa pro tempo e ele trouxe sem aviso,",
+   "estrofe": 3
+  },
+  {
+   "t": 149.04,
+   "texto": "hoje eu passo do lado e quase esqueço o sacrifício.",
+   "estrofe": 3
+  },
+  {
+   "t": 152.6,
+   "texto": "Engraçado como o sonho perde o brilho do início,",
+   "estrofe": 3
+  },
+  {
+   "t": 156.12,
+   "texto": "não porque ficou pequeno, eu só mudei de edifício.",
+   "estrofe": 3
+  },
+  {
+   "t": 159.62,
+   "texto": "Minha mente troca o teto antes de eu tocar no teto,",
+   "estrofe": 3
+  },
+  {
+   "t": 162.72,
+   "texto": "eu desenho outro caminho quando o antigo fica perto.",
+   "estrofe": 3
+  },
+  {
+   "t": 166.26,
+   "texto": "Tem uns plano que eu não conto, eu protejo bem quieto",
+   "estrofe": 3
+  },
+  {
+   "t": 169.82,
+   "texto": "porque sonho muito exposto é difícil de dar certo",
+   "estrofe": 3
+  },
+  {
+   "t": 173.22,
+   "texto": "Eu não tô correndo atrás pra provar que eu consigo,",
+   "estrofe": 3
+  },
+  {
+   "t": 176.36,
+   "texto": "eu já tive prova demais andando junto comigo.",
+   "estrofe": 3
+  },
+  {
+   "t": 179.72,
+   "texto": "Se amanhã vier mais caro, eu negocio com o perigo,",
+   "estrofe": 3
+  },
+  {
+   "t": 183.0,
+   "texto": "porque o \"longe\" de hoje é o de ontem que conquisto",
+   "estrofe": 3
+  },
+  {
+   "t": 186.41,
+   "texto": "Tem memória no barulho que hoje eu nem noto direito,",
+   "estrofe": 3
+  },
+  {
+   "t": 189.58,
+   "texto": "tem conquista no conforto que se esconde no meu peito.",
+   "estrofe": 3
+  },
+  {
+   "t": 193.48,
+   "texto": "Tem um \"eu\" de outro tempo que olharia sem acreditar,",
+   "estrofe": 3
+  },
+  {
+   "t": 196.44,
+   "texto": "e outro \"eu\" aqui na frente me mandando acelerar.",
+   "estrofe": 3
+  },
+  {
+   "t": 200.4,
+   "texto": "É meio estranho...",
+   "estrofe": 4
+  },
+  {
+   "t": 201.9,
+   "texto": "Eu quero tanto o que não veio,",
+   "estrofe": 4
+  },
+  {
+   "t": 203.7,
+   "texto": "mas não trocaria o que chegou.",
+   "estrofe": 4
+  },
+  {
+   "t": 206.66,
+   "texto": "Eu penso tanto no que falta,",
+   "estrofe": 4
+  },
+  {
+   "t": 208.4,
+   "texto": "mas sei exatamente o que custou.",
+   "estrofe": 4
+  },
+  {
+   "t": 211.52,
+   "texto": "Talvez a vida seja isso:",
+   "estrofe": 4
+  },
+  {
+   "t": 213.98,
+   "texto": "o sonho muda de nome",
+   "estrofe": 4
+  },
+  {
+   "t": 215.42,
+   "texto": "quando deixa de ser sonho.",
+   "estrofe": 4
+  },
+  {
+   "t": 217.08,
+   "texto": "O que eu quero, o que eu busco, o que eu guardo e não revelo,",
+   "estrofe": 5
+  },
+  {
+   "t": 220.46,
+   "texto": "tem um império na cabeça, mas eu não desprezo o castelo.",
+   "estrofe": 5
+  },
+  {
+   "t": 223.7,
+   "texto": "A fundação que eu fiz ontem aguenta o peso de agora,",
+   "estrofe": 5
+  },
+  {
+   "t": 226.85,
+   "texto": "E o peso de agora é pra montar minha própria história.",
+   "estrofe": 5
+  },
+  {
+   "t": 230.54,
+   "texto": "Já me contentei com pouco quando a vida era escassa,",
+   "estrofe": 5
+  },
+  {
+   "t": 233.9,
+   "texto": "hoje eu quero a estrutura, e isso nunca foi de graça.",
+   "estrofe": 5
+  },
+  {
+   "t": 237.34,
+   "texto": "Cobrou meu suor e sangue, testou o limite da minha calma,",
+   "estrofe": 5
+  },
+  {
+   "t": 241.16,
+   "texto": "pois sei que cada conquista cobra um pedaço da minha alma.",
+   "estrofe": 5
+  },
+  {
+   "t": 244.63,
+   "texto": "Tem gente que só respira quando finalmente alcança,",
+   "estrofe": 5
+  },
+  {
+   "t": 248.2,
+   "texto": "depois esquece do caminho e chama o sonho de lembrança.",
+   "estrofe": 5
+  },
+  {
+   "t": 251.0,
+   "texto": "Eu prefiro olhar de novo, reconhecer cada mudança,",
+   "estrofe": 5
+  },
+  {
+   "t": 254.48,
+   "texto": "porque quem não honra o começo perde o peso da distância.",
+   "estrofe": 5
+  },
+  {
+   "t": 257.6,
+   "texto": "Se o topo virar rotina, a minha mente quer o espaço,",
+   "estrofe": 5
+  },
+  {
+   "t": 260.84,
+   "texto": "não porque esqueci o chão, mas pela força do meu passo.",
+   "estrofe": 5
+  },
+  {
+   "t": 264.34,
+   "texto": "Quem nasceu pra construir nunca desacelera a marcha,",
+   "estrofe": 5
+  },
+  {
+   "t": 267.55,
+   "texto": "eu só paro de correr se o motor sair fumaça.",
+   "estrofe": 5
+  },
+  {
+   "t": 271.24,
+   "texto": "Hoje eu durmo com umas coisa que eu nem ousava pedir,",
+   "estrofe": 6
+  },
+  {
+   "t": 274.32,
+   "texto": "e ainda acordo pensando no que falta construir.",
+   "estrofe": 6
+  },
+  {
+   "t": 277.76,
+   "texto": "Não tem guerra entre os dois, eles conseguem coexistir,",
+   "estrofe": 6
+  },
+  {
+   "t": 281.4,
+   "texto": "eu tô em paz com essa vida e ainda quero evoluir.",
+   "estrofe": 6
+  },
+  {
+   "t": 284.66,
+   "texto": "Se meu amanhã tá longe, ele que espere eu chegar,",
+   "estrofe": 6
+  },
+  {
+   "t": 287.92,
+   "texto": "eu já vi longe demais diminuindo de lugar.",
+   "estrofe": 6
+  },
+  {
+   "t": 292.86,
+   "texto": "O que era miragem um dia começou a me cercar,",
+   "estrofe": 6
+  },
+  {
+   "t": 294.96,
+   "texto": "e o que hoje é paisagem também já soube me assustar.",
+   "estrofe": 6
+  },
+  {
+   "t": 298.76,
+   "texto": "Então eu sigo...",
+   "estrofe": 6
+  },
+  {
+   "t": 300.26,
+   "texto": "Sem fingir que já bastou,",
+   "estrofe": 6
+  },
+  {
+   "t": 301.6,
+   "texto": "sem fingir que nada vale.",
+   "estrofe": 6
+  },
+  {
+   "t": 303.46,
+   "texto": "Eu sei o peso do que veio,",
+   "estrofe": 6
+  },
+  {
+   "t": 305.38,
+   "texto": "sei o preço do detalhe.",
+   "estrofe": 6
+  },
+  {
+   "t": 306.92,
+   "texto": "Tenho paz no que conquistei,",
+   "estrofe": 6
+  },
+  {
+   "t": 309.0,
+   "texto": "tenho fome no que vem.",
+   "estrofe": 6
+  },
+  {
+   "t": 310.68,
+   "texto": "Se eu morrer hoje, morro em paz.",
+   "estrofe": 6
+  },
+  {
+   "t": 314.46,
+   "texto": "Se eu acordar amanhã...",
+   "estrofe": 6
+  },
+  {
+   "t": 316.28,
+   "texto": "eu sigo além.",
+   "estrofe": 6
+  },
+  {
+   "t": 318.42,
+   "texto": "O que era miragem virou paisagem,",
+   "estrofe": 7
+  },
+  {
+   "t": 321.8,
+   "texto": "o que era distante hoje anda comigo.",
+   "estrofe": 7
+  },
+  {
+   "t": 324.82,
+   "texto": "Eu ainda tenho fome de outra viagem,",
+   "estrofe": 7
+  },
+  {
+   "t": 328.62,
+   "texto": "mas já fiz do impossível o meu próprio abrigo.",
+   "estrofe": 7
+  },
+  {
+   "t": 332.06,
+   "texto": "Fome de amanhã não apaga o que eu fiz ontem,",
+   "estrofe": 7
+  },
+  {
+   "t": 335.06,
+   "texto": "eu não piso no passado só pra alcançar o horizonte.",
+   "estrofe": 7
+  },
+  {
+   "t": 338.92,
+   "texto": "Se eu quiser muito mais, isso não muda o que eu sou,",
+   "estrofe": 7
+  },
+  {
+   "t": 342.31,
+   "texto": "tem sonho que virou vida e nem percebeu que chegou.",
+   "estrofe": 7
+  },
+  {
+   "t": 345.88,
+   "texto": "O que eu quero, o que eu busco,",
+   "estrofe": 8
+  },
+  {
+   "t": 348.28,
+   "texto": "o que eu trago e não exponho.",
+   "estrofe": 8
+  },
+  {
+   "t": 350.04,
+   "texto": "Era longe.",
+   "estrofe": 8
+  },
+  {
+   "t": 351.92,
+   "texto": "Virou perto.",
+   "estrofe": 8
+  },
+  {
+   "t": 353.1,
+   "texto": "Virou vida.",
+   "estrofe": 8
+  },
+  {
+   "t": 354.46,
+   "texto": "Virou sonho.",
+   "estrofe": 8
+  }
+ ]
+}

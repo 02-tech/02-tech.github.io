@@ -54,3 +54,12 @@
 ## 2026-10-02: trilha ao entrar
 
 - O Trágico e Grandioso toca ao abrir o site; se o navegador bloquear som automático (padrão em Chrome/Safari/celular), começa no primeiro toque, clique ou tecla. Botão fixo no canto inferior direito ("Silenciar"/"Ouvir") com barras animadas; a escolha de silenciar fica salva no navegador (localStorage). Testado com política bloqueada e liberada, 0 erros.
+
+## 2026-10-02: player completo com letra sincronizada
+
+- Player na seção Música (substituiu o destaque): 12 faixas com áudio hospedado em `assets/audio/` (MP3 128 a 160 kbps, sem metadados extras, 48 MB), botão Baixar em cada uma, troca de faixa, avanço automático para a próxima, e O Trágico e Grandioso tocando ao entrar.
+- Letra sincronizada estilo Spotify: `assets/letras/*.json` gerados por `tools/alinhar-letras.py` (faster-whisper "small" local + alinhamento global da letra oficial às palavras transcritas). 12/12 músicas com letra; 99% dos versos casados direto no áudio. O verso cantado fica em destaque, o painel rola sozinho e tocar num verso pula a música para ele.
+- Correção do autoplay: o navegador só libera som após gesto completo (touchend/click/keydown/pointerup); antes o código tentava no pointerdown/touchstart, por isso não tocava no celular.
+- Lista "Também no YouTube" retirada: todas as faixas do canal estão no player; o canal segue em Sinais abertos.
+- Céu Não é o Limite: esta gravação começa em "Sei quem me fez cair"; os 14 primeiros versos da descrição do YouTube ficaram fora do player.
+- Teste local de áudio exige servidor com Range (206): `node tools/servidor-local.js 8851` (o http.server do Python não serve trechos e impede avançar o áudio).

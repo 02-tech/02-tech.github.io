@@ -1,0 +1,445 @@
+{
+ "duracao": 344.92,
+ "linhas": [
+  {
+   "t": 5.4,
+   "texto": "Se você tá ouvindo isso...",
+   "estrofe": 0
+  },
+  {
+   "t": 14.62,
+   "texto": "Talvez eu só tenha deixado algumas perguntas por aí.",
+   "estrofe": 0
+  },
+  {
+   "t": 20.94,
+   "texto": "Não porque encontrei resposta.",
+   "estrofe": 0
+  },
+  {
+   "t": 26.04,
+   "texto": "Mas porque algumas delas nunca foram embora.",
+   "estrofe": 0
+  },
+  {
+   "t": 31.72,
+   "texto": "Volto pra casa sozinho",
+   "estrofe": 1
+  },
+  {
+   "t": 34.06,
+   "texto": "com a rua vazia também",
+   "estrofe": 1
+  },
+  {
+   "t": 39.06,
+   "texto": "a cidade já foi dormir",
+   "estrofe": 1
+  },
+  {
+   "t": 41.22,
+   "texto": "mas minha mente me faz refém",
+   "estrofe": 1
+  },
+  {
+   "t": 46.1,
+   "texto": "São perguntas sem resposta",
+   "estrofe": 1
+  },
+  {
+   "t": 49.2,
+   "texto": "são respostas sem ninguém",
+   "estrofe": 1
+  },
+  {
+   "t": 53.12,
+   "texto": "se eu sou eu porque penso",
+   "estrofe": 1
+  },
+  {
+   "t": 55.36,
+   "texto": "sem pensar eu sou quem?",
+   "estrofe": 1
+  },
+  {
+   "t": 58.78,
+   "texto": "Tem noite que eu penso em tudo",
+   "estrofe": 1
+  },
+  {
+   "t": 62.95,
+   "texto": "tem noite que eu não vou além",
+   "estrofe": 1
+  },
+  {
+   "t": 65.56,
+   "texto": "mas mesmo pensando em nada",
+   "estrofe": 1
+  },
+  {
+   "t": 69.32,
+   "texto": "os pensamentos ainda vêm",
+   "estrofe": 1
+  },
+  {
+   "t": 72.74,
+   "texto": "Eu olho o mundo mudando",
+   "estrofe": 1
+  },
+  {
+   "t": 76.5,
+   "texto": "e tento entender também",
+   "estrofe": 1
+  },
+  {
+   "t": 79.8,
+   "texto": "quantas verdades existem",
+   "estrofe": 1
+  },
+  {
+   "t": 83.62,
+   "texto": "e quantas só nos convêm",
+   "estrofe": 1
+  },
+  {
+   "t": 86.93,
+   "texto": "Eu não queria ser eterno",
+   "estrofe": 2
+  },
+  {
+   "t": 90.46,
+   "texto": "isso nunca me atraiu",
+   "estrofe": 2
+  },
+  {
+   "t": 93.62,
+   "texto": "só queria alguns minutos",
+   "estrofe": 2
+  },
+  {
+   "t": 96.16,
+   "texto": "pra entender o que meu olhar não viu",
+   "estrofe": 2
+  },
+  {
+   "t": 101.02,
+   "texto": "Ver o começo da estrada",
+   "estrofe": 2
+  },
+  {
+   "t": 103.44,
+   "texto": "e onde ela vai cair",
+   "estrofe": 2
+  },
+  {
+   "t": 107.62,
+   "texto": "se vai ser tudo ou nada",
+   "estrofe": 2
+  },
+  {
+   "t": 110.9,
+   "texto": "e quantos virão me ouvir",
+   "estrofe": 2
+  },
+  {
+   "t": 115.06,
+   "texto": "Porque cheguei tarde pro início",
+   "estrofe": 2
+  },
+  {
+   "t": 117.96,
+   "texto": "e cedo demais pra ver o fim",
+   "estrofe": 2
+  },
+  {
+   "t": 121.12,
+   "texto": "não devia pensar tanto nisso",
+   "estrofe": 2
+  },
+  {
+   "t": 125.36,
+   "texto": "mas é isso que me faz ser assim",
+   "estrofe": 2
+  },
+  {
+   "t": 133.82,
+   "texto": "Queria ver o primeiro passo",
+   "estrofe": 3
+  },
+  {
+   "t": 136.06,
+   "texto": "antes da primeira versão",
+   "estrofe": 3
+  },
+  {
+   "t": 139.42,
+   "texto": "antes de alguém escrever a história",
+   "estrofe": 3
+  },
+  {
+   "t": 143.56,
+   "texto": "e chamar memória de razão",
+   "estrofe": 3
+  },
+  {
+   "t": 146.64,
+   "texto": "Antes do nome das coisas",
+   "estrofe": 3
+  },
+  {
+   "t": 150.34,
+   "texto": "antes de toda explicação",
+   "estrofe": 3
+  },
+  {
+   "t": 153.58,
+   "texto": "quando o homem olhava o céu",
+   "estrofe": 3
+  },
+  {
+   "t": 157.22,
+   "texto": "sem ter nenhuma definição",
+   "estrofe": 3
+  },
+  {
+   "t": 160.62,
+   "texto": "Mas me deram poucos anos",
+   "estrofe": 3
+  },
+  {
+   "t": 164.14,
+   "texto": "e uma cabeça em confusão",
+   "estrofe": 3
+  },
+  {
+   "t": 167.84,
+   "texto": "quanto mais eu junto respostas",
+   "estrofe": 3
+  },
+  {
+   "t": 172.0,
+   "texto": "mais perguntas faço então",
+   "estrofe": 3
+  },
+  {
+   "t": 174.84,
+   "texto": "E talvez seja por isso",
+   "estrofe": 3
+  },
+  {
+   "t": 178.5,
+   "texto": "que eu nunca aceitei prisão",
+   "estrofe": 3
+  },
+  {
+   "t": 182.12,
+   "texto": "nem daquilo que me ensinam",
+   "estrofe": 3
+  },
+  {
+   "t": 185.76,
+   "texto": "nem da minha própria visão",
+   "estrofe": 3
+  },
+  {
+   "t": 188.9,
+   "texto": "Eu não queria ser eterno",
+   "estrofe": 4
+  },
+  {
+   "t": 192.64,
+   "texto": "isso nunca me atraiu",
+   "estrofe": 4
+  },
+  {
+   "t": 195.16,
+   "texto": "só queria alguns minutos",
+   "estrofe": 4
+  },
+  {
+   "t": 198.46,
+   "texto": "pra saber o que já existiu",
+   "estrofe": 4
+  },
+  {
+   "t": 203.26,
+   "texto": "Ver o começo da estrada",
+   "estrofe": 4
+  },
+  {
+   "t": 205.74,
+   "texto": "e onde ela vai cair",
+   "estrofe": 4
+  },
+  {
+   "t": 210.14,
+   "texto": "se vai ser tudo ou nada",
+   "estrofe": 4
+  },
+  {
+   "t": 213.36,
+   "texto": "e quantos virão me ouvir",
+   "estrofe": 4
+  },
+  {
+   "t": 217.36,
+   "texto": "Porque cheguei tarde pro início",
+   "estrofe": 4
+  },
+  {
+   "t": 220.08,
+   "texto": "e cedo demais pra ver o fim",
+   "estrofe": 4
+  },
+  {
+   "t": 223.42,
+   "texto": "não devia pensar tanto nisso",
+   "estrofe": 4
+  },
+  {
+   "t": 227.92,
+   "texto": "mas é isso que me faz ser assim",
+   "estrofe": 4
+  },
+  {
+   "t": 233.1,
+   "texto": "Se amanhã falarem de mim",
+   "estrofe": 5
+  },
+  {
+   "t": 235.48,
+   "texto": "não me transformem em lenda não",
+   "estrofe": 5
+  },
+  {
+   "t": 240.22,
+   "texto": "Eu era só mais um cara",
+   "estrofe": 5
+  },
+  {
+   "t": 242.62,
+   "texto": "tentando encontrar direção",
+   "estrofe": 5
+  },
+  {
+   "t": 246.04,
+   "texto": "Não deixem trocar minhas dúvidas",
+   "estrofe": 5
+  },
+  {
+   "t": 249.94,
+   "texto": "por alguma falsa conclusão",
+   "estrofe": 5
+  },
+  {
+   "t": 253.04,
+   "texto": "Porque eu nunca tive certeza",
+   "estrofe": 5
+  },
+  {
+   "t": 256.32,
+   "texto": "e essa era minha convicção",
+   "estrofe": 5
+  },
+  {
+   "t": 260.86,
+   "texto": "Se existe algo que eu deixo",
+   "estrofe": 6
+  },
+  {
+   "t": 264.18,
+   "texto": "não cabe em fotografia",
+   "estrofe": 6
+  },
+  {
+   "t": 266.92,
+   "texto": "Não cabe em frase bonita",
+   "estrofe": 6
+  },
+  {
+   "t": 270.66,
+   "texto": "nem em qualquer biografia",
+   "estrofe": 6
+  },
+  {
+   "t": 274.08,
+   "texto": "Talvez fique nas perguntas",
+   "estrofe": 6
+  },
+  {
+   "t": 277.8,
+   "texto": "que me fizeram companhia",
+   "estrofe": 6
+  },
+  {
+   "t": 280.9,
+   "texto": "Enquanto eu voltava sozinho",
+   "estrofe": 6
+  },
+  {
+   "t": 283.9,
+   "texto": "pelas ruas da madrugada fria",
+   "estrofe": 6
+  },
+  {
+   "t": 288.3,
+   "texto": "Porque viver sem procurar",
+   "estrofe": 6
+  },
+  {
+   "t": 291.36,
+   "texto": "nunca fez sentido pra mim",
+   "estrofe": 6
+  },
+  {
+   "t": 294.76,
+   "texto": "Não sei se vou me encontrar",
+   "estrofe": 6
+  },
+  {
+   "t": 298.18,
+   "texto": "ou me perder antes do fim",
+   "estrofe": 6
+  },
+  {
+   "t": 301.67,
+   "texto": "E se eu não puder ver",
+   "estrofe": 6
+  },
+  {
+   "t": 304.14,
+   "texto": "o mundo no último dia",
+   "estrofe": 6
+  },
+  {
+   "t": 308.92,
+   "texto": "Que ao menos fique registrado",
+   "estrofe": 6
+  },
+  {
+   "t": 311.48,
+   "texto": "que eu tentei entender a vida",
+   "estrofe": 6
+  },
+  {
+   "t": 315.74,
+   "texto": "Antes que o tempo apague",
+   "estrofe": 6
+  },
+  {
+   "t": 318.24,
+   "texto": "meu nome, meu rosto e meu traço",
+   "estrofe": 6
+  },
+  {
+   "t": 323.02,
+   "texto": "Eu deixei minha assinatura",
+   "estrofe": 6
+  },
+  {
+   "t": 325.94,
+   "texto": "pra patentear meu legado",
+   "estrofe": 6
+  }
+ ]
+}
