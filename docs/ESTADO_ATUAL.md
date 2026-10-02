@@ -28,4 +28,4 @@
 
 - Guilherme confirmou "Pelcon" = Pelotão de Comunicações: incluído na trajetória e na ficha da página Sobre.
 - Pasta antiga arquivada (movida, hashes conferidos) em `PROJETOS/10_BACKUPS/faguital-com-br-legado-20261001`.
-- Pendentes: diploma "Ao Mérito" (citar só se Guilherme confirmar nome); foto com a mãe e a madrasta (só com consentimento).
+- Guilherme confirmou ("sim foi pra tudo"): o diploma Ao Mérito é a condecoração (ficha e JSON-LD `award`) e a foto com a mãe e a madrasta está autorizada (galeria, largura total, sem nomes). Nenhuma pendência de conteúdo aberta.
