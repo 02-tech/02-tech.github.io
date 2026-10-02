@@ -23,3 +23,4 @@ Este projeto pertence ao Núcleo FAGUITAL e segue `0_CENTRAL_ENGENHARIA/09_COLAB
 - Fotos: só as aprovadas; sem documentos pessoais nem terceiros sem consentimento. Remover metadados (EXIF/GPS).
 - Sem travessões como separador na redação.
 - Escritos e letras no site: só trechos de superação, identidade, tempo e legado; textos pesados (morte, colapso, arma) ficam fora, porque o site também apresenta Guilherme a empresários e investidores. Transcrever fielmente, trocando só travessões por pontuação.
+- Antes de acrescentar escrito ou música, conferir e atualizar `docs/ACERVO_ESCRITOS.md` (controle de duplicidade).
