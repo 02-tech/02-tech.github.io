@@ -35,3 +35,8 @@
 - Seção "05 · MÚSICA" na página inicial (rap e poesia Boom Bap, letra e direção de FAGUITAL, produção independente) com 4 faixas linkadas ao vídeo: PALÁCIO DE FERRUGEM, BARULHO, OLHA QUEM EU ME TORNEI, PERGUNTAS QUE FICARAM. Script: `tools/musica-20261002.js`.
 - YouTube `@faguital` nos Sinais abertos, no menu (Música), no JSON-LD `sameAs` das duas páginas e no humans.txt.
 - Google ainda mostra o título antigo (cache): sem acesso ao Search Console nesta sessão; reindexação depende de Guilherme ou de nova visita do Google.
+
+## 2026-10-02: aba Militar
+
+- Guilherme não encontrava as fotos (ficavam só no fim da página Sobre). Criada a aba "Militar" no menu da página inicial, seção `#militar` logo após Essência, com estilo militar discreto (oliva, estêncil, cantos de enquadramento), sem numeração: texto curto (32º BIL Mth, infantaria, Pelotão de Comunicações, montanha, Diploma Ao Mérito), ficha e as 3 fotos. A galeria da página Sobre continua.
+- Lição: imagem com atributos width/height precisa de `height:auto` no CSS para o `aspect-ratio` valer (senão vira altura fixa em pixels).
