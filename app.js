@@ -93,3 +93,41 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
 document.querySelector('#year').textContent = new Date().getFullYear();
+
+// 2026-10-02: trilha ao entrar (O Trágico e Grandioso) com botão fixo de silenciar.
+// Navegadores bloqueiam som automático até o primeiro gesto do visitante: tenta ao abrir e, se bloqueado, no primeiro toque/clique/tecla.
+(() => {
+  const audio = document.getElementById("trilha");
+  const botao = document.getElementById("som-botao");
+  if (!audio || !botao) return;
+  const CHAVE = "faguital-som";
+  let mudo = false;
+  try { mudo = localStorage.getItem(CHAVE) === "mudo"; } catch (e) { /* sem armazenamento */ }
+  audio.volume = 0.6;
+  botao.hidden = false;
+  const atualizar = () => {
+    const tocando = !audio.paused && !audio.muted;
+    botao.setAttribute("aria-pressed", tocando ? "true" : "false");
+    botao.querySelector(".som-texto").textContent = tocando ? "Silenciar" : "Ouvir";
+    botao.setAttribute("aria-label", tocando ? "Silenciar a música O Trágico e Grandioso" : "Ouvir a música O Trágico e Grandioso");
+    botao.classList.toggle("tocando", tocando);
+  };
+  const tocar = () => { audio.muted = false; return audio.play().then(atualizar, () => { atualizar(); return Promise.reject(); }); };
+  const gestos = ["pointerdown", "keydown", "touchstart"];
+  const noPrimeiroGesto = (e) => {
+    if (e.target && e.target.closest && e.target.closest("#som-botao, #trilha")) return;
+    gestos.forEach((g) => document.removeEventListener(g, noPrimeiroGesto, true));
+    if (!mudo && audio.paused) tocar().catch(() => {});
+  };
+  botao.addEventListener("click", () => {
+    if (!audio.paused && !audio.muted) { audio.pause(); mudo = true; }
+    else { mudo = false; tocar().catch(() => {}); }
+    try { localStorage.setItem(CHAVE, mudo ? "mudo" : "som"); } catch (e) { /* ok */ }
+    gestos.forEach((g) => document.removeEventListener(g, noPrimeiroGesto, true));
+    atualizar();
+  });
+  ["play", "pause", "volumechange", "ended"].forEach((ev) => audio.addEventListener(ev, atualizar));
+  audio.addEventListener("ended", () => { mudo = true; });
+  if (!mudo) tocar().catch(() => gestos.forEach((g) => document.addEventListener(g, noPrimeiroGesto, { capture: true, passive: true })));
+  atualizar();
+})();
