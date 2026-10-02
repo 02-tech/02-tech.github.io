@@ -63,3 +63,10 @@
 - Lista "Também no YouTube" retirada: todas as faixas do canal estão no player; o canal segue em Sinais abertos.
 - Céu Não é o Limite: esta gravação começa em "Sei quem me fez cair"; os 14 primeiros versos da descrição do YouTube ficaram fora do player.
 - Teste local de áudio exige servidor com Range (206): `node tools/servidor-local.js 8851` (o http.server do Python não serve trechos e impede avançar o áudio).
+
+## 2026-10-02: identidade digital unificada
+
+- Grafo JSON-LD único nos três sites: Person `https://faguital.com.br/#person` (Guilherme Carvalho de Andrade, FAGUITAL), Organization `https://imperialvolt.com/#organization` (founder = a pessoa, CNPJ), Project `https://tecnofagguard.com.br/#tecnofag-guard` (founder = a pessoa), MusicPlaylist com as 12 faixas, FAQPage na página Sobre com 5 perguntas visíveis. Gerador: `tools/entidade-20261002.js` (idempotente; mexe nos três repositórios).
+- Títulos e descrições com termos estratégicos (prototipador, empreendedor, Petrópolis, fundador da Imperial Volt, criador do TECNOFAG GUARD, rapper e poeta); bio visível ganhou "fundador e dono da Imperial Volt" e "criador do TECNOFAG GUARD" com links.
+- `llms.txt` nos três sites (leitura por IAs), `humans.txt` atualizado/criado, sitemaps com lastmod 2026-10-02.
+- Pendente fora do meu alcance: Google Search Console (verificar os três domínios, enviar os sitemaps e pedir reindexação de faguital.com.br e /sobre.html).
