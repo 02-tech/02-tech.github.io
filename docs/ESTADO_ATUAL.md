@@ -76,3 +76,9 @@
 - Imagem de compartilhamento `assets/img/og-faguital.png` (1200x630, tipográfica; `tools/og.html` + `tools/gerar-og.js`) nas duas páginas (og:image e twitter:card).
 - IndexNow (Bing, Yandex e buscadores que usam o índice do Bing, inclusive ChatGPT/Copilot): chave `f9332cf0a33fc0f7e90bede81db78aed.txt` na raiz dos três sites; envio em 2026-10-02 respondeu 202 para faguital.com.br, tecnofagguard.com.br e imperialvolt.com. Reenviar após mudanças relevantes (POST https://api.indexnow.org/indexnow com host, key, keyLocation e urlList). O Google não usa IndexNow: para ele, só Search Console.
 - Chrome atualizado (154) demora até ~9 s na primeira abertura de perfil novo: ferramentas esperam até 30 s.
+
+## 2026-10-02: trilha ao entrar confiável
+
+- Guilherme viu "Silenciar" sem música tocando: o estado usava "não pausado", que inclui carregando ou travado. Agora "tocando" só quando o áudio avança de fato (eventos playing/timeupdate); enquanto carrega o botão diz "Carregando…".
+- O primeiro gesto em qualquer lugar da página (touchend, click, keydown, pointerup) sempre garante o som, mesmo que o navegador não tenha recusado de cara; respeita quem silenciou antes. Primeiro áudio com preload="auto".
+- Testado com toque real emulado no topo da página: navegador bloqueando som (toca no 1º toque) e liberando (toca ao abrir); letra sincronizada sem rolar a página.

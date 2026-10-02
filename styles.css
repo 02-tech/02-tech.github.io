@@ -251,11 +251,3 @@ html,body{overflow-x:clip}
 .pl-baixar:hover{border-color:var(--cyan);color:var(--cyan)}
 @media (prefers-reduced-motion:reduce){.letra-linha{transition:none}.letra-linha.agora{transform:none}}
 @media (max-width:900px){.musica-grid>.player{grid-column:auto}.letra-viva{height:220px;padding:80px 20px}}
-/* 2026-10-02: perguntas diretas (página Sobre) */
-.profile-faq h2{font-size:clamp(2.7rem,5vw,5.8rem);line-height:.92;letter-spacing:-.065em;margin:30px 0 0;font-weight:600}
-.profile-faq h2 span{font-style:normal;color:transparent;-webkit-text-stroke:1px rgba(242,246,247,.5)}
-.faq-lista{margin:50px 0 0;border-top:1px solid var(--line)}
-.faq-lista div{display:grid;grid-template-columns:minmax(220px,.8fr) 1.2fr;gap:30px;padding:26px 0;border-bottom:1px solid var(--line)}
-.faq-lista dt{color:#e8edef;font-weight:600;font-size:1.05rem}
-.faq-lista dd{margin:0;color:var(--muted);line-height:1.75}
-@media (max-width:900px){.faq-lista div{grid-template-columns:1fr;gap:10px}}

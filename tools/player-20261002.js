@@ -28,7 +28,7 @@ const BLOCO = `        <div class="player reveal" id="player" aria-label="Player
           <div class="player-topo">
             <span class="player-rotulo">OUÇA E BAIXE · TOCANDO AGORA</span>
             <strong class="player-titulo" id="player-titulo">O Trágico e Grandioso</strong>
-            <audio id="trilha" controls preload="metadata" src="assets/audio/o-tragico-e-grandioso.mp3">Seu navegador não toca áudio. <a href="assets/audio/o-tragico-e-grandioso.mp3" download>Baixar a faixa</a>.</audio>
+            <audio id="trilha" controls preload="auto" src="assets/audio/o-tragico-e-grandioso.mp3">Seu navegador não toca áudio. <a href="assets/audio/o-tragico-e-grandioso.mp3" download>Baixar a faixa</a>.</audio>
           </div>
           <div class="letra-viva" id="letra-viva" aria-label="Letra sincronizada">
             <p class="letra-aviso">A letra acompanha a música enquanto ela toca.</p>
