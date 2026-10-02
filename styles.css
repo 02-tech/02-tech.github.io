@@ -213,3 +213,14 @@ html,body{overflow-x:clip}
 .faixa-destaque p{margin:0 0 16px;color:#cfd6d9;line-height:1.7}
 .faixa-destaque .refrao{color:#fff;font-weight:600;border-left:2px solid var(--cyan);padding-left:14px}
 @media (max-width:900px){.musica-grid>.faixas,.musica-grid>.faixa-destaque{grid-column:auto}}
+/* 2026-10-02: botão fixo de som */
+.som-botao{position:fixed;right:max(16px,env(safe-area-inset-right));bottom:max(16px,env(safe-area-inset-bottom));z-index:60;display:flex;align-items:center;gap:10px;min-height:46px;padding:0 18px 0 14px;border:1px solid rgba(60,242,228,.45);border-radius:999px;background:rgba(5,7,11,.88);backdrop-filter:blur(8px);color:#e6ecee;font:600 .72rem Consolas,"Courier New",monospace;letter-spacing:.14em;text-transform:uppercase;cursor:pointer}
+.som-botao[hidden]{display:none}
+.som-botao:hover{border-color:var(--cyan)}
+.som-botao:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}
+.som-icone{display:flex;align-items:flex-end;gap:2px;height:14px}
+.som-icone:before,.som-icone:after{content:"";width:3px;height:6px;background:var(--cyan);border-radius:1px}
+.som-botao.tocando .som-icone:before{animation:somBarra .9s ease-in-out infinite}
+.som-botao.tocando .som-icone:after{animation:somBarra .9s .3s ease-in-out infinite}
+@keyframes somBarra{0%,100%{height:4px}50%{height:14px}}
+@media (prefers-reduced-motion:reduce){.som-botao.tocando .som-icone:before,.som-botao.tocando .som-icone:after{animation:none;height:12px}}

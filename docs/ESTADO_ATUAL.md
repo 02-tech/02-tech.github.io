@@ -50,3 +50,7 @@
 
 - Guilherme enviou 16 capturas do próprio Instagram (posts de 2021 a 2026, curtidas e visualizações). Seção "06 · ESCRITOS" criada com a frase-guia "Não vivendo a ilusão, vivo o que eu quero, que é muita poesia em sintonia com o progresso." e 7 escritos transcritos fielmente (tempo, atitude, aprendizado, recomeço). Sinais abertos virou 07. Script: `tools/escritos-20261002.js`.
 - Achados registrados para uso futuro: poesia publicada desde jul/2021 com assinatura em código de barras "FaGuiTal"; mais curtido de 2021: "Sujeito" (69); reels recentes de maior alcance: "Entre dois mundos" (482), "Ausente para muitos" (471), "Se for pra cair" (415), "O céu não é o limite" (403); post de 2021 "Projeto do carrinho movido a energia solar. Fase 1" (323 visualizações).
+
+## 2026-10-02: trilha ao entrar
+
+- O Trágico e Grandioso toca ao abrir o site; se o navegador bloquear som automático (padrão em Chrome/Safari/celular), começa no primeiro toque, clique ou tecla. Botão fixo no canto inferior direito ("Silenciar"/"Ouvir") com barras animadas; a escolha de silenciar fica salva no navegador (localStorage). Testado com política bloqueada e liberada, 0 erros.
