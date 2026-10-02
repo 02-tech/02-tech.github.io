@@ -40,3 +40,8 @@
 
 - Guilherme não encontrava as fotos (ficavam só no fim da página Sobre). Criada a aba "Militar" no menu da página inicial, seção `#militar` logo após Essência, com estilo militar discreto (oliva, estêncil, cantos de enquadramento), sem numeração: texto curto (32º BIL Mth, infantaria, Pelotão de Comunicações, montanha, Diploma Ao Mérito), ficha e as 3 fotos. A galeria da página Sobre continua.
 - Lição: imagem com atributos width/height precisa de `height:auto` no CSS para o `aspect-ratio` valer (senão vira altura fixa em pixels).
+
+## 2026-10-02: música com a voz de Guilherme
+
+- Análise dos 9 vídeos públicos do canal @faguital (títulos, datas, visualizações, descrições e letras). Seção Música reescrita com o lema dele ("Essa música não nasceu hoje. A ideia continua a mesma. A forma evoluiu."), trajetória 2021 (Pessoas, desabafo) a 2026 (nova fase), 7 faixas com frases das próprias letras e a frase de legado de Perguntas Que Ficaram. Curadoria: versos pesados (ex.: menção a arma/tiro em Céu Não é o Limite) ficam fora do site. Script: `tools/musica-voz-20261002.js`.
+- Instagram @faguital (861 seguidores, 47 posts): sem acesso a posts. API e página pública exigem login; busca na web não indexa os posts; uso da sessão logada do Edge compartilhado foi bloqueado pelo classificador de segurança (exploração de credenciais) e não foi contornado. Caminhos possíveis: Guilherme exportar os dados pelo Instagram (Configurações > Baixar suas informações, JSON) ou enviar links de posts (a página pública de embed de cada post mostra a legenda).
