@@ -19,6 +19,6 @@ Este projeto pertence ao Núcleo FAGUITAL e segue `0_CENTRAL_ENGENHARIA/09_COLAB
   NFC, sensores, "objetos conectados" ou qualquer pista de mecanismo, nem em nomes de classes do código-fonte.
 - Imperial Volt é outra empresa de Guilherme (não faz parte do ecossistema TECNOFAG GUARD).
 - Nomes TECNOFAG GUARD e Imperial Volt no texto são links; sem botões do tipo "Conhecer".
-- Condecoração publicável: Diploma Ao Mérito. Foto com a mãe e a madrasta autorizada por Guilherme (2026-10-01), sem nomes.
+- Condecoração publicável: Diploma Ao Mérito. Foto com a madrasta e a mãe autorizada por Guilherme (2026-10-01), sem nomes.
 - Fotos: só as aprovadas; sem documentos pessoais nem terceiros sem consentimento. Remover metadados (EXIF/GPS).
 - Sem travessões como separador na redação.

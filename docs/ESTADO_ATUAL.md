@@ -9,7 +9,7 @@
 - Trajetória militar: 32º Batalhão de Infantaria Leve de Montanha; infantaria, comunicações e montanha. Ficha da página
   Sobre com Exército Brasileiro, Criação (TECNOFAG GUARD®, link) e Empresa (Imperial Volt, link).
 - Galeria na página Sobre: operação noturna e treinamento de montanha (fotos enviadas por Guilherme; sem EXIF/GPS).
-  NÃO publicadas: parede de certificados (documentos pessoais, terceiros, textos de story) e foto com a mãe e a madrasta
+  NÃO publicadas: parede de certificados (documentos pessoais, terceiros, textos de story) e foto com a madrasta e a mãe
   (aguarda consentimento delas).
 - TECNOFAG GUARD apresentado só com informação pública (card do projeto na página inicial e parágrafo na trajetória);
   JSON-LD com `Project` de @id `https://tecnofagguard.com.br/#tecnofag-guard` e `founder` = a pessoa deste site.
@@ -22,13 +22,13 @@
 ## Pendências
 
 2. Diploma "Ao Mérito" visto na parede: confirmar se é a condecoração e o nome exato, se quiser citar.
-3. Foto com a mãe e a madrasta: publicar só com o consentimento delas.
+3. Foto com a madrasta e a mãe: publicar só com o consentimento delas.
 
 ## 2026-10-01 (complemento)
 
 - Guilherme confirmou "Pelcon" = Pelotão de Comunicações: incluído na trajetória e na ficha da página Sobre.
 - Pasta antiga arquivada (movida, hashes conferidos) em `PROJETOS/10_BACKUPS/faguital-com-br-legado-20261001`.
-- Guilherme confirmou ("sim foi pra tudo"): o diploma Ao Mérito é a condecoração (ficha e JSON-LD `award`) e a foto com a mãe e a madrasta está autorizada (galeria, largura total, sem nomes). Nenhuma pendência de conteúdo aberta.
+- Guilherme confirmou ("sim foi pra tudo"): o diploma Ao Mérito é a condecoração (ficha e JSON-LD `award`) e a foto com a madrasta e a mãe está autorizada (galeria, largura total, sem nomes). Nenhuma pendência de conteúdo aberta.
 
 ## 2026-10-02: música
 
