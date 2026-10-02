@@ -251,20 +251,16 @@ html,body{overflow-x:clip}
 .pl-baixar:hover{border-color:var(--cyan);color:var(--cyan)}
 @media (prefers-reduced-motion:reduce){.letra-linha{transition:none}.letra-linha.agora{transform:none}}
 @media (max-width:900px){.musica-grid>.player{grid-column:auto}.letra-viva{height:220px;padding:80px 20px}}
-/* ===== molécula (botão de música depois que a música começa) ===== */
+/* ===== molécula (botão de música depois que a música começa): solta, sem moldura ===== */
 .som-botao .molecula-svg{display:none}
-.som-botao.molecula{width:64px;height:64px;min-height:0;padding:0;border-radius:50%;justify-content:center;border-color:rgba(60,242,228,.35);background:radial-gradient(circle at 50% 50%,#0b0f14 0,#030406 70%);box-shadow:0 0 0 1px rgba(60,242,228,.12),0 10px 30px rgba(0,0,0,.6),inset 0 0 18px rgba(120,80,255,.18)}
+.som-botao.molecula{width:84px;height:76px;min-height:0;padding:0;border:0;border-radius:0;background:none;box-shadow:none;backdrop-filter:none;justify-content:center}
 .som-botao.molecula .som-icone,.som-botao.molecula .som-texto{display:none}
-.som-botao.molecula .molecula-svg{display:block;width:50px;height:50px}
-.molecula-svg ellipse{fill:none;stroke:rgba(60,242,228,.55);stroke-width:1.2}
-.molecula-svg .eletron{fill:#3cf2e4}
-.molecula-svg .nucleo{fill:#020203;stroke:rgba(150,110,255,.85);stroke-width:1.6;filter:drop-shadow(0 0 4px rgba(150,110,255,.8))}
-.molecula-svg .orbitas{transform-origin:32px 32px}
-.som-botao.molecula.tocando .orbitas{animation:molGira 6s linear infinite}
-.som-botao.molecula.tocando .nucleo{animation:molPulsa 1.4s ease-in-out infinite}
-.som-botao.molecula:not(.tocando) .molecula-svg{opacity:.55}
-@keyframes molGira{to{transform:rotate(360deg)}}
-@keyframes molPulsa{0%,100%{r:7}50%{r:9}}
+.som-botao.molecula .molecula-svg{display:block;width:84px;height:76px;overflow:visible}
+.molecula-svg .ligacoes line{stroke:rgba(140,120,255,.55);stroke-width:1.4;stroke-linecap:round}
+.molecula-svg .atomos circle{stroke:rgba(150,120,255,.9);stroke-width:1.1;filter:drop-shadow(0 0 3px rgba(130,100,255,.75))}
+.som-botao.molecula.tocando .molecula-svg{filter:drop-shadow(0 0 8px rgba(60,242,228,.22))}
+.som-botao.molecula:not(.tocando) .molecula-svg{opacity:.6}
+.som-botao.molecula:focus-visible{outline:2px solid var(--cyan);outline-offset:4px;border-radius:12px}
 /* ===== mini player ===== */
 .mini-player{position:fixed;right:max(16px,env(safe-area-inset-right));bottom:calc(max(16px,env(safe-area-inset-bottom)) + 76px);z-index:61;width:min(300px,calc(100vw - 32px));padding:18px 18px 14px;border:1px solid rgba(60,242,228,.4);background:rgba(5,7,11,.96);backdrop-filter:blur(10px);box-shadow:0 18px 40px rgba(0,0,0,.6)}
 .mini-player[hidden],.nav-painel[hidden],.nav-orbe[hidden]{display:none}
@@ -286,4 +282,9 @@ html,body{overflow-x:clip}
 .nav-painel ul{list-style:none;margin:0;padding:0}
 .nav-painel a{display:block;padding:11px 10px;color:#dfe5e7;text-decoration:none;font-size:.95rem;border-top:1px solid var(--line)}
 .nav-painel a:hover{color:var(--cyan);background:rgba(60,242,228,.05)}
-@media (prefers-reduced-motion:reduce){.som-botao.molecula.tocando .orbitas,.som-botao.molecula.tocando .nucleo{animation:none}.nav-orbe{transition:none}}
+@media (prefers-reduced-motion:reduce){.nav-orbe{transition:none}}
+/* posições (pedido de Guilherme): música à direita, um pouco acima do meio; navegação no canto superior esquerdo */
+.som-botao{top:40%;bottom:auto;transform:translateY(-50%)}
+.mini-player{top:40%;bottom:auto;right:calc(max(16px,env(safe-area-inset-right)) + 92px);transform:translateY(-50%);width:min(290px,calc(100vw - 124px))}
+.nav-orbe{top:max(16px,env(safe-area-inset-top));bottom:auto}
+.nav-painel{top:calc(max(16px,env(safe-area-inset-top)) + 64px);bottom:auto;max-height:calc(100vh - 110px);overflow-y:auto}
