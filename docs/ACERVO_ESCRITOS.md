@@ -86,6 +86,6 @@ Legenda: NO SITE = publicado em faguital.com.br · ANALISADO = visto, ainda não
 | Palácio de Ferrugem | assets/audio/palacio-de-ferrugem.mp3 | mesma do YouTube BOqqmfuUO_o | oficial (enviada 2026-10-02), sincronizada |
 | Pessoas (Parte 2) | assets/audio/pessoas-parte-2.mp3 | mesma do YouTube JAnVp5H33qg | oficial (enviada 2026-10-02), sincronizada |
 | Barulho | assets/audio/barulho.mp3 | mesma do YouTube LsmdTp2iFqc (enviada 2026-10-02) | oficial, sincronizada |
-| No Escuro (nome provisório; arquivo "No Jogo da Vida 2.0") | assets/audio/no-escuro.mp3 | áudio enviado, inédita; Guilherme liberou trocar o nome | oficial, sincronizada |
+| No Escuro (nome confirmado por Guilherme em 2026-10-02; arquivo original "No Jogo da Vida 2.0") | assets/audio/no-escuro.mp3 | áudio enviado, inédita; Guilherme liberou trocar o nome | oficial, sincronizada |
 
 Todas as faixas do canal estão no player; a lista "Também no YouTube" foi retirada (o canal segue em Sinais abertos).
