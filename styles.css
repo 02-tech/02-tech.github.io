@@ -153,3 +153,22 @@ html,body{overflow-x:clip}
 .musica h2{line-height:.92;letter-spacing:-.065em;margin:0;font-weight:600}
 .musica h2 span{font-style:normal;color:transparent;-webkit-text-stroke:1px rgba(242,246,247,.5)}
 @media (max-width:900px){.musica h2{font-size:2.65rem}}
+/* 2026-10-02: aba "Militar" (estilo militar discreto: oliva, estêncil, cantos de enquadramento) */
+.militar{--oliva:#9aa86b;position:relative}
+.militar-tag{display:inline-block;font:700 .66rem Consolas,"Courier New",monospace;letter-spacing:.32em;color:var(--oliva);border:1px solid rgba(154,168,107,.45);padding:7px 12px}
+.militar-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:70px;align-items:start;margin-top:44px}
+.militar h2{font-size:clamp(2.6rem,4.6vw,5rem);line-height:.95;letter-spacing:-.05em;margin:0;font-weight:600}
+.militar-copy>p{color:var(--muted);line-height:1.8;margin:28px 0 0;max-width:520px}
+.militar-ficha{margin:34px 0 0;border-top:1px solid rgba(154,168,107,.3)}
+.militar-ficha div{display:grid;grid-template-columns:130px 1fr;gap:14px;padding:14px 0;border-bottom:1px solid rgba(154,168,107,.2)}
+.militar-ficha dt{font:.6rem Consolas,"Courier New",monospace;letter-spacing:.2em;text-transform:uppercase;color:var(--oliva)}
+.militar-ficha dd{margin:0;color:#d4dad6;font-size:.95rem}
+.militar-fotos{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.militar-fotos figure{position:relative;margin:0;background:#05070b;border:1px solid rgba(154,168,107,.28)}
+.militar-fotos figure:before,.militar-fotos figure:after{content:"";position:absolute;width:18px;height:18px;border-color:var(--oliva);border-style:solid;z-index:1;pointer-events:none}
+.militar-fotos figure:before{top:-1px;left:-1px;border-width:2px 0 0 2px}
+.militar-fotos figure:after{bottom:-1px;right:-1px;border-width:0 2px 2px 0}
+.militar-fotos img{display:block;width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;object-position:center 30%;filter:saturate(.85) contrast(1.05)}
+.militar-fotos .larga{grid-column:1/-1}.militar-fotos .larga img{aspect-ratio:4/3}
+.militar-fotos figcaption{padding:10px 12px;font:.56rem Consolas,"Courier New",monospace;letter-spacing:.2em;text-transform:uppercase;color:var(--oliva);border-top:1px solid rgba(154,168,107,.2)}
+@media (max-width:900px){.militar-grid{grid-template-columns:1fr;gap:40px}.militar-ficha div{grid-template-columns:110px 1fr}}
