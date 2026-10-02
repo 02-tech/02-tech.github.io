@@ -134,3 +134,22 @@ html,body{overflow-x:clip}
 @media (min-width:901px){.identity-facts{grid-template-columns:repeat(3,1fr)}.identity-facts div{border-right:1px solid var(--line)}.identity-facts div:nth-child(3n){border-right:0}.identity-facts div:nth-child(-n+3){border-bottom:1px solid var(--line)}}
 /* foto horizontal da família em largura total, sem corte */
 .trajetoria-fotos .foto-larga{grid-column:1/-1}.trajetoria-fotos .foto-larga img{aspect-ratio:auto;object-fit:contain}
+/* 2026-10-02: música */
+.musica-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;margin-top:50px}
+.musica h2{font-size:clamp(2.7rem,5vw,5.8rem)}
+.musica-texto{color:var(--muted);line-height:1.8;max-width:520px;margin-top:34px}
+.musica-texto a{color:var(--cyan);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px}
+.faixas{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.faixas li{display:grid;grid-template-columns:48px 1fr auto;align-items:baseline;gap:16px;padding:24px 4px;border-bottom:1px solid var(--line)}
+.faixa-num{font:.7rem Consolas,"Courier New",monospace;color:var(--cyan);letter-spacing:.14em}
+.faixas a{color:#e8edef;font-size:clamp(1.05rem,2.2vw,1.45rem);font-weight:500;letter-spacing:.02em;text-decoration:none;transition:color .2s}
+.faixas a:hover,.faixas a:focus-visible{color:var(--cyan);text-decoration:underline;text-underline-offset:5px}
+.faixas a:focus-visible{outline:2px solid var(--cyan);outline-offset:4px}
+.faixas small{font:.58rem Consolas,"Courier New",monospace;letter-spacing:.14em;text-transform:uppercase;color:#7b888e;text-align:right}
+.social-links{grid-template-columns:repeat(3,1fr)}
+@media (max-width:900px){.musica-grid{grid-template-columns:1fr;gap:40px}.social-links{grid-template-columns:1fr}}
+@media (max-width:520px){.faixas li{grid-template-columns:36px 1fr}.faixas small{grid-column:2;text-align:left;margin-top:-8px}}
+/* musica h2 segue o padrão dos títulos de seção (peso, espaçamento e segunda linha vazada) */
+.musica h2{line-height:.92;letter-spacing:-.065em;margin:0;font-weight:600}
+.musica h2 span{font-style:normal;color:transparent;-webkit-text-stroke:1px rgba(242,246,247,.5)}
+@media (max-width:900px){.musica h2{font-size:2.65rem}}
