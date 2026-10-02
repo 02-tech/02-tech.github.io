@@ -159,12 +159,43 @@
   gestos.forEach((g) => document.addEventListener(g, noGesto, { capture: true, passive: true }));
 
   if (botao) {
-    // a molécula: anéis em órbita, giram só enquanto toca
-    if (!botao.querySelector(".molecula-svg")) botao.insertAdjacentHTML("afterbegin",
-      '<svg class="molecula-svg" viewBox="0 0 64 64" aria-hidden="true"><g class="orbitas">' +
-      '<ellipse cx="32" cy="32" rx="27" ry="10"/><ellipse cx="32" cy="32" rx="27" ry="10" transform="rotate(60 32 32)"/><ellipse cx="32" cy="32" rx="27" ry="10" transform="rotate(120 32 32)"/>' +
-      '<circle class="eletron e1" cx="59" cy="32" r="2.6"/><circle class="eletron e2" cx="18.5" cy="8.6" r="2.6"/><circle class="eletron e3" cx="18.5" cy="55.4" r="2.6"/></g>' +
-      '<circle class="nucleo" cx="32" cy="32" r="8"/></svg>');
+    // a molécula: átomos escuros ligados, sem formato fixo; enquanto toca, cada átomo se move no seu ritmo
+    // (a forma se contorce); parada quando a música para. O laço só roda tocando e com a aba visível.
+    if (!botao.querySelector(".molecula-svg")) {
+      const ATOMOS = [ // x, y, raio, amplitude, velocidade, fase
+        [40, 40, 8.5, 2.2, 0.9, 0], [22, 30, 6, 4.5, 1.3, 1.1], [58, 26, 5.5, 4.8, 1.1, 2.3],
+        [26, 58, 5, 5, 1.5, 3.4], [60, 56, 6.5, 4, 1.2, 4.6], [41, 14, 4, 5.5, 1.7, 5.2], [12, 46, 3.6, 5.5, 1.9, 0.6]];
+      const LIGACOES = [[0, 1], [0, 2], [0, 3], [0, 4], [2, 5], [1, 6], [3, 6], [4, 2]];
+      let svg = '<svg class="molecula-svg" viewBox="0 0 80 72" aria-hidden="true"><defs><radialGradient id="mol-atomo" cx="38%" cy="32%" r="70%">' +
+        '<stop offset="0" stop-color="#2a2340"/><stop offset=".55" stop-color="#07060c"/><stop offset="1" stop-color="#000"/></radialGradient></defs><g class="ligacoes">';
+      LIGACOES.forEach(() => { svg += '<line/>'; });
+      svg += '</g><g class="atomos">';
+      ATOMOS.forEach(([x, y, r]) => { svg += '<circle cx="' + x + '" cy="' + y + '" r="' + r + '" fill="url(#mol-atomo)"/>'; });
+      botao.insertAdjacentHTML("afterbegin", svg + "</g></svg>");
+      const circ = [...botao.querySelectorAll(".atomos circle")], lin = [...botao.querySelectorAll(".ligacoes line")];
+      const desenhar = (t) => {
+        const pos = ATOMOS.map(([x, y, r, a, v, f]) => [
+          x + Math.sin(t * v + f) * a + Math.sin(t * v * 0.37 + f * 2) * a * 0.5,
+          y + Math.cos(t * v * 0.83 + f) * a + Math.sin(t * v * 0.51 + f) * a * 0.4,
+          r * (1 + Math.sin(t * v * 1.7 + f) * 0.12)]);
+        pos.forEach(([x, y, r], i) => { circ[i].setAttribute("cx", x.toFixed(2)); circ[i].setAttribute("cy", y.toFixed(2)); circ[i].setAttribute("r", r.toFixed(2)); });
+        LIGACOES.forEach(([a, b], i) => { lin[i].setAttribute("x1", pos[a][0].toFixed(2)); lin[i].setAttribute("y1", pos[a][1].toFixed(2)); lin[i].setAttribute("x2", pos[b][0].toFixed(2)); lin[i].setAttribute("y2", pos[b][1].toFixed(2)); });
+      };
+      const reduz = matchMedia("(prefers-reduced-motion: reduce)").matches;
+      let quadro = 0, t0 = performance.now(), tAcum = 0;
+      const laco = (agora) => {
+        quadro = 0;
+        if (!soando || document.hidden || reduz) return;
+        tAcum += Math.min(agora - t0, 50) / 1000; t0 = agora;
+        desenhar(tAcum);
+        quadro = requestAnimationFrame(laco);
+      };
+      const animar = () => { if (!quadro && soando && !reduz && !document.hidden) { t0 = performance.now(); quadro = requestAnimationFrame(laco); } };
+      desenhar(0);
+      audio.addEventListener("timeupdate", animar);
+      audio.addEventListener("playing", animar);
+      document.addEventListener("visibilitychange", animar);
+    }
     botao.addEventListener("click", () => {
       gestoUsado = true; tirarGestos();
       if (jaTocou) { abrirMini(mini.hidden); return; }

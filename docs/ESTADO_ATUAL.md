@@ -88,3 +88,5 @@
 - Depois que a música começa, o botão flutuante vira uma molécula (núcleo escuro tipo antimatéria, órbitas ciano girando só enquanto toca) que abre um mini player: título, anterior, tocar/pausar, próxima e atalho "Ver letra e todas as músicas". Fecha ao tocar fora ou com Esc.
 - Navegação flutuante: quando o cabeçalho sai da tela, o símbolo do topo aparece no canto inferior esquerdo e abre um painel com todas as seções (Início, Essência, Quem sou, Militar, Universo, Experimentos, Música, 3·6·9, Escritos, Sinais abertos).
 - Código: `tools/player-app.js`, `tools/flutuantes-app.js`, `tools/flutuantes.css`, aplicados por `tools/player-20261002.js`. Movimento reduzido desliga as animações.
+- Ajustes pedidos por Guilherme (mesmo dia): molécula à direita um pouco acima do meio; navegação no canto superior esquerdo; molécula livre (7 átomos escuros ligados que se contorcem enquanto toca, parada quando pausa; laço de animação só roda tocando e com a aba visível).
+- WhatsApp pessoal (24) 99275-4537 no bloco de redes, em azul-escuro neon (wa.me/5524992754537), autorizado por Guilherme.
