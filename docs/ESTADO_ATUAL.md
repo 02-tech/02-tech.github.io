@@ -29,3 +29,9 @@
 - Guilherme confirmou "Pelcon" = Pelotão de Comunicações: incluído na trajetória e na ficha da página Sobre.
 - Pasta antiga arquivada (movida, hashes conferidos) em `PROJETOS/10_BACKUPS/faguital-com-br-legado-20261001`.
 - Guilherme confirmou ("sim foi pra tudo"): o diploma Ao Mérito é a condecoração (ficha e JSON-LD `award`) e a foto com a mãe e a madrasta está autorizada (galeria, largura total, sem nomes). Nenhuma pendência de conteúdo aberta.
+
+## 2026-10-02: música
+
+- Seção "05 · MÚSICA" na página inicial (rap e poesia Boom Bap, letra e direção de FAGUITAL, produção independente) com 4 faixas linkadas ao vídeo: PALÁCIO DE FERRUGEM, BARULHO, OLHA QUEM EU ME TORNEI, PERGUNTAS QUE FICARAM. Script: `tools/musica-20261002.js`.
+- YouTube `@faguital` nos Sinais abertos, no menu (Música), no JSON-LD `sameAs` das duas páginas e no humans.txt.
+- Google ainda mostra o título antigo (cache): sem acesso ao Search Console nesta sessão; reindexação depende de Guilherme ou de nova visita do Google.
