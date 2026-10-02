@@ -70,3 +70,9 @@
 - Títulos e descrições com termos estratégicos (prototipador, empreendedor, Petrópolis, fundador da Imperial Volt, criador do TECNOFAG GUARD, rapper e poeta); bio visível ganhou "fundador e dono da Imperial Volt" e "criador do TECNOFAG GUARD" com links.
 - `llms.txt` nos três sites (leitura por IAs), `humans.txt` atualizado/criado, sitemaps com lastmod 2026-10-02.
 - Pendente fora do meu alcance: Google Search Console (verificar os três domínios, enviar os sitemaps e pedir reindexação de faguital.com.br e /sobre.html).
+
+## 2026-10-02: compartilhamento e IndexNow
+
+- Imagem de compartilhamento `assets/img/og-faguital.png` (1200x630, tipográfica; `tools/og.html` + `tools/gerar-og.js`) nas duas páginas (og:image e twitter:card).
+- IndexNow (Bing, Yandex e buscadores que usam o índice do Bing, inclusive ChatGPT/Copilot): chave `f9332cf0a33fc0f7e90bede81db78aed.txt` na raiz dos três sites; envio em 2026-10-02 respondeu 202 para faguital.com.br, tecnofagguard.com.br e imperialvolt.com. Reenviar após mudanças relevantes (POST https://api.indexnow.org/indexnow com host, key, keyLocation e urlList). O Google não usa IndexNow: para ele, só Search Console.
+- Chrome atualizado (154) demora até ~9 s na primeira abertura de perfil novo: ferramentas esperam até 30 s.
