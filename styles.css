@@ -132,3 +132,5 @@ html,body{overflow-x:clip}
 .profile-prose a:focus-visible,.business-bridge p a:focus-visible,.identity-facts dd a:focus-visible,.project-copy h3 a:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}
 /* 2026-10-01: ficha com 6 itens: 3 colunas no computador (2 linhas completas) */
 @media (min-width:901px){.identity-facts{grid-template-columns:repeat(3,1fr)}.identity-facts div{border-right:1px solid var(--line)}.identity-facts div:nth-child(3n){border-right:0}.identity-facts div:nth-child(-n+3){border-bottom:1px solid var(--line)}}
+/* foto horizontal da família em largura total, sem corte */
+.trajetoria-fotos .foto-larga{grid-column:1/-1}.trajetoria-fotos .foto-larga img{aspect-ratio:auto;object-fit:contain}
