@@ -202,3 +202,14 @@ html,body{overflow-x:clip}
 .escrito-destaque p{break-inside:avoid;margin:0 0 18px;color:#cfd6d9;line-height:1.7}
 .escrito-destaque .fecho{color:#fff;font-size:1.15rem;font-weight:600;border-left:2px solid var(--cyan);padding-left:16px}
 .escrito-destaque+.escritos-grid{margin-top:16px}
+/* 2026-10-02: O Trágico e Grandioso em destaque */
+.musica-grid>.faixas,.musica-grid>.faixa-destaque{grid-column:2}
+.faixa-destaque{margin:0 0 28px;padding:30px 28px;border:1px solid rgba(60,242,228,.4);background:radial-gradient(circle at 90% 0,rgba(60,242,228,.1),transparent 60%),rgba(7,10,14,.92)}
+.faixa-destaque figcaption{display:flex;flex-direction:column;gap:8px;margin-bottom:18px}
+.faixa-destaque figcaption span{font:.6rem Consolas,"Courier New",monospace;letter-spacing:.2em;color:var(--cyan)}
+.faixa-destaque figcaption strong{font-size:clamp(1.8rem,3.4vw,2.8rem);font-weight:600;letter-spacing:-.04em;line-height:1}
+.faixa-destaque audio{width:100%;margin-bottom:22px;color-scheme:dark}
+.faixa-destaque blockquote{margin:0}
+.faixa-destaque p{margin:0 0 16px;color:#cfd6d9;line-height:1.7}
+.faixa-destaque .refrao{color:#fff;font-weight:600;border-left:2px solid var(--cyan);padding-left:14px}
+@media (max-width:900px){.musica-grid>.faixas,.musica-grid>.faixa-destaque{grid-column:auto}}

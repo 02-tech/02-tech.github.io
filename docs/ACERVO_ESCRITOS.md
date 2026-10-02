@@ -53,7 +53,7 @@ Legenda: NO SITE = publicado em faguital.com.br · ANALISADO = visto, ainda não
 | NO SITE | OLHA QUEM EU ME TORNEI | 2026 | 86 | Música (sem letra publicada) |
 | NO SITE | Perguntas Que Ficaram: "Eu nunca quis ser eterno…" | 2026 | 28 | Música e fechamento da seção |
 | NO SITE | Lema: "Essa música não nasceu hoje. A ideia continua a mesma. A forma evoluiu." | 2026 | | Música |
-| ANALISADO | MIRAGEM VIROU PAISAGEM | 2026 | 4 | Sem letra publicada; fora da lista de destaque |
+| NO SITE | MIRAGEM VIROU PAISAGEM | 2026 | 4 | Música (letra recebida 2026-10-02) |
 
 ## Leva 2 do Instagram (2026-10-02): duplicados e novos fora do site
 
@@ -61,3 +61,12 @@ Legenda: NO SITE = publicado em faguital.com.br · ANALISADO = visto, ainda não
 |---|---|---|---|---|
 | ANALISADO | Sozinho e Eficaz: "Cumpro todas missões, mas penso demais…" | 13/05/2025 | 97 views | Fecha em "perdido no fim"; tom melancólico |
 | (duplicado) | Se for pra cair; O céu não é o limite (reel); Entre dois mundos (25/07/2025, legenda "Entre ideias e boletos, sigo sonhando"); É fácil parecer corajoso (07/08/2025); À beira do colapso (17/09/2025); Estava tentando não morrer | | | Já registrados |
+
+## Áudios enviados por Guilherme (2026-10-02)
+
+| Status | Faixa | Duração | Onde / motivo |
+|---|---|---|---|
+| NO SITE | O Trágico e Grandioso (letra oficial enviada) | 2:35 | Música: destaque com player (assets/audio) e trechos; fora: outro falado ("odeio estar aqui… sem querer existir") por tom pesado |
+| NO SITE | Miragem Virou Paisagem (arquivo chegou como "O Que Quero, O Que Busco"; letra oficial enviada) | 6:01 | Duplicado do YouTube aMKex25x9Wc: entrou na lista de Música com link e "Tem sonho que virou vida e nem percebeu que chegou."; áudio não hospedado |
+| NO SITE | Olha Quem Eu Me Tornei (letra oficial enviada) | 5:12 | Já no site via YouTube; ganhou a frase "Eu não quero parar de construir." |
+| (duplicado) | Perguntas Que Ficaram | 5:45 | Já no site via YouTube |
