@@ -1,3 +1,4 @@
+// OBSOLETO após 2026-10-02: a seção Escritos foi ampliada direto no index.html (Jogo Injusto e leva 2). Não rodar de novo: apagaria esses acréscimos.
 // Seção "Escritos" (2026-10-02): curadoria de poesias do Instagram @faguital, transcritas das capturas
 // que o próprio Guilherme enviou. Só textos de tempo, atitude, disciplina e recomeço; textos pesados ficam fora.
 // Travessões do original trocados por vírgula/ponto (preferência de Guilherme). Idempotente.

@@ -20,13 +20,13 @@ Legenda: NO SITE = publicado em faguital.com.br · ANALISADO = visto, ainda não
 | ANALISADO | O céu não é o limite (post: "e tudo que eu peço…") | 25/08/2021 | 21 curtidas | Mesma letra da música no YouTube; frase já usada em Música |
 | ANALISADO | Reel "O céu não é o limite, pra quem vive a vida" | reel | 403 views | Mesma música |
 | ANALISADO | Alma Fria: "Eu levo na minha vida este dom da poesia…" | 13/10/2021 | 11 curtidas | Candidato (início sobre o dom da poesia) |
-| ANALISADO | "Já estive em lugares melhores do que esse, mas nunca tão em paz comigo mesmo…" | reel | 299 views | Candidato forte |
-| ANALISADO | "Ausente para muitos, mas presente em minha luta…" | reel | 471 views | Candidato forte |
-| ANALISADO | "Não espero o céu, nem me vendo pelo mundo…" | reel | 96 views | Candidato |
-| ANALISADO | "Hoje acordei confortável e tranquilo… mas não nasci pra viver de anestesia." | reel | 164 views | Candidato (texto longo) |
-| ANALISADO | FAGUITAL: "Nasci do silêncio, do aço e da dor…" | reel | 287 views | Candidato parcial (tem versos sobre morte) |
-| ANALISADO | Entre meu consciente e meu subconsciente | reel | 111 views | Texto ilegível na captura |
-| ANALISADO | Jogo injusto | reel | 231 views | Só capa visível |
+| NO SITE | "Já estive em lugares melhores do que esse…" | 18/04/2025 | 299 views | Escritos |
+| NO SITE | "Ausente para muitos, mas presente em minha luta…" | 17/08/2025 | 471 views | Escritos |
+| NO SITE | "Não espero o céu, nem me vendo pelo mundo…" | 22/04/2025 | 96 views | Escritos |
+| NO SITE | "Hoje acordei confortável e tranquilo…" (trecho: "Quando pressionado, eu evoluía… não nasci pra viver de anestesia.") | 12/02/2026 | 164 views | Escritos |
+| NO SITE | Cântico do Guerreiro Invisível: "Nasci do silêncio, do aço e da dor…" (só o trecho "Não sigo caminhos traçados por medo, eu crio estradas no próprio degredo."; versos sobre morte fora) | 07/08/2025 | 287 views | Escritos |
+| NO SITE | Entre meu consciente e meu subconsciente (legenda "Quem Sou, Afinal?"): "Eu não sou apenas o que penso ser…" | 27/04/2025 | 111 views | Escritos |
+| NO SITE | Jogo Injusto (carrossel 13 slides, beat Mamba Beatz): "Correm apressados, sem tempo a perder…" | 13/03/2025 | 231 views | Escritos: destaque completo (slides 2 a 12) |
 | ANALISADO | andando por aí: "sentindo a noite fria…" | 13/03/2025 | 19 curtidas | Candidato |
 | ANALISADO | Sujeito: "usar a rima como arma e… deixar a população alertada" | 04/08/2021 | 69 curtidas | Candidato (crítica social) |
 | ANALISADO | "Para mim, a vida é um valor…" | 2021 | n/d | Candidato com cuidado (fala de tirar a vida) |
@@ -34,7 +34,7 @@ Legenda: NO SITE = publicado em faguital.com.br · ANALISADO = visto, ainda não
 | FORA | Descanso: "Às vezes dormir e demorar a acordar…" | 05/11/2023 | 5 curtidas | Tom pesado |
 | FORA | Desabafo: "As pessoas querem me ajudar, mas não entendem…" | 12/10/2021 | 16 curtidas | Tom pesado |
 | FORA | Esperando por um talvez: "Sabe, eu tenho medo do fim…" | 08/08/2021 | 32 curtidas | Tom pesado |
-| FORA | "Estava tentando não morrer, e você me culpava por não sorrir." | reel | 305 views | Tom pesado |
+| FORA | "Estava tentando não morrer, e você me culpava por não sorrir." | reel | 305 views | Tom pesado (recebido de novo em 2026-10-02, leva 2: duplicado) |
 | FORA | À beira do colapso | reel | 242 views | Tom pesado |
 | FORA | Alma Fria (2ª imagem): "…a morte não é um mo(mento)…" | 2021 | n/d | Fala de morte |
 | ANALISADO | "Dia após dia voltando ao passado." | 2021 | n/d | Fragmento curto |
@@ -54,3 +54,10 @@ Legenda: NO SITE = publicado em faguital.com.br · ANALISADO = visto, ainda não
 | NO SITE | Perguntas Que Ficaram: "Eu nunca quis ser eterno…" | 2026 | 28 | Música e fechamento da seção |
 | NO SITE | Lema: "Essa música não nasceu hoje. A ideia continua a mesma. A forma evoluiu." | 2026 | | Música |
 | ANALISADO | MIRAGEM VIROU PAISAGEM | 2026 | 4 | Sem letra publicada; fora da lista de destaque |
+
+## Leva 2 do Instagram (2026-10-02): duplicados e novos fora do site
+
+| Status | Título / início | Data | Alcance | Onde / motivo |
+|---|---|---|---|---|
+| ANALISADO | Sozinho e Eficaz: "Cumpro todas missões, mas penso demais…" | 13/05/2025 | 97 views | Fecha em "perdido no fim"; tom melancólico |
+| (duplicado) | Se for pra cair; O céu não é o limite (reel); Entre dois mundos (25/07/2025, legenda "Entre ideias e boletos, sigo sonhando"); É fácil parecer corajoso (07/08/2025); À beira do colapso (17/09/2025); Estava tentando não morrer | | | Já registrados |
