@@ -1,0 +1,615 @@
+{
+ "duracao": 312.0,
+ "linhas": [
+  {
+   "t": 3.34,
+   "texto": "Engraçado...",
+   "estrofe": 0
+  },
+  {
+   "t": 3.74,
+   "texto": "Quando eu era moleque,",
+   "estrofe": 0
+  },
+  {
+   "t": 5.12,
+   "texto": "eu sabia o tipo de adulto",
+   "estrofe": 0
+  },
+  {
+   "t": 7.14,
+   "texto": "que eu nunca ia ser.",
+   "estrofe": 0
+  },
+  {
+   "t": 9.98,
+   "texto": "O cara estressado.",
+   "estrofe": 0
+  },
+  {
+   "t": 11.74,
+   "texto": "O cara que reclama.",
+   "estrofe": 0
+  },
+  {
+   "t": 13.08,
+   "texto": "O cara que cobra.",
+   "estrofe": 0
+  },
+  {
+   "t": 14.12,
+   "texto": "O cara que só pensa em grana.",
+   "estrofe": 0
+  },
+  {
+   "t": 15.58,
+   "texto": "O cara que some",
+   "estrofe": 0
+  },
+  {
+   "t": 16.52,
+   "texto": "porque sempre tem algo mais importante.",
+   "estrofe": 0
+  },
+  {
+   "t": 19.4,
+   "texto": "Hoje eu olho no espelho...",
+   "estrofe": 0
+  },
+  {
+   "t": 20.88,
+   "texto": "Mano, quando foi que eu virei esse cara?",
+   "estrofe": 0
+  },
+  {
+   "t": 23.22,
+   "texto": "Tô no quarto, fone no talo, a mente não para",
+   "estrofe": 1
+  },
+  {
+   "t": 26.06,
+   "texto": "Peito pesado, olhar cansado, a vida me encara",
+   "estrofe": 1
+  },
+  {
+   "t": 28.58,
+   "texto": "Perguntam se eu tô bem, desvio, não falo nada",
+   "estrofe": 1
+  },
+  {
+   "t": 31.38,
+   "texto": "Eu me salvo todo dia e não ganho uma medalha",
+   "estrofe": 1
+  },
+  {
+   "t": 34.06,
+   "texto": "Toda vez que eu fecho os olhos, algo vem cobrar",
+   "estrofe": 1
+  },
+  {
+   "t": 36.46,
+   "texto": "Tô pensando, planejando, tentando me ajeitar",
+   "estrofe": 1
+  },
+  {
+   "t": 39.2,
+   "texto": "Quanto mais entendo o mundo, menos sei me achar",
+   "estrofe": 1
+  },
+  {
+   "t": 41.92,
+   "texto": "Quanto mais vou em frente, mais difícil voltar",
+   "estrofe": 1
+  },
+  {
+   "t": 44.84,
+   "texto": "Olhar pra quem ficou, olhar pra quem eu larguei",
+   "estrofe": 1
+  },
+  {
+   "t": 47.24,
+   "texto": "Olhar pro tipo de pessoa que aos poucos me tornei",
+   "estrofe": 1
+  },
+  {
+   "t": 50.24,
+   "texto": "Julguei tanta coisa que hoje eu mesmo falei",
+   "estrofe": 1
+  },
+  {
+   "t": 52.66,
+   "texto": "Acho que virei o adulto que eu tanto critiquei",
+   "estrofe": 1
+  },
+  {
+   "t": 55.44,
+   "texto": "Virei o cara que reclama se demora chegar",
+   "estrofe": 1
+  },
+  {
+   "t": 57.82,
+   "texto": "Fico estressado quando algo sai do lugar",
+   "estrofe": 1
+  },
+  {
+   "t": 61.3,
+   "texto": "Passo o dia inteiro tentando não vacilar",
+   "estrofe": 1
+  },
+  {
+   "t": 63.54,
+   "texto": "Olha quem eu me tornei, quem será que vou virar?",
+   "estrofe": 2
+  },
+  {
+   "t": 69.1,
+   "texto": "Um moleque tão na paz que aprendeu a se afastar",
+   "estrofe": 2
+  },
+  {
+   "t": 71.88,
+   "texto": "Queria independência, encontrei a solidão",
+   "estrofe": 2
+  },
+  {
+   "t": 74.5,
+   "texto": "Hoje tenho tanta pressa que perdi a direção",
+   "estrofe": 2
+  },
+  {
+   "t": 77.18,
+   "texto": "Olha quem eu me tornei, será que sei onde chegar?",
+   "estrofe": 2
+  },
+  {
+   "t": 79.8,
+   "texto": "Tanta coisa na cabeça, tanta coisa pra mudar",
+   "estrofe": 2
+  },
+  {
+   "t": 82.56,
+   "texto": "Só que no meio de tanta coisa que quis levantar",
+   "estrofe": 2
+  },
+  {
+   "t": 85.44,
+   "texto": "Eu nem mesmo vi que comecei a derrubar",
+   "estrofe": 2
+  },
+  {
+   "t": 88.08,
+   "texto": "Sempre estressado e vazio, esse é o meu mundo",
+   "estrofe": 3
+  },
+  {
+   "t": 90.88,
+   "texto": "Pra fugir da luz do sol, criei meu submundo",
+   "estrofe": 3
+  },
+  {
+   "t": 93.62,
+   "texto": "Meu sorriso não é falso, mano, ele é meu escudo",
+   "estrofe": 3
+  },
+  {
+   "t": 96.38,
+   "texto": "Não quero perder tempo tendo que explicar tudo",
+   "estrofe": 3
+  },
+  {
+   "t": 99.5,
+   "texto": "Poucos veem a alma de um jovem revoltado",
+   "estrofe": 3
+  },
+  {
+   "t": 101.88,
+   "texto": "Tentando salvar alguém, mas morrendo afogado",
+   "estrofe": 3
+  },
+  {
+   "t": 104.51,
+   "texto": "Te estendo a mão mesmo estando cansado",
+   "estrofe": 3
+  },
+  {
+   "t": 107.34,
+   "texto": "Não deixei de ser do bem, só fiquei mais afastado",
+   "estrofe": 3
+  },
+  {
+   "t": 110.32,
+   "texto": "Sou ambicioso, mas não por ostentação",
+   "estrofe": 3
+  },
+  {
+   "t": 112.74,
+   "texto": "Grana virou plano, liberdade e opção",
+   "estrofe": 3
+  },
+  {
+   "t": 115.42,
+   "texto": "Quero meu caminho, escolher minha direção",
+   "estrofe": 3
+  },
+  {
+   "t": 118.14,
+   "texto": "Mas tentando ser tão livre, encontrei a solidão",
+   "estrofe": 3
+  },
+  {
+   "t": 120.84,
+   "texto": "Fui ficando distante, sem notar que me afastei",
+   "estrofe": 3
+  },
+  {
+   "t": 123.64,
+   "texto": "Cada \"depois eu apareço\" virou \"eu não sei\"",
+   "estrofe": 3
+  },
+  {
+   "t": 126.4,
+   "texto": "Dava tempo pros projetos, o resto eu adiei",
+   "estrofe": 3
+  },
+  {
+   "t": 129.4,
+   "texto": "Olho pra distância, fui eu mesmo que criei",
+   "estrofe": 3
+  },
+  {
+   "t": 131.86,
+   "texto": "Olha quem eu me tornei, quem será que vou virar?",
+   "estrofe": 4
+  },
+  {
+   "t": 134.68,
+   "texto": "Um moleque tão na paz que aprendeu a se afastar",
+   "estrofe": 4
+  },
+  {
+   "t": 137.32,
+   "texto": "Queria independência, encontrei a solidão",
+   "estrofe": 4
+  },
+  {
+   "t": 139.94,
+   "texto": "Hoje tenho tanta pressa que perdi a direção",
+   "estrofe": 4
+  },
+  {
+   "t": 142.72,
+   "texto": "Olha quem eu me tornei, será que sei onde chegar?",
+   "estrofe": 4
+  },
+  {
+   "t": 145.28,
+   "texto": "Tanta coisa na cabeça, tanta coisa pra mudar",
+   "estrofe": 4
+  },
+  {
+   "t": 148.02,
+   "texto": "Só que no meio de tanta coisa que quis levantar",
+   "estrofe": 4
+  },
+  {
+   "t": 151.22,
+   "texto": "Eu nem mesmo vi que comecei a derrubar",
+   "estrofe": 4
+  },
+  {
+   "t": 153.51,
+   "texto": "Dez projetos na minha mão, mil ideias na cabeça",
+   "estrofe": 5
+  },
+  {
+   "t": 156.28,
+   "texto": "Fisgadas no coração, que o mundo não me esqueça",
+   "estrofe": 5
+  },
+  {
+   "t": 159.1,
+   "texto": "Tanta coisa pra fazer, e o tempo me atropela",
+   "estrofe": 5
+  },
+  {
+   "t": 161.84,
+   "texto": "Quanto mais o tempo passa, mais essa merda me estressa",
+   "estrofe": 5
+  },
+  {
+   "t": 164.6,
+   "texto": "Penso tanto em ganhar, às vezes paro pra entender",
+   "estrofe": 5
+  },
+  {
+   "t": 167.08,
+   "texto": "Quanto preciso conquistar pra finalmente perceber?",
+   "estrofe": 5
+  },
+  {
+   "t": 169.8,
+   "texto": "Perceber que eu tô vivendo, perceber quem tá aqui",
+   "estrofe": 5
+  },
+  {
+   "t": 172.6,
+   "texto": "Mas de tanto olhar pra frente, esqueci de existir",
+   "estrofe": 5
+  },
+  {
+   "t": 175.5,
+   "texto": "Eu me vejo no quarto discutindo com IA",
+   "estrofe": 5
+  },
+  {
+   "t": 178.08,
+   "texto": "Mano, que mundo doido, olha o que eu fui me tornar",
+   "estrofe": 5
+  },
+  {
+   "t": 180.72,
+   "texto": "Tentando pôr em frase o que eu nem entenderia",
+   "estrofe": 5
+  },
+  {
+   "t": 183.68,
+   "texto": "Às vezes uma máquina escuta mais que a família",
+   "estrofe": 5
+  },
+  {
+   "t": 186.3,
+   "texto": "Paro por um segundo, começo a me observar",
+   "estrofe": 5
+  },
+  {
+   "t": 189.42,
+   "texto": "Como foi que eu fui parar nesse lugar?",
+   "estrofe": 5
+  },
+  {
+   "t": 191.72,
+   "texto": "Eu queria só crescer, eu queria conquistar",
+   "estrofe": 5
+  },
+  {
+   "t": 194.5,
+   "texto": "Ninguém disse que crescendo eu podia me afastar",
+   "estrofe": 5
+  },
+  {
+   "t": 198.9,
+   "texto": "E o pior é que...",
+   "estrofe": 6
+  },
+  {
+   "t": 200.08,
+   "texto": "eu não odeio quem eu virei.",
+   "estrofe": 6
+  },
+  {
+   "t": 203.84,
+   "texto": "Eu gosto dos meus projetos.",
+   "estrofe": 6
+  },
+  {
+   "t": 205.62,
+   "texto": "Gosto dos meus planos.",
+   "estrofe": 6
+  },
+  {
+   "t": 206.74,
+   "texto": "Gosto de criar e pensar:",
+   "estrofe": 6
+  },
+  {
+   "t": 208.44,
+   "texto": "\"Mano... fui eu que fiz.\"",
+   "estrofe": 6
+  },
+  {
+   "t": 211.1,
+   "texto": "Quero crescer.",
+   "estrofe": 6
+  },
+  {
+   "t": 212.06,
+   "texto": "Quero grana.",
+   "estrofe": 6
+  },
+  {
+   "t": 213.4,
+   "texto": "Quero liberdade.",
+   "estrofe": 6
+  },
+  {
+   "t": 214.28,
+   "texto": "Quero chegar longe.",
+   "estrofe": 6
+  },
+  {
+   "t": 215.7,
+   "texto": "Eu não quero parar de construir.",
+   "estrofe": 6
+  },
+  {
+   "t": 217.36,
+   "texto": "Eu só não quero descobrir tarde demais",
+   "estrofe": 6
+  },
+  {
+   "t": 219.7,
+   "texto": "o que eu destruí construindo.",
+   "estrofe": 6
+  },
+  {
+   "t": 221.1,
+   "texto": "Se o moleque que eu fui me encontrasse por aí",
+   "estrofe": 7
+  },
+  {
+   "t": 223.68,
+   "texto": "Não sei se reconheceria o adulto que construí",
+   "estrofe": 7
+  },
+  {
+   "t": 226.38,
+   "texto": "Ele queria ser do bem, ainda quero ser assim",
+   "estrofe": 7
+  },
+  {
+   "t": 229.24,
+   "texto": "Fui ficando mais fechado com o que guardei em mim",
+   "estrofe": 7
+  },
+  {
+   "t": 232.1,
+   "texto": "Aprendi a andar sozinho, aprendi a ser veloz",
+   "estrofe": 7
+  },
+  {
+   "t": 234.51,
+   "texto": "Só não sei se nessa corrida eu fui ficando mais a sós",
+   "estrofe": 7
+  },
+  {
+   "t": 237.66,
+   "texto": "Talvez isso seja crescer",
+   "estrofe": 7
+  },
+  {
+   "t": 239.24,
+   "texto": "Porque é fácil julgar alguém antes de ser você",
+   "estrofe": 7
+  },
+  {
+   "t": 242.62,
+   "texto": "Julguei quem cobrava, hoje eu sei por que cobrava",
+   "estrofe": 7
+  },
+  {
+   "t": 245.34,
+   "texto": "Julguei quem sumia, hoje eu sei por que se afastava",
+   "estrofe": 7
+  },
+  {
+   "t": 248.06,
+   "texto": "Julguei aquele adulto que vivia e reclamava",
+   "estrofe": 7
+  },
+  {
+   "t": 250.84,
+   "texto": "Hoje eu olho pro espelho...",
+   "estrofe": 7
+  },
+  {
+   "t": 252.14,
+   "texto": "E vejo exatamente o que eu julgava.",
+   "estrofe": 7
+  },
+  {
+   "t": 253.7,
+   "texto": "Olha quem eu me tornei, quem será que vou virar?",
+   "estrofe": 8
+  },
+  {
+   "t": 256.38,
+   "texto": "Um moleque tão na paz que aprendeu a se afastar",
+   "estrofe": 8
+  },
+  {
+   "t": 259.06,
+   "texto": "Queria independência, encontrei a solidão",
+   "estrofe": 8
+  },
+  {
+   "t": 261.68,
+   "texto": "Hoje tenho tanta pressa que perdi a direção",
+   "estrofe": 8
+  },
+  {
+   "t": 264.4,
+   "texto": "Olha quem eu me tornei, ainda dá pra me encontrar?",
+   "estrofe": 8
+  },
+  {
+   "t": 266.94,
+   "texto": "Ainda existe aquele moleque em algum canto desse olhar?",
+   "estrofe": 8
+  },
+  {
+   "t": 269.86,
+   "texto": "Eu não quero abandonar tudo que eu quero conquistar",
+   "estrofe": 8
+  },
+  {
+   "t": 272.62,
+   "texto": "Só não quero destruir tentando levantar",
+   "estrofe": 8
+  },
+  {
+   "t": 276.9,
+   "texto": "Tô no meu quarto.",
+   "estrofe": 9
+  },
+  {
+   "t": 279.0,
+   "texto": "Fone no talo.",
+   "estrofe": 9
+  },
+  {
+   "t": 281.02,
+   "texto": "Cabeça cheia.",
+   "estrofe": 9
+  },
+  {
+   "t": 283.16,
+   "texto": "Amanhã provavelmente",
+   "estrofe": 9
+  },
+  {
+   "t": 284.34,
+   "texto": "vou pensar em projeto de novo.",
+   "estrofe": 9
+  },
+  {
+   "t": 286.72,
+   "texto": "Talvez eu não saiba mudar.",
+   "estrofe": 9
+  },
+  {
+   "t": 288.56,
+   "texto": "Talvez eu nem queira mudar tudo.",
+   "estrofe": 9
+  },
+  {
+   "t": 290.98,
+   "texto": "Mas hoje eu consegui parar,",
+   "estrofe": 9
+  },
+  {
+   "t": 293.46,
+   "texto": "olhar pra trás,",
+   "estrofe": 9
+  },
+  {
+   "t": 294.62,
+   "texto": "olhar pra mim",
+   "estrofe": 9
+  },
+  {
+   "t": 295.28,
+   "texto": "e perguntar:",
+   "estrofe": 9
+  },
+  {
+   "t": 297.26,
+   "texto": "Olha quem eu me tornei...",
+   "estrofe": 9
+  },
+  {
+   "t": 302.74,
+   "texto": "quem será que eu vou virar?",
+   "estrofe": 9
+  }
+ ]
+}

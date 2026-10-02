@@ -1,0 +1,520 @@
+{
+ "duracao": 210.04,
+ "linhas": [
+  {
+   "t": 30.07,
+   "texto": "Sei quem me fez cair",
+   "estrofe": 0
+  },
+  {
+   "t": 31.32,
+   "texto": "E quem me ajudou a levantar",
+   "estrofe": 0
+  },
+  {
+   "t": 32.75,
+   "texto": "E eu sigo o meu caminho",
+   "estrofe": 1
+  },
+  {
+   "t": 34.34,
+   "texto": "Meu verso é verídico",
+   "estrofe": 1
+  },
+  {
+   "t": 35.82,
+   "texto": "Tudo que eu mais quero",
+   "estrofe": 1
+  },
+  {
+   "t": 37.02,
+   "texto": "Pode crer que eu consigo",
+   "estrofe": 1
+  },
+  {
+   "t": 38.58,
+   "texto": "Tô melhor sozinho",
+   "estrofe": 2
+  },
+  {
+   "t": 39.86,
+   "texto": "Com asas pra voar",
+   "estrofe": 2
+  },
+  {
+   "t": 41.18,
+   "texto": "Pensando e agindo",
+   "estrofe": 2
+  },
+  {
+   "t": 42.6,
+   "texto": "Eu sei que esse é meu lugar",
+   "estrofe": 2
+  },
+  {
+   "t": 43.92,
+   "texto": "Se liga na batida",
+   "estrofe": 3
+  },
+  {
+   "t": 45.58,
+   "texto": "No flow que nos anima",
+   "estrofe": 3
+  },
+  {
+   "t": 46.76,
+   "texto": "Eu sei que essa letra",
+   "estrofe": 3
+  },
+  {
+   "t": 48.06,
+   "texto": "Contagia, traz energia",
+   "estrofe": 3
+  },
+  {
+   "t": 49.81,
+   "texto": "E tudo que eu peço",
+   "estrofe": 4
+  },
+  {
+   "t": 50.88,
+   "texto": "É que não tirem minha paz",
+   "estrofe": 4
+  },
+  {
+   "t": 52.18,
+   "texto": "Todo o resto é progresso",
+   "estrofe": 4
+  },
+  {
+   "t": 53.64,
+   "texto": "E a gente corre atrás",
+   "estrofe": 4
+  },
+  {
+   "t": 55.0,
+   "texto": "Futuro conquistado",
+   "estrofe": 5
+  },
+  {
+   "t": 56.76,
+   "texto": "Passado é passado",
+   "estrofe": 5
+  },
+  {
+   "t": 57.84,
+   "texto": "O que já aconteceu, se esqueceu",
+   "estrofe": 5
+  },
+  {
+   "t": 59.88,
+   "texto": "Foi superado",
+   "estrofe": 5
+  },
+  {
+   "t": 60.56,
+   "texto": "E foi tão fácil",
+   "estrofe": 6
+  },
+  {
+   "t": 65.44,
+   "texto": "O que eu quero é lucro",
+   "estrofe": 7
+  },
+  {
+   "t": 67.54,
+   "texto": "Junto com meus parceiros",
+   "estrofe": 7
+  },
+  {
+   "t": 68.76,
+   "texto": "Pra quem merece, é justo",
+   "estrofe": 7
+  },
+  {
+   "t": 70.14,
+   "texto": "Nós vai curtir o dia inteiro",
+   "estrofe": 7
+  },
+  {
+   "t": 71.82,
+   "texto": "Autoconfiança é a base",
+   "estrofe": 8
+  },
+  {
+   "t": 73.3,
+   "texto": "Tristeza é só fase",
+   "estrofe": 8
+  },
+  {
+   "t": 74.46,
+   "texto": "Tudo que vem sem esforço",
+   "estrofe": 8
+  },
+  {
+   "t": 75.86,
+   "texto": "Vai embora cedo ou tarde",
+   "estrofe": 8
+  },
+  {
+   "t": 77.14,
+   "texto": "Por isso viva sorrindo",
+   "estrofe": 9
+  },
+  {
+   "t": 78.82,
+   "texto": "Mudando o destino",
+   "estrofe": 9
+  },
+  {
+   "t": 80.02,
+   "texto": "Nada pra mim é certo",
+   "estrofe": 9
+  },
+  {
+   "t": 81.5,
+   "texto": "Nós só segue evoluindo",
+   "estrofe": 9
+  },
+  {
+   "t": 82.76,
+   "texto": "Pois quando o mar se acalma",
+   "estrofe": 10
+  },
+  {
+   "t": 84.34,
+   "texto": "Pode crer, um dia",
+   "estrofe": 10
+  },
+  {
+   "t": 85.52,
+   "texto": "Você vai ver sua alma",
+   "estrofe": 10
+  },
+  {
+   "t": 86.92,
+   "texto": "Se encher de disciplina",
+   "estrofe": 10
+  },
+  {
+   "t": 88.36,
+   "texto": "Vai ver que sua vida",
+   "estrofe": 11
+  },
+  {
+   "t": 89.66,
+   "texto": "Vai sair da pior",
+   "estrofe": 11
+  },
+  {
+   "t": 90.88,
+   "texto": "Chega dessa corrida",
+   "estrofe": 11
+  },
+  {
+   "t": 92.56,
+   "texto": "Se desata desse nó",
+   "estrofe": 11
+  },
+  {
+   "t": 93.8,
+   "texto": "Vocês falam demais",
+   "estrofe": 12
+  },
+  {
+   "t": 95.16,
+   "texto": "Eu não escuto mais",
+   "estrofe": 12
+  },
+  {
+   "t": 96.64,
+   "texto": "Se faço isso hoje",
+   "estrofe": 12
+  },
+  {
+   "t": 98.0,
+   "texto": "Já pensei dias atrás",
+   "estrofe": 12
+  },
+  {
+   "t": 99.4,
+   "texto": "Eu faço meus versos",
+   "estrofe": 13
+  },
+  {
+   "t": 100.98,
+   "texto": "Não jogo esse joguinho",
+   "estrofe": 13
+  },
+  {
+   "t": 102.38,
+   "texto": "Cada vez mais perto",
+   "estrofe": 13
+  },
+  {
+   "t": 103.58,
+   "texto": "Aprendendo no caminho",
+   "estrofe": 13
+  },
+  {
+   "t": 104.92,
+   "texto": "Se pensa que a vida",
+   "estrofe": 14
+  },
+  {
+   "t": 106.3,
+   "texto": "Pode me derrubar",
+   "estrofe": 14
+  },
+  {
+   "t": 108.0,
+   "texto": "Que toda essa merda",
+   "estrofe": 14
+  },
+  {
+   "t": 109.18,
+   "texto": "No fim vai me afetar",
+   "estrofe": 14
+  },
+  {
+   "t": 110.6,
+   "texto": "Então escuta bem",
+   "estrofe": 15
+  },
+  {
+   "t": 111.92,
+   "texto": "O que eu vou te falar",
+   "estrofe": 15
+  },
+  {
+   "t": 113.12,
+   "texto": "Na vida eu tô ligeiro",
+   "estrofe": 15
+  },
+  {
+   "t": 114.35,
+   "texto": "Eu só tenho a ganhar",
+   "estrofe": 15
+  },
+  {
+   "t": 115.98,
+   "texto": "Mas às vezes eu tô cansado",
+   "estrofe": 16
+  },
+  {
+   "t": 117.54,
+   "texto": "Guardei o quanto isso dói",
+   "estrofe": 16
+  },
+  {
+   "t": 118.92,
+   "texto": "O tempo passa rápido",
+   "estrofe": 16
+  },
+  {
+   "t": 120.42,
+   "texto": "Mas lentamente corrói",
+   "estrofe": 16
+  },
+  {
+   "t": 121.9,
+   "texto": "Eu tenho um legado",
+   "estrofe": 17
+  },
+  {
+   "t": 123.06,
+   "texto": "Sei que a vida não é fácil",
+   "estrofe": 17
+  },
+  {
+   "t": 124.44,
+   "texto": "Por isso eu levo ela",
+   "estrofe": 17
+  },
+  {
+   "t": 125.78,
+   "texto": "Como um mero aprendizado",
+   "estrofe": 17
+  },
+  {
+   "t": 127.16,
+   "texto": "Os motivos lá fora",
+   "estrofe": 18
+  },
+  {
+   "t": 128.48,
+   "texto": "Mudaram minha trajetória",
+   "estrofe": 18
+  },
+  {
+   "t": 129.92,
+   "texto": "Hoje eu sigo meu caminho",
+   "estrofe": 18
+  },
+  {
+   "t": 131.2,
+   "texto": "Juntinho com minha tropa",
+   "estrofe": 18
+  },
+  {
+   "t": 132.86,
+   "texto": "Tô doido pra lucrar",
+   "estrofe": 19
+  },
+  {
+   "t": 134.66,
+   "texto": "Comprar o que só posso olhar",
+   "estrofe": 19
+  },
+  {
+   "t": 137.86,
+   "texto": "Se eles querem dom",
+   "estrofe": 19
+  },
+  {
+   "t": 141.0,
+   "texto": "Esse som eu vou mostrar",
+   "estrofe": 19
+  },
+  {
+   "t": 143.7,
+   "texto": "Letra por letra é fácil",
+   "estrofe": 20
+  },
+  {
+   "t": 145.28,
+   "texto": "Cada vez mais bolado",
+   "estrofe": 20
+  },
+  {
+   "t": 146.07,
+   "texto": "Minhas rimas são com amor",
+   "estrofe": 20
+  },
+  {
+   "t": 147.68,
+   "texto": "Mesmo com o ódio declarado",
+   "estrofe": 20
+  },
+  {
+   "t": 149.22,
+   "texto": "E eu vivo assim",
+   "estrofe": 21
+  },
+  {
+   "t": 150.7,
+   "texto": "Não ligo mais pro fim",
+   "estrofe": 21
+  },
+  {
+   "t": 151.98,
+   "texto": "A morte acha todos",
+   "estrofe": 21
+  },
+  {
+   "t": 153.12,
+   "texto": "Isso não é tão ruim",
+   "estrofe": 21
+  },
+  {
+   "t": 154.54,
+   "texto": "Só consigo pensar",
+   "estrofe": 22
+  },
+  {
+   "t": 156.08,
+   "texto": "Em motivos pra sorrir",
+   "estrofe": 22
+  },
+  {
+   "t": 157.74,
+   "texto": "Lutei pra chegar",
+   "estrofe": 22
+  },
+  {
+   "t": 158.86,
+   "texto": "E ninguém vai me tirar daqui",
+   "estrofe": 22
+  },
+  {
+   "t": 165.64,
+   "texto": "Essa é a vida que eu vivo",
+   "estrofe": 23
+  },
+  {
+   "t": 167.3,
+   "texto": "Às vezes eu tô perdido",
+   "estrofe": 23
+  },
+  {
+   "t": 168.7,
+   "texto": "Os pensamentos criam",
+   "estrofe": 23
+  },
+  {
+   "t": 170.04,
+   "texto": "Pesadelos tão vivos",
+   "estrofe": 23
+  },
+  {
+   "t": 171.46,
+   "texto": "Uma arma e um tiro",
+   "estrofe": 24
+  },
+  {
+   "t": 172.9,
+   "texto": "Tudo isso acabaria",
+   "estrofe": 24
+  },
+  {
+   "t": 173.98,
+   "texto": "Mas se eu buscasse a morte",
+   "estrofe": 24
+  },
+  {
+   "t": 175.46,
+   "texto": "Num caixão eu já estaria",
+   "estrofe": 24
+  },
+  {
+   "t": 177.16,
+   "texto": "Cartas no chão",
+   "estrofe": 25
+  },
+  {
+   "t": 178.64,
+   "texto": "No refrão da canção",
+   "estrofe": 25
+  },
+  {
+   "t": 179.84,
+   "texto": "Eu mostro quem domina",
+   "estrofe": 25
+  },
+  {
+   "t": 181.17,
+   "texto": "O meu coração",
+   "estrofe": 25
+  },
+  {
+   "t": 182.52,
+   "texto": "Por mais que os outros falem",
+   "estrofe": 26
+  },
+  {
+   "t": 184.76,
+   "texto": "“Faz música sobre amor”",
+   "estrofe": 26
+  },
+  {
+   "t": 188.08,
+   "texto": "Querendo ou não, no final",
+   "estrofe": 26
+  },
+  {
+   "t": 200.46,
+   "texto": "Eu mostro quem eu sou",
+   "estrofe": 26
+  }
+ ]
+}

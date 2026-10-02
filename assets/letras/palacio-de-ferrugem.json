@@ -1,0 +1,625 @@
+{
+ "duracao": 298.57,
+ "linhas": [
+  {
+   "t": 4.24,
+   "texto": "No palácio de ferrugem,",
+   "estrofe": 0
+  },
+  {
+   "t": 9.12,
+   "texto": "os anjos cantam sem voz.",
+   "estrofe": 0
+  },
+  {
+   "t": 12.85,
+   "texto": "Há luz dentro dos cabos,",
+   "estrofe": 0
+  },
+  {
+   "t": 15.97,
+   "texto": "há sombra dentro dos nós.",
+   "estrofe": 0
+  },
+  {
+   "t": 32.18,
+   "texto": "Passos de ferro riscam o chão da cidade,",
+   "estrofe": 1
+  },
+  {
+   "t": 35.36,
+   "texto": "um santo sem altar atravessa a tempestade.",
+   "estrofe": 1
+  },
+  {
+   "t": 38.92,
+   "texto": "No bolso, mapas dobrados de um reino sem portão,",
+   "estrofe": 1
+  },
+  {
+   "t": 42.66,
+   "texto": "no peito, um relógio batendo fora da mão.",
+   "estrofe": 1
+  },
+  {
+   "t": 46.22,
+   "texto": "As ruas sabem seu nome,",
+   "estrofe": 1
+  },
+  {
+   "t": 48.24,
+   "texto": "mas não sabem sua língua.",
+   "estrofe": 1
+  },
+  {
+   "t": 49.65,
+   "texto": "A lua vê a armadura,",
+   "estrofe": 1
+  },
+  {
+   "t": 51.66,
+   "texto": "mas não vê onde ela pinga.",
+   "estrofe": 1
+  },
+  {
+   "t": 53.68,
+   "texto": "Cada torre levantada cobra um pedaço do céu,",
+   "estrofe": 1
+  },
+  {
+   "t": 57.38,
+   "texto": "cada vitória assinada deixa gosto de papel.",
+   "estrofe": 1
+  },
+  {
+   "t": 60.45,
+   "texto": "Há bandeiras na janela, há medalhas no porão,",
+   "estrofe": 1
+  },
+  {
+   "t": 64.28,
+   "texto": "há um trono feito de meta e uma cama pelo chão.",
+   "estrofe": 1
+  },
+  {
+   "t": 67.85,
+   "texto": "No espelho, um capacete.",
+   "estrofe": 1
+  },
+  {
+   "t": 69.68,
+   "texto": "No silêncio, um sinal.",
+   "estrofe": 1
+  },
+  {
+   "t": 71.5,
+   "texto": "Por fora, arquitetura.",
+   "estrofe": 1
+  },
+  {
+   "t": 73.4,
+   "texto": "Por dentro, temporal.",
+   "estrofe": 1
+  },
+  {
+   "t": 76.9,
+   "texto": "Dorme, soldado de vidro,",
+   "estrofe": 2
+  },
+  {
+   "t": 79.38,
+   "texto": "dorme, rei sem manhã.",
+   "estrofe": 2
+  },
+  {
+   "t": 80.78,
+   "texto": "Nem todo aço é infinito,",
+   "estrofe": 2
+  },
+  {
+   "t": 82.92,
+   "texto": "nem toda luz é sã.",
+   "estrofe": 2
+  },
+  {
+   "t": 84.52,
+   "texto": "Dorme, filho do ruído,",
+   "estrofe": 2
+  },
+  {
+   "t": 86.34,
+   "texto": "fecha os olhos no chão.",
+   "estrofe": 2
+  },
+  {
+   "t": 88.3,
+   "texto": "Há um pássaro preso",
+   "estrofe": 2
+  },
+  {
+   "t": 90.08,
+   "texto": "dentro da construção.",
+   "estrofe": 2
+  },
+  {
+   "t": 91.66,
+   "texto": "No palácio de ferrugem,",
+   "estrofe": 3
+  },
+  {
+   "t": 93.92,
+   "texto": "ninguém reza em vão.",
+   "estrofe": 3
+  },
+  {
+   "t": 95.48,
+   "texto": "Uma máquina sonhou",
+   "estrofe": 3
+  },
+  {
+   "t": 97.22,
+   "texto": "que tinha coração.",
+   "estrofe": 3
+  },
+  {
+   "t": 98.94,
+   "texto": "No palácio de ferrugem,",
+   "estrofe": 3
+  },
+  {
+   "t": 100.78,
+   "texto": "o céu desceu devagar.",
+   "estrofe": 3
+  },
+  {
+   "t": 102.62,
+   "texto": "Quem nasceu feito muralha",
+   "estrofe": 3
+  },
+  {
+   "t": 104.46,
+   "texto": "também aprende a quebrar.",
+   "estrofe": 3
+  },
+  {
+   "t": 106.08,
+   "texto": "Havia um menino guardado num quarto sem maçaneta,",
+   "estrofe": 4
+  },
+  {
+   "t": 109.84,
+   "texto": "desenhando constelações com ponta de caneta.",
+   "estrofe": 4
+  },
+  {
+   "t": 113.62,
+   "texto": "Chamavam de destino o peso da engrenagem,",
+   "estrofe": 4
+  },
+  {
+   "t": 117.02,
+   "texto": "mas ninguém traduziu o preço da viagem.",
+   "estrofe": 4
+  },
+  {
+   "t": 120.96,
+   "texto": "Ele fez do medo uma faca,",
+   "estrofe": 4
+  },
+  {
+   "t": 122.4,
+   "texto": "da falta, combustível.",
+   "estrofe": 4
+  },
+  {
+   "t": 124.12,
+   "texto": "Virou farol entre sombras,",
+   "estrofe": 4
+  },
+  {
+   "t": 126.14,
+   "texto": "mas por dentro era invisível.",
+   "estrofe": 4
+  },
+  {
+   "t": 128.12,
+   "texto": "Construiu pontes no escuro,",
+   "estrofe": 4
+  },
+  {
+   "t": 129.82,
+   "texto": "vendeu silêncio por paz,",
+   "estrofe": 4
+  },
+  {
+   "t": 131.58,
+   "texto": "plantou fogo nos olhos",
+   "estrofe": 4
+  },
+  {
+   "t": 133.14,
+   "texto": "pra ninguém olhar para trás.",
+   "estrofe": 4
+  },
+  {
+   "t": 135.14,
+   "texto": "E toda noite o teto desce,",
+   "estrofe": 4
+  },
+  {
+   "t": 137.3,
+   "texto": "branco, frio, devagar,",
+   "estrofe": 4
+  },
+  {
+   "t": 138.74,
+   "texto": "como se o mundo inteiro",
+   "estrofe": 4
+  },
+  {
+   "t": 140.66,
+   "texto": "viesse lhe perguntar:",
+   "estrofe": 4
+  },
+  {
+   "t": 142.46,
+   "texto": "\"Quantas vitórias cabem",
+   "estrofe": 4
+  },
+  {
+   "t": 144.62,
+   "texto": "num peito sem morada?",
+   "estrofe": 4
+  },
+  {
+   "t": 146.34,
+   "texto": "Quantos nomes na parede",
+   "estrofe": 4
+  },
+  {
+   "t": 148.16,
+   "texto": "pagam uma madrugada?\"",
+   "estrofe": 4
+  },
+  {
+   "t": 149.94,
+   "texto": "Não se mede um abismo",
+   "estrofe": 5
+  },
+  {
+   "t": 151.8,
+   "texto": "pela altura do olhar.",
+   "estrofe": 5
+  },
+  {
+   "t": 153.46,
+   "texto": "Tem queda que mora por dentro",
+   "estrofe": 5
+  },
+  {
+   "t": 155.4,
+   "texto": "sem ninguém escutar.",
+   "estrofe": 5
+  },
+  {
+   "t": 156.98,
+   "texto": "Há gigantes sem sombra,",
+   "estrofe": 5
+  },
+  {
+   "t": 159.2,
+   "texto": "com o peito em alto-mar,",
+   "estrofe": 5
+  },
+  {
+   "t": 160.74,
+   "texto": "carregando tempestades",
+   "estrofe": 5
+  },
+  {
+   "t": 162.58,
+   "texto": "que não sabem descansar.",
+   "estrofe": 5
+  },
+  {
+   "t": 164.48,
+   "texto": "Não se abre uma alma",
+   "estrofe": 5
+  },
+  {
+   "t": 166.42,
+   "texto": "sem ouvir sua razão.",
+   "estrofe": 5
+  },
+  {
+   "t": 168.04,
+   "texto": "Há mapas no sangue,",
+   "estrofe": 5
+  },
+  {
+   "t": 169.65,
+   "texto": "há portas na solidão.",
+   "estrofe": 5
+  },
+  {
+   "t": 178.22,
+   "texto": "No palácio de ferrugem,",
+   "estrofe": 6
+  },
+  {
+   "t": 181.1,
+   "texto": "ninguém reza em vão.",
+   "estrofe": 6
+  },
+  {
+   "t": 182.66,
+   "texto": "Uma máquina sonhou",
+   "estrofe": 6
+  },
+  {
+   "t": 184.54,
+   "texto": "que tinha coração.",
+   "estrofe": 6
+  },
+  {
+   "t": 186.12,
+   "texto": "No palácio de ferrugem,",
+   "estrofe": 6
+  },
+  {
+   "t": 188.14,
+   "texto": "o céu desceu devagar.",
+   "estrofe": 6
+  },
+  {
+   "t": 189.78,
+   "texto": "Quem nasceu feito muralha",
+   "estrofe": 6
+  },
+  {
+   "t": 191.64,
+   "texto": "também aprende a quebrar.",
+   "estrofe": 6
+  },
+  {
+   "t": 193.4,
+   "texto": "Os sinos não tocavam,",
+   "estrofe": 7
+  },
+  {
+   "t": 195.44,
+   "texto": "só tremiam no ar.",
+   "estrofe": 7
+  },
+  {
+   "t": 197.32,
+   "texto": "Havia um altar sem santo",
+   "estrofe": 7
+  },
+  {
+   "t": 199.0,
+   "texto": "e um céu sem lugar.",
+   "estrofe": 7
+  },
+  {
+   "t": 200.52,
+   "texto": "As velas queimavam baixo,",
+   "estrofe": 7
+  },
+  {
+   "t": 202.58,
+   "texto": "como estrelas no chão.",
+   "estrofe": 7
+  },
+  {
+   "t": 204.32,
+   "texto": "E uma ferramenta fria",
+   "estrofe": 7
+  },
+  {
+   "t": 206.08,
+   "texto": "pedia para ser canção.",
+   "estrofe": 7
+  },
+  {
+   "t": 207.67,
+   "texto": "No vitral, uma sombra",
+   "estrofe": 7
+  },
+  {
+   "t": 210.26,
+   "texto": "tentava esconder a cor.",
+   "estrofe": 7
+  },
+  {
+   "t": 214.74,
+   "texto": "E o homem que ninguém via",
+   "estrofe": 7
+  },
+  {
+   "t": 217.52,
+   "texto": "negociava com a dor.",
+   "estrofe": 7
+  },
+  {
+   "t": 221.36,
+   "texto": "Sangue nos olhos, gelo na alma,",
+   "estrofe": 8
+  },
+  {
+   "t": 223.26,
+   "texto": "tudo aos poucos lhe roubava a calma.",
+   "estrofe": 8
+  },
+  {
+   "t": 225.04,
+   "texto": "Coroa torta, quarto sem aplausos,",
+   "estrofe": 8
+  },
+  {
+   "t": 226.76,
+   "texto": "a luta, outrora, deixava espaços.",
+   "estrofe": 8
+  },
+  {
+   "t": 228.64,
+   "texto": "Tudo que brilha cobra sombra depois,",
+   "estrofe": 8
+  },
+  {
+   "t": 230.46,
+   "texto": "todo gigante divide o peito em dois.",
+   "estrofe": 8
+  },
+  {
+   "t": 232.66,
+   "texto": "Um lado marcha, outro lado sangra,",
+   "estrofe": 8
+  },
+  {
+   "t": 234.56,
+   "texto": "um lado vence, outro lado tranca.",
+   "estrofe": 8
+  },
+  {
+   "t": 236.68,
+   "texto": "Tem senha quebrada no fundo da pele,",
+   "estrofe": 8
+  },
+  {
+   "t": 238.46,
+   "texto": "tem grito sem som que ninguém repele.",
+   "estrofe": 8
+  },
+  {
+   "t": 240.28,
+   "texto": "Tem santo cansado perdendo o halo,",
+   "estrofe": 8
+  },
+  {
+   "t": 242.12,
+   "texto": "tem cavalo de guerra pedindo intervalo.",
+   "estrofe": 8
+  },
+  {
+   "t": 244.4,
+   "texto": "Mas quando amanhece, a lâmina acorda,",
+   "estrofe": 8
+  },
+  {
+   "t": 245.99,
+   "texto": "a cidade chama, a missão transborda.",
+   "estrofe": 8
+  },
+  {
+   "t": 248.14,
+   "texto": "E ninguém percebe, no brilho do aço,",
+   "estrofe": 8
+  },
+  {
+   "t": 249.67,
+   "texto": "a marca de asa queimando no braço.",
+   "estrofe": 8
+  },
+  {
+   "t": 251.8,
+   "texto": "Dorme, soldado de vidro,",
+   "estrofe": 9
+  },
+  {
+   "t": 253.84,
+   "texto": "dorme, rei sem manhã.",
+   "estrofe": 9
+  },
+  {
+   "t": 255.11,
+   "texto": "Nem todo aço é infinito,",
+   "estrofe": 9
+  },
+  {
+   "t": 257.31,
+   "texto": "nem toda luz é sã.",
+   "estrofe": 9
+  },
+  {
+   "t": 258.96,
+   "texto": "Dorme, filho do ruído,",
+   "estrofe": 9
+  },
+  {
+   "t": 260.76,
+   "texto": "fecha os olhos no chão.",
+   "estrofe": 9
+  },
+  {
+   "t": 262.59,
+   "texto": "Há um pássaro preso",
+   "estrofe": 9
+  },
+  {
+   "t": 264.46,
+   "texto": "dentro da construção.",
+   "estrofe": 9
+  },
+  {
+   "t": 266.23,
+   "texto": "No palácio de ferrugem,",
+   "estrofe": 10
+  },
+  {
+   "t": 268.28,
+   "texto": "ninguém reza em vão.",
+   "estrofe": 10
+  },
+  {
+   "t": 269.84,
+   "texto": "Uma máquina sonhou",
+   "estrofe": 10
+  },
+  {
+   "t": 271.66,
+   "texto": "que tinha coração.",
+   "estrofe": 10
+  },
+  {
+   "t": 273.51,
+   "texto": "No palácio de ferrugem,",
+   "estrofe": 10
+  },
+  {
+   "t": 275.01,
+   "texto": "o céu desceu devagar.",
+   "estrofe": 10
+  },
+  {
+   "t": 276.94,
+   "texto": "Quem nasceu feito muralha",
+   "estrofe": 10
+  },
+  {
+   "t": 278.97,
+   "texto": "também aprende a quebrar.",
+   "estrofe": 10
+  },
+  {
+   "t": 282.08,
+   "texto": "Quando o sino calar,",
+   "estrofe": 11
+  },
+  {
+   "t": 285.32,
+   "texto": "quando a luz se apagar,",
+   "estrofe": 11
+  },
+  {
+   "t": 289.32,
+   "texto": "talvez o aço descubra",
+   "estrofe": 11
+  },
+  {
+   "t": 292.1,
+   "texto": "que nasceu para respirar.",
+   "estrofe": 11
+  }
+ ]
+}

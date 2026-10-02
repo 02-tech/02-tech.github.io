@@ -1,0 +1,310 @@
+{
+ "duracao": 237.2,
+ "linhas": [
+  {
+   "t": 1.52,
+   "texto": "Olha o quadro...",
+   "estrofe": 0
+  },
+  {
+   "t": 3.0,
+   "texto": "O peso não avisa quando vai cair, né?",
+   "estrofe": 0
+  },
+  {
+   "t": 7.54,
+   "texto": "Mas o vagabundo não dobra o joelho.",
+   "estrofe": 0
+  },
+  {
+   "t": 14.02,
+   "texto": "Escuta a métrica...",
+   "estrofe": 0
+  },
+  {
+   "t": 26.55,
+   "texto": "Yo.",
+   "estrofe": 0
+  },
+  {
+   "t": 39.08,
+   "texto": "O despertador nem toca e a mente já tá na pista",
+   "estrofe": 1
+  },
+  {
+   "t": 41.9,
+   "texto": "Coração é engrenagem, o cansaço é entrevista",
+   "estrofe": 1
+  },
+  {
+   "t": 44.7,
+   "texto": "Que eu recuso diariamente, sigo a meta realista",
+   "estrofe": 1
+  },
+  {
+   "t": 47.48,
+   "texto": "Nesse jogo de xadrez onde o herói não vira artista",
+   "estrofe": 1
+  },
+  {
+   "t": 50.28,
+   "texto": "Eu não debato o fardo, o silêncio é meu escudo",
+   "estrofe": 1
+  },
+  {
+   "t": 52.88,
+   "texto": "O mundo cobra postura de quem sempre resolve tudo",
+   "estrofe": 1
+  },
+  {
+   "t": 55.6,
+   "texto": "Viro estrutura, muro alto pra segurar o baque",
+   "estrofe": 1
+  },
+  {
+   "t": 58.54,
+   "texto": "O meu silêncio é o preço pra não demonstrar ataque",
+   "estrofe": 1
+  },
+  {
+   "t": 61.1,
+   "texto": "Cultura do aguenta firme, não chora, não explica",
+   "estrofe": 1
+  },
+  {
+   "t": 63.61,
+   "texto": "A ferida tá exposta, mas a lágrima não fica",
+   "estrofe": 1
+  },
+  {
+   "t": 66.5,
+   "texto": "Se me perguntam se eu tô bem, o roteiro se replica",
+   "estrofe": 1
+  },
+  {
+   "t": 69.14,
+   "texto": "Tô na marcha, tudo certo, e a resposta fortifica",
+   "estrofe": 1
+  },
+  {
+   "t": 71.98,
+   "texto": "Ninguém vê o maquinista, só enxergam o proveito",
+   "estrofe": 1
+  },
+  {
+   "t": 74.7,
+   "texto": "Noites em claro na busca do corre perfeito",
+   "estrofe": 1
+  },
+  {
+   "t": 77.44,
+   "texto": "Tem que fazer dinheiro, tem que fazer direito",
+   "estrofe": 1
+  },
+  {
+   "t": 80.12,
+   "texto": "Tem que vencer o mundo sem ter nascido herdeiro",
+   "estrofe": 1
+  },
+  {
+   "t": 83.16,
+   "texto": "Essa é pros irmãos que tão na madruga",
+   "estrofe": 2
+  },
+  {
+   "t": 85.84,
+   "texto": "Lutando e zelando por uma vida mais farta",
+   "estrofe": 2
+  },
+  {
+   "t": 88.36,
+   "texto": "Pensando e criando projetos na marra",
+   "estrofe": 2
+  },
+  {
+   "t": 90.83,
+   "texto": "A meta é o topo e a mente não para",
+   "estrofe": 2
+  },
+  {
+   "t": 94.06,
+   "texto": "Essa é pros irmãos que tão na madruga",
+   "estrofe": 2
+  },
+  {
+   "t": 96.6,
+   "texto": "Lutando e zelando por uma vida mais farta",
+   "estrofe": 2
+  },
+  {
+   "t": 99.44,
+   "texto": "Pensando e criando projetos na marra",
+   "estrofe": 2
+  },
+  {
+   "t": 101.72,
+   "texto": "A meta é o topo e a mente não para",
+   "estrofe": 2
+  },
+  {
+   "t": 105.04,
+   "texto": "O tempo não espera e a cobrança é real",
+   "estrofe": 3
+  },
+  {
+   "t": 107.46,
+   "texto": "Cada dia na pista é um teste mental",
+   "estrofe": 3
+  },
+  {
+   "t": 110.24,
+   "texto": "A mente arquiteta o plano perfeito",
+   "estrofe": 3
+  },
+  {
+   "t": 113.12,
+   "texto": "Um ser incomum, vivendo sem medo",
+   "estrofe": 3
+  },
+  {
+   "t": 115.82,
+   "texto": "Não nasci pra pedir, nem tão pouco esperar",
+   "estrofe": 3
+  },
+  {
+   "t": 118.42,
+   "texto": "Porque se eu quiser, eu vou ali buscar",
+   "estrofe": 3
+  },
+  {
+   "t": 121.2,
+   "texto": "Um homem sem grana o mundo rejeita",
+   "estrofe": 3
+  },
+  {
+   "t": 124.2,
+   "texto": "É quando se vale o que se coloca na mesa",
+   "estrofe": 3
+  },
+  {
+   "t": 127.54,
+   "texto": "Você olha pro nada, você sente o vazio",
+   "estrofe": 3
+  },
+  {
+   "t": 130.54,
+   "texto": "Você nada e nada, mas vive no rio",
+   "estrofe": 3
+  },
+  {
+   "t": 133.26,
+   "texto": "Te falo irmão, eu vivo isso",
+   "estrofe": 3
+  },
+  {
+   "t": 135.96,
+   "texto": "Mas se não há solução, o problema não é físico",
+   "estrofe": 3
+  },
+  {
+   "t": 138.76,
+   "texto": "Treine sua mente, a mente é o guia",
+   "estrofe": 3
+  },
+  {
+   "t": 141.28,
+   "texto": "E o guia te leva à ponta da ilha",
+   "estrofe": 3
+  },
+  {
+   "t": 144.04,
+   "texto": "E chegando lá, você treina e treina",
+   "estrofe": 3
+  },
+  {
+   "t": 147.12,
+   "texto": "Mente e corpo prontos pra arena",
+   "estrofe": 3
+  },
+  {
+   "t": 149.48,
+   "texto": "A repetição com correção...",
+   "estrofe": 4
+  },
+  {
+   "t": 155.34,
+   "texto": "Até a exaustão...",
+   "estrofe": 4
+  },
+  {
+   "t": 156.96,
+   "texto": "Leva à perfeição.",
+   "estrofe": 4
+  },
+  {
+   "t": 159.68,
+   "texto": "Essa é pros irmãos que tão na madruga",
+   "estrofe": 5
+  },
+  {
+   "t": 162.78,
+   "texto": "Lutando e zelando por uma vida mais farta",
+   "estrofe": 5
+  },
+  {
+   "t": 165.5,
+   "texto": "Pensando e criando projetos na marra",
+   "estrofe": 5
+  },
+  {
+   "t": 168.56,
+   "texto": "A meta é o topo e a mente não para",
+   "estrofe": 5
+  },
+  {
+   "t": 171.3,
+   "texto": "Essa é pros irmãos que tão na madruga",
+   "estrofe": 5
+  },
+  {
+   "t": 174.04,
+   "texto": "Lutando e zelando por uma vida mais farta",
+   "estrofe": 5
+  },
+  {
+   "t": 176.8,
+   "texto": "Pensando e criando projetos na marra",
+   "estrofe": 5
+  },
+  {
+   "t": 179.64,
+   "texto": "A meta é o topo e a mente não para",
+   "estrofe": 5
+  },
+  {
+   "t": 195.1,
+   "texto": "Sem vitimismo, o registro tá feito",
+   "estrofe": 6
+  },
+  {
+   "t": 210.56,
+   "texto": "É o relato da pressa que consome o sujeito",
+   "estrofe": 6
+  },
+  {
+   "t": 213.91,
+   "texto": "O homem que carrega o mundo e não reclama do efeito",
+   "estrofe": 6
+  },
+  {
+   "t": 217.48,
+   "texto": "Segue calado batendo no peito",
+   "estrofe": 6
+  },
+  {
+   "t": 220.48,
+   "texto": "Fui",
+   "estrofe": 6
+  }
+ ]
+}
