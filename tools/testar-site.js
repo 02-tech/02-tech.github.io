@@ -29,7 +29,7 @@ function matarChrome() {
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 let falhas = 0; const ok = (c, m) => { console.log((c ? "ok   " : "FALHA") + " - " + m); if (!c) falhas++; };
 (async () => {
-  let a; for (let i = 0; i < 60; i++) { try { a = await (await fetch(`http://127.0.0.1:${port}/json`)).json(); break; } catch { await sleep(200); } }
+  let a; for (let i = 0; i < 150; i++) { try { a = await (await fetch(`http://127.0.0.1:${port}/json`)).json(); break; } catch { await sleep(200); } }
   const ws = new WebSocket(a.find(x => x.type === "page").webSocketDebuggerUrl); await new Promise(r => ws.addEventListener("open", r));
   let id = 0; const p = new Map(); let erros = [];
   ws.addEventListener("message", e => { const m = JSON.parse(e.data); if (m.id && p.has(m.id)) { p.get(m.id)(m); p.delete(m.id); }
