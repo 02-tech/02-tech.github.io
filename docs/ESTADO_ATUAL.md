@@ -82,3 +82,9 @@
 - Guilherme viu "Silenciar" sem música tocando: o estado usava "não pausado", que inclui carregando ou travado. Agora "tocando" só quando o áudio avança de fato (eventos playing/timeupdate); enquanto carrega o botão diz "Carregando…".
 - O primeiro gesto em qualquer lugar da página (touchend, click, keydown, pointerup) sempre garante o som, mesmo que o navegador não tenha recusado de cara; respeita quem silenciou antes. Primeiro áudio com preload="auto".
 - Testado com toque real emulado no topo da página: navegador bloqueando som (toca no 1º toque) e liberando (toca ao abrir); letra sincronizada sem rolar a página.
+
+## 2026-10-02: molécula e navegação flutuante
+
+- Depois que a música começa, o botão flutuante vira uma molécula (núcleo escuro tipo antimatéria, órbitas ciano girando só enquanto toca) que abre um mini player: título, anterior, tocar/pausar, próxima e atalho "Ver letra e todas as músicas". Fecha ao tocar fora ou com Esc.
+- Navegação flutuante: quando o cabeçalho sai da tela, o símbolo do topo aparece no canto inferior esquerdo e abre um painel com todas as seções (Início, Essência, Quem sou, Militar, Universo, Experimentos, Música, 3·6·9, Escritos, Sinais abertos).
+- Código: `tools/player-app.js`, `tools/flutuantes-app.js`, `tools/flutuantes.css`, aplicados por `tools/player-20261002.js`. Movimento reduzido desliga as animações.

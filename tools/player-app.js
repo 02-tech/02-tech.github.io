@@ -22,15 +22,46 @@
   audio.preload = "auto";
   const salvar = () => { try { localStorage.setItem(CHAVE, mudo ? "mudo" : "som"); } catch (e) { /* ok */ } };
 
+  // mini player: depois que a música começa, o botão flutuante vira uma "molécula" que abre controles rápidos
+  let jaTocou = false;
+  const mini = document.createElement("div");
+  mini.className = "mini-player"; mini.id = "mini-player"; mini.hidden = true;
+  mini.setAttribute("role", "dialog"); mini.setAttribute("aria-label", "Controles da música");
+  mini.innerHTML = '<p class="mini-rotulo">TOCANDO AGORA</p><p class="mini-titulo" id="mini-titulo"></p>' +
+    '<div class="mini-botoes"><button type="button" class="mini-ant" aria-label="Música anterior">⏮</button>' +
+    '<button type="button" class="mini-play" aria-label="Pausar">⏸</button>' +
+    '<button type="button" class="mini-prox" aria-label="Próxima música">⏭</button></div>' +
+    '<a class="mini-letra" href="#player">Ver letra e todas as músicas</a>';
+  document.body.appendChild(mini);
+  const abrirMini = (abrir) => {
+    mini.hidden = !abrir;
+    if (botao) botao.setAttribute("aria-expanded", abrir ? "true" : "false");
+  };
+  mini.querySelector(".mini-ant").addEventListener("click", () => { gestoUsado = true; selecionar(atual - 1, true); });
+  mini.querySelector(".mini-prox").addEventListener("click", () => { gestoUsado = true; selecionar(atual + 1, true); });
+  mini.querySelector(".mini-play").addEventListener("click", () => { gestoUsado = true; if (soando) audio.pause(); else tocar(); });
+  mini.querySelector(".mini-letra").addEventListener("click", () => abrirMini(false));
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !mini.hidden) { abrirMini(false); if (botao) botao.focus(); } });
+  document.addEventListener("click", (e) => { if (!mini.hidden && !mini.contains(e.target) && !(botao && botao.contains(e.target))) abrirMini(false); });
+
   const atualizar = () => {
+    if (soando && !jaTocou) { jaTocou = true; if (botao) botao.classList.add("molecula"); }
     if (botao) {
       botao.hidden = false;
       const rotulo = soando ? "Silenciar" : (carregando && !audio.paused ? "Carregando…" : "Ouvir");
-      botao.setAttribute("aria-pressed", soando ? "true" : "false");
       botao.querySelector(".som-texto").textContent = rotulo;
-      botao.setAttribute("aria-label", soando ? "Silenciar a música" : "Ouvir a música");
       botao.classList.toggle("tocando", soando);
+      if (jaTocou) {
+        botao.removeAttribute("aria-pressed");
+        botao.setAttribute("aria-haspopup", "dialog");
+        botao.setAttribute("aria-label", "Controles da música" + (titulo ? ": " + titulo.textContent : "") + (soando ? " (tocando)" : " (pausada)"));
+      } else {
+        botao.setAttribute("aria-pressed", soando ? "true" : "false");
+        botao.setAttribute("aria-label", soando ? "Silenciar a música" : "Ouvir a música");
+      }
     }
+    const mt = mini.querySelector("#mini-titulo"); if (mt && titulo) mt.textContent = titulo.textContent;
+    const mp = mini.querySelector(".mini-play"); mp.textContent = soando ? "⏸" : "▶"; mp.setAttribute("aria-label", soando ? "Pausar" : "Tocar");
     itens.forEach((li, i) => li.classList.toggle("tocando", i === atual && soando));
   };
 
@@ -127,10 +158,19 @@
   }
   gestos.forEach((g) => document.addEventListener(g, noGesto, { capture: true, passive: true }));
 
-  if (botao) botao.addEventListener("click", () => {
-    gestoUsado = true; tirarGestos();
-    if (soando) audio.pause(); else tocar();
-  });
+  if (botao) {
+    // a molécula: anéis em órbita, giram só enquanto toca
+    if (!botao.querySelector(".molecula-svg")) botao.insertAdjacentHTML("afterbegin",
+      '<svg class="molecula-svg" viewBox="0 0 64 64" aria-hidden="true"><g class="orbitas">' +
+      '<ellipse cx="32" cy="32" rx="27" ry="10"/><ellipse cx="32" cy="32" rx="27" ry="10" transform="rotate(60 32 32)"/><ellipse cx="32" cy="32" rx="27" ry="10" transform="rotate(120 32 32)"/>' +
+      '<circle class="eletron e1" cx="59" cy="32" r="2.6"/><circle class="eletron e2" cx="18.5" cy="8.6" r="2.6"/><circle class="eletron e3" cx="18.5" cy="55.4" r="2.6"/></g>' +
+      '<circle class="nucleo" cx="32" cy="32" r="8"/></svg>');
+    botao.addEventListener("click", () => {
+      gestoUsado = true; tirarGestos();
+      if (jaTocou) { abrirMini(mini.hidden); return; }
+      if (soando) audio.pause(); else tocar();
+    });
+  }
 
   carregarLetra(itens[0].dataset.letra);
   atualizar();

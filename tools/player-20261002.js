@@ -55,13 +55,13 @@ let j = fs.readFileSync(path.join(raiz, "app.js"), "utf8");
 for (const m of ["// 2026-10-02: trilha ao entrar", "// 2026-10-02: player de músicas"]) {
   const k = j.indexOf(m); if (k >= 0) j = j.slice(0, k).trimEnd() + "\n";
 }
-j += fs.readFileSync(path.join(__dirname, "player-app.js"), "utf8");
+j += fs.readFileSync(path.join(__dirname, "player-app.js"), "utf8") + fs.readFileSync(path.join(__dirname, "flutuantes-app.js"), "utf8");
 fs.writeFileSync(path.join(raiz, "app.js"), j);
 
 // ---------- CSS ----------
 let c = fs.readFileSync(path.join(raiz, "styles.css"), "utf8");
 const MARCA = "/* 2026-10-02: player */";
 const k = c.indexOf(MARCA); if (k >= 0) c = c.slice(0, k);
-c += MARCA + "\n" + fs.readFileSync(path.join(__dirname, "player.css"), "utf8");
+c += MARCA + "\n" + fs.readFileSync(path.join(__dirname, "player.css"), "utf8") + fs.readFileSync(path.join(__dirname, "flutuantes.css"), "utf8");
 fs.writeFileSync(path.join(raiz, "styles.css"), c);
 console.log("player aplicado:", FAIXAS.length, "faixas");
