@@ -117,8 +117,13 @@ document.querySelector('#year').textContent = new Date().getFullYear();
   audio.preload = "auto";
   const salvar = () => { try { localStorage.setItem(CHAVE, mudo ? "mudo" : "som"); } catch (e) { /* ok */ } };
 
-  // mini player: depois que a música começa, o botão flutuante vira uma "molécula" que abre controles rápidos
-  let jaTocou = false;
+  // molécula: único controle flutuante. Tocar nela inicia a música e mostra o mini painel, que some sozinho
+  // depois de alguns segundos sem interação (para não deixar coisa na tela).
+  const jaTocou = true;
+  if (botao) botao.classList.add("molecula");
+  let timerMini = 0;
+  const SUMIR_MS = 4500;
+  const temMouse = matchMedia("(hover: hover) and (pointer: fine)").matches; // no celular o hover fica "preso" no último toque
   const mini = document.createElement("div");
   mini.className = "mini-player"; mini.id = "mini-player"; mini.hidden = true;
   mini.setAttribute("role", "dialog"); mini.setAttribute("aria-label", "Controles da música");
@@ -128,10 +133,21 @@ document.querySelector('#year').textContent = new Date().getFullYear();
     '<button type="button" class="mini-prox" aria-label="Próxima música">⏭</button></div>' +
     '<a class="mini-letra" href="#player">Ver letra e todas as músicas</a>';
   document.body.appendChild(mini);
+  const agendarSumir = () => {
+    clearTimeout(timerMini);
+    if (mini.hidden) return;
+    timerMini = setTimeout(() => {
+      // mouse em cima ou teclado lá dentro conta como "mexendo": espera mais um pouco
+      if ((temMouse && mini.matches(":hover")) || mini.querySelector(":focus-visible")) return agendarSumir();
+      abrirMini(false);
+    }, SUMIR_MS);
+  };
   const abrirMini = (abrir) => {
     mini.hidden = !abrir;
     if (botao) botao.setAttribute("aria-expanded", abrir ? "true" : "false");
+    if (abrir) agendarSumir(); else clearTimeout(timerMini);
   };
+  ["pointerdown", "pointermove", "keydown", "focusin", "wheel", "touchstart"].forEach((g) => mini.addEventListener(g, agendarSumir, { passive: true }));
   mini.querySelector(".mini-ant").addEventListener("click", () => { gestoUsado = true; selecionar(atual - 1, true); });
   mini.querySelector(".mini-prox").addEventListener("click", () => { gestoUsado = true; selecionar(atual + 1, true); });
   mini.querySelector(".mini-play").addEventListener("click", () => { gestoUsado = true; if (soando) audio.pause(); else tocar(); });
@@ -140,7 +156,6 @@ document.querySelector('#year').textContent = new Date().getFullYear();
   document.addEventListener("click", (e) => { if (!mini.hidden && !mini.contains(e.target) && !(botao && botao.contains(e.target))) abrirMini(false); });
 
   const atualizar = () => {
-    if (soando && !jaTocou) { jaTocou = true; if (botao) botao.classList.add("molecula"); }
     if (botao) {
       botao.hidden = false;
       const rotulo = soando ? "Silenciar" : (carregando && !audio.paused ? "Carregando…" : "Ouvir");
@@ -293,8 +308,8 @@ document.querySelector('#year').textContent = new Date().getFullYear();
     }
     botao.addEventListener("click", () => {
       gestoUsado = true; tirarGestos();
-      if (jaTocou) { abrirMini(mini.hidden); return; }
-      if (soando) audio.pause(); else tocar();
+      if (!soando && !carregando) tocar();
+      abrirMini(true);
     });
   }
 
@@ -323,7 +338,15 @@ document.querySelector('#year').textContent = new Date().getFullYear();
     [...extras, ...daNav, ...mais].map(([h, t]) => '<li><a href="' + h + '">' + t + "</a></li>").join("") + "</ul>";
   document.body.append(orbe, painel);
 
-  const abrir = (sim) => { painel.hidden = !sim; orbe.setAttribute("aria-expanded", sim ? "true" : "false"); if (sim) { const a = painel.querySelector("a"); if (a) a.focus(); } };
+  // some sozinho depois de alguns segundos sem interação, como o mini painel da música
+  let timer = 0;
+  const agendar = () => {
+    clearTimeout(timer);
+    if (painel.hidden) return;
+    timer = setTimeout(() => { if (matchMedia("(hover: hover) and (pointer: fine)").matches && painel.matches(":hover")) return agendar(); abrir(false); }, 5000);
+  };
+  const abrir = (sim) => { painel.hidden = !sim; orbe.setAttribute("aria-expanded", sim ? "true" : "false"); if (sim) agendar(); else clearTimeout(timer); };
+  ["pointerdown", "pointermove", "keydown", "focusin", "wheel", "touchstart", "scroll"].forEach((ev) => painel.addEventListener(ev, agendar, { passive: true }));
   orbe.addEventListener("click", () => abrir(painel.hidden));
   painel.addEventListener("click", (e) => { if (e.target.closest("a")) abrir(false); });
   document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !painel.hidden) { abrir(false); orbe.focus(); } });
