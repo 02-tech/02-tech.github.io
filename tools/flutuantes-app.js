@@ -19,7 +19,15 @@
     [...extras, ...daNav, ...mais].map(([h, t]) => '<li><a href="' + h + '">' + t + "</a></li>").join("") + "</ul>";
   document.body.append(orbe, painel);
 
-  const abrir = (sim) => { painel.hidden = !sim; orbe.setAttribute("aria-expanded", sim ? "true" : "false"); if (sim) { const a = painel.querySelector("a"); if (a) a.focus(); } };
+  // some sozinho depois de alguns segundos sem interação, como o mini painel da música
+  let timer = 0;
+  const agendar = () => {
+    clearTimeout(timer);
+    if (painel.hidden) return;
+    timer = setTimeout(() => { if (matchMedia("(hover: hover) and (pointer: fine)").matches && painel.matches(":hover")) return agendar(); abrir(false); }, 5000);
+  };
+  const abrir = (sim) => { painel.hidden = !sim; orbe.setAttribute("aria-expanded", sim ? "true" : "false"); if (sim) agendar(); else clearTimeout(timer); };
+  ["pointerdown", "pointermove", "keydown", "focusin", "wheel", "touchstart", "scroll"].forEach((ev) => painel.addEventListener(ev, agendar, { passive: true }));
   orbe.addEventListener("click", () => abrir(painel.hidden));
   painel.addEventListener("click", (e) => { if (e.target.closest("a")) abrir(false); });
   document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !painel.hidden) { abrir(false); orbe.focus(); } });

@@ -90,3 +90,4 @@
 - Código: `tools/player-app.js`, `tools/flutuantes-app.js`, `tools/flutuantes.css`, aplicados por `tools/player-20261002.js`. Movimento reduzido desliga as animações.
 - Ajustes pedidos por Guilherme (mesmo dia): molécula à direita um pouco acima do meio; navegação no canto superior esquerdo; molécula livre (7 átomos escuros ligados que se contorcem enquanto toca, parada quando pausa; laço de animação só roda tocando e com a aba visível).
 - WhatsApp pessoal (24) 99275-4537 no bloco de redes, em azul-escuro neon (wa.me/5524992754537), autorizado por Guilherme.
+- Só a molécula (sem o botão "Ouvir"): parada quando não toca; tocar nela inicia a música e mostra o mini painel; tocar música na lista também a faz mexer. Mini painel e painel de navegação somem sozinhos após ~5 s sem interação (no celular o hover "preso" do último toque é ignorado; foco de teclado mantém aberto).
