@@ -21,7 +21,11 @@
 
 ## Pendências
 
-1. "Pelcon" citado por Guilherme: confirmar a grafia/significado antes de publicar (provável Pelotão de Comunicações).
 2. Diploma "Ao Mérito" visto na parede: confirmar se é a condecoração e o nome exato, se quiser citar.
 3. Foto com a mãe e a madrasta: publicar só com o consentimento delas.
-4. Pasta antiga `PROJETOS/FAGUITAL/faguital.com.br` (repo vazio, alterações de 2025-10): decidir arquivar ou manter.
+
+## 2026-10-01 (complemento)
+
+- Guilherme confirmou "Pelcon" = Pelotão de Comunicações: incluído na trajetória e na ficha da página Sobre.
+- Pasta antiga arquivada (movida, hashes conferidos) em `PROJETOS/10_BACKUPS/faguital-com-br-legado-20261001`.
+- Pendentes: diploma "Ao Mérito" (citar só se Guilherme confirmar nome); foto com a mãe e a madrasta (só com consentimento).

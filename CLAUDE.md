@@ -14,7 +14,7 @@ Este projeto pertence ao Núcleo FAGUITAL e segue `0_CENTRAL_ENGENHARIA/09_COLAB
 
 - Site PESSOAL e artístico de Guilherme Carvalho de Andrade (FAGUITAL). Nome completo como nas demais propriedades.
 - Trajetória militar publicável: ex-militar condecorado do Exército Brasileiro; 32º Batalhão de Infantaria Leve de
-  Montanha; militar de infantaria, de comunicações e de montanha.
+  Montanha; militar de infantaria, do Pelotão de Comunicações (o "Pelcon" citado por Guilherme) e de montanha.
 - TECNOFAG GUARD: só informação pública (a mesma do site oficial https://tecnofagguard.com.br/). SIGILO: nunca citar
   NFC, sensores, "objetos conectados" ou qualquer pista de mecanismo, nem em nomes de classes do código-fonte.
 - Imperial Volt é outra empresa de Guilherme (não faz parte do ecossistema TECNOFAG GUARD).
