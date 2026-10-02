@@ -193,3 +193,12 @@ html,body{overflow-x:clip}
 .escrito p{margin:0;color:#dfe5e7;font-size:1.02rem;line-height:1.65}
 .escrito figcaption{margin-top:16px;font:.56rem Consolas,"Courier New",monospace;letter-spacing:.18em;text-transform:uppercase;color:#76838a}
 @media (max-width:900px){.escritos-topo{grid-template-columns:1fr;gap:30px}.escritos h2{font-size:2.65rem}}
+/* 2026-10-02: Jogo Injusto em destaque */
+.escrito-destaque{margin:70px 0 0;padding:44px clamp(22px,5vw,64px);border:1px solid rgba(60,242,228,.35);background:radial-gradient(circle at 80% 0,rgba(60,242,228,.08),transparent 55%),rgba(7,10,14,.9)}
+.escrito-destaque figcaption{display:flex;flex-direction:column;gap:10px;margin-bottom:28px}
+.escrito-destaque figcaption span{font:.6rem Consolas,"Courier New",monospace;letter-spacing:.2em;color:var(--cyan)}
+.escrito-destaque figcaption strong{font-size:clamp(2rem,4vw,3.4rem);font-weight:600;letter-spacing:-.04em;line-height:1}
+.escrito-destaque blockquote{margin:0;columns:2 300px;column-gap:56px}
+.escrito-destaque p{break-inside:avoid;margin:0 0 18px;color:#cfd6d9;line-height:1.7}
+.escrito-destaque .fecho{color:#fff;font-size:1.15rem;font-weight:600;border-left:2px solid var(--cyan);padding-left:16px}
+.escrito-destaque+.escritos-grid{margin-top:16px}
