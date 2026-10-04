@@ -219,12 +219,34 @@ document.querySelector('#year').textContent = new Date().getFullYear();
     return p && p.catch ? p.catch(() => { carregando = false; atualizar(); }) : Promise.resolve();
   };
 
+  // faixa atual visível dentro da lista (rola só a lista, nunca a página)
+  const mostrarNaLista = (li) => {
+    if (lista.scrollHeight <= lista.clientHeight + 2) return;
+    const alvo = li.offsetTop - lista.clientHeight / 3; // .playlist é position: relative
+    lista.scrollTo({ top: Math.max(0, alvo), behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+  };
+  // tela de bloqueio e notificação: nome da música (não o título do site), artista e capa
+  const atualizarMidia = (li) => {
+    if (!("mediaSession" in navigator) || typeof MediaMetadata === "undefined") return;
+    navigator.mediaSession.metadata = new MediaMetadata({
+      title: li.dataset.titulo,
+      artist: "FAGUITAL",
+      album: "Guilherme Carvalho de Andrade",
+      artwork: [
+        { src: "assets/img/capa-musica-192.png", sizes: "192x192", type: "image/png" },
+        { src: "assets/img/capa-musica-512.png", sizes: "512x512", type: "image/png" }
+      ]
+    });
+  };
+
   const selecionar = (i, comSom) => {
     atual = (i + itens.length) % itens.length;
     const li = itens[atual];
     itens.forEach((x) => x.classList.toggle("ativa", x === li));
     if (audio.getAttribute("src") !== li.dataset.src) { soando = false; ultimoTempo = -1; audio.src = li.dataset.src; carregarLetra(li.dataset.letra); }
     if (titulo) titulo.textContent = li.dataset.titulo;
+    atualizarMidia(li);
+    mostrarNaLista(li);
     if (comSom) tocar(); else atualizar();
   };
 
@@ -314,6 +336,16 @@ document.querySelector('#year').textContent = new Date().getFullYear();
   }
 
   carregarLetra(itens[0].dataset.letra);
+  atualizarMidia(itens[0]);
+  // botões da tela de bloqueio/notificação: anterior e próxima trocam de faixa
+  if ("mediaSession" in navigator) {
+    const acao = (nome, fn) => { try { navigator.mediaSession.setActionHandler(nome, fn); } catch (e) { /* ação não suportada */ } };
+    acao("play", () => { gestoUsado = true; tocar(); });
+    acao("pause", () => audio.pause());
+    acao("previoustrack", () => { gestoUsado = true; if (audio.currentTime > 4) audio.currentTime = 0; else selecionar(atual - 1, true); });
+    acao("nexttrack", () => { gestoUsado = true; selecionar(atual + 1, true); });
+    acao("seekto", (d) => { if (d && typeof d.seekTime === "number") audio.currentTime = d.seekTime; });
+  }
   atualizar();
   if (!mudo) tocar();
 })();
