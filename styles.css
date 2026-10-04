@@ -256,6 +256,18 @@ html,body{overflow-x:clip}
 .playlist{position:relative;max-height:min(40vh,340px);overflow-y:auto;scrollbar-width:thin;scrollbar-color:rgba(60,242,228,.45) transparent;-webkit-mask-image:linear-gradient(#000 85%,transparent);mask-image:linear-gradient(#000 85%,transparent);padding-bottom:28px}
 .letra-viva{height:220px}
 @media (max-width:900px){.letra-viva{height:200px;padding:70px 20px}.playlist{max-height:min(38vh,320px)}.playlist-rotulo{padding:12px 20px 6px}}
+/* 2026-10-04: compartilhar a música (discreto, ao lado do nome) */
+.player-titulo-linha{position:relative;display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+.player-titulo-linha .player-titulo{flex:1;min-width:0}
+.player-compartilhar{flex:none;display:inline-flex;align-items:center;gap:6px;margin-top:10px;padding:7px 10px;border:1px solid var(--line);background:transparent;color:#9aa7ad;font:.6rem Consolas,"Courier New",monospace;letter-spacing:.14em;text-transform:uppercase;cursor:pointer}
+.player-compartilhar svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:1.8}
+.player-compartilhar:hover{border-color:var(--cyan);color:var(--cyan)}
+.player-compartilhar:focus-visible,.compartilhar-menu a:focus-visible,.compartilhar-menu button:focus-visible{outline:2px solid var(--cyan);outline-offset:2px}
+.compartilhar-menu{position:absolute;right:0;top:calc(100% + 4px);z-index:20;display:grid;min-width:170px;border:1px solid rgba(60,242,228,.45);background:rgba(5,7,11,.97);box-shadow:0 14px 30px rgba(0,0,0,.5)}
+.compartilhar-menu a,.compartilhar-menu button{display:block;padding:12px 14px;border:0;border-top:1px solid var(--line);background:none;color:#e6ecee;text-align:left;text-decoration:none;font:600 .9rem inherit;cursor:pointer}
+.compartilhar-menu a:first-child{border-top:0}
+.compartilhar-menu a:hover,.compartilhar-menu button:hover{color:var(--cyan)}
+@media (max-width:520px){.player-compartilhar span{display:none}.player-compartilhar{padding:8px}}
 /* ===== molécula (botão de música depois que a música começa): solta, sem moldura ===== */
 .som-botao .molecula-svg{display:none}
 .som-botao.molecula{width:84px;height:76px;min-height:0;padding:0;border:0;border-radius:0;background:none;box-shadow:none;backdrop-filter:none;justify-content:center}

@@ -239,6 +239,46 @@ document.querySelector('#year').textContent = new Date().getFullYear();
     });
   };
 
+  // ---------- compartilhar a música (link próprio + mensagem com o verso do momento) ----------
+  const linkDaMusica = (li) => "https://faguital.com.br/musica/" + li.dataset.id + "/";
+  const textoDaMusica = (li) => {
+    const verso = soando && painel ? ((painel.querySelector(".letra-linha.agora") || {}).textContent || "").trim() : "";
+    return (verso ? "“" + verso + "”\n\n" : "") + "Ouça \"" + li.dataset.titulo + "\", de FAGUITAL:";
+  };
+  let menuCompartilhar = null, timerMenu = 0;
+  const fecharMenuCompartilhar = () => { clearTimeout(timerMenu); if (menuCompartilhar) { menuCompartilhar.remove(); menuCompartilhar = null; } };
+  const abrirMenuCompartilhar = (botaoC, li, url, texto) => {
+    fecharMenuCompartilhar();
+    const m = document.createElement("div");
+    m.className = "compartilhar-menu"; m.setAttribute("role", "dialog"); m.setAttribute("aria-label", "Compartilhar " + li.dataset.titulo);
+    const zap = document.createElement("a");
+    zap.href = "https://wa.me/?text=" + encodeURIComponent(texto + "\n" + url); zap.target = "_blank"; zap.rel = "noopener"; zap.textContent = "WhatsApp";
+    const copiar = document.createElement("button"); copiar.type = "button"; copiar.textContent = "Copiar link";
+    copiar.addEventListener("click", () => {
+      const feito = () => { copiar.textContent = "Link copiado"; timerMenu = setTimeout(fecharMenuCompartilhar, 1600); };
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(texto + "\n" + url).then(feito, feito); else feito();
+    });
+    zap.addEventListener("click", () => setTimeout(fecharMenuCompartilhar, 300));
+    m.append(zap, copiar);
+    botaoC.after(m);
+    menuCompartilhar = m;
+    timerMenu = setTimeout(fecharMenuCompartilhar, 8000);
+    zap.focus({ preventScroll: true });
+  };
+  const botaoCompartilhar = document.getElementById("player-compartilhar");
+  if (botaoCompartilhar) {
+    botaoCompartilhar.addEventListener("click", () => {
+      const li = itens[atual], url = linkDaMusica(li), texto = textoDaMusica(li);
+      // no celular abre o menu de compartilhar do aparelho (WhatsApp, Instagram, Telegram...); no computador, WhatsApp ou copiar link
+      if (navigator.share && matchMedia("(pointer: coarse)").matches) {
+        navigator.share({ title: li.dataset.titulo + " · FAGUITAL", text: texto, url }).catch(() => {});
+      } else if (menuCompartilhar) fecharMenuCompartilhar();
+      else abrirMenuCompartilhar(botaoCompartilhar, li, url, texto);
+    });
+    document.addEventListener("click", (e) => { if (menuCompartilhar && !menuCompartilhar.contains(e.target) && e.target !== botaoCompartilhar && !botaoCompartilhar.contains(e.target)) fecharMenuCompartilhar(); });
+    document.addEventListener("keydown", (e) => { if (e.key === "Escape" && menuCompartilhar) { fecharMenuCompartilhar(); botaoCompartilhar.focus(); } });
+  }
+
   const selecionar = (i, comSom) => {
     atual = (i + itens.length) % itens.length;
     const li = itens[atual];
@@ -335,8 +375,12 @@ document.querySelector('#year').textContent = new Date().getFullYear();
     });
   }
 
-  carregarLetra(itens[0].dataset.letra);
-  atualizarMidia(itens[0]);
+  // link compartilhado (?musica=id): já abre com essa música escolhida
+  const pedida = new URLSearchParams(location.search).get("musica");
+  const indicePedido = pedida ? itens.findIndex((li) => li.dataset.id === pedida) : -1;
+  if (indicePedido > 0) selecionar(indicePedido, false);
+  else { carregarLetra(itens[0].dataset.letra); atualizarMidia(itens[0]); }
+  if (indicePedido >= 0) setTimeout(() => { const pl = document.getElementById("player"); if (pl) pl.scrollIntoView({ block: "start" }); }, 400);
   // botões da tela de bloqueio/notificação: anterior e próxima trocam de faixa
   if ("mediaSession" in navigator) {
     const acao = (nome, fn) => { try { navigator.mediaSession.setActionHandler(nome, fn); } catch (e) { /* ação não suportada */ } };

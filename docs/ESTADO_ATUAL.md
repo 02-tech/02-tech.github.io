@@ -99,3 +99,7 @@
 - Media Session: tela de bloqueio/notificação mostra o nome da música (artista FAGUITAL, álbum com o nome completo) e a
   capa nítida `assets/img/capa-musica-192.png`/`-512.png` (gerada do favicon); botões anterior/próxima trocam de faixa
   (anterior volta ao início se passou de 4 s), play/pause e arrastar a barra funcionam.
+- 2026-10-04 (compartilhar música por música): botão discreto ao lado do nome da música. Celular: menu de compartilhar do
+  aparelho; computador: WhatsApp ou copiar link. Mensagem: verso do momento (se tocando) + "Ouça \"Música\", de FAGUITAL:" +
+  link próprio `https://faguital.com.br/musica/<id>/` (páginas geradas por `tools/player-20261002.js`, `noindex`, com
+  og:title/descrição da música para a prévia do WhatsApp, redirecionam para `/?musica=<id>#player`, que abre com a música escolhida).
