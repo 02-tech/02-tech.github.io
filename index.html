@@ -617,7 +617,10 @@
         <div class="player reveal" id="player" aria-label="Player de músicas de FAGUITAL">
           <div class="player-topo">
             <span class="player-rotulo">OUÇA E BAIXE · TOCANDO AGORA</span>
-            <strong class="player-titulo" id="player-titulo">O Trágico e Grandioso</strong>
+            <div class="player-titulo-linha">
+              <strong class="player-titulo" id="player-titulo">O Trágico e Grandioso</strong>
+              <button class="player-compartilhar" id="player-compartilhar" type="button" aria-label="Compartilhar esta música"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="18" cy="5" r="2.6"/><circle cx="6" cy="12" r="2.6"/><circle cx="18" cy="19" r="2.6"/><path d="M8.3 10.8 15.7 6.3M8.3 13.2l7.4 4.5"/></svg><span>Compartilhar</span></button>
+            </div>
             <audio id="trilha" controls preload="auto" src="assets/audio/o-tragico-e-grandioso.mp3">Seu navegador não toca áudio. <a href="assets/audio/o-tragico-e-grandioso.mp3" download>Baixar a faixa</a>.</audio>
           </div>
           <div class="letra-viva" id="letra-viva" aria-label="Letra sincronizada">
@@ -625,51 +628,51 @@
           </div>
           <p class="playlist-rotulo">12 músicas · role a lista para ver todas</p>
           <ol class="playlist" id="playlist">
-              <li class="pl-item ativa" data-src="assets/audio/o-tragico-e-grandioso.mp3" data-letra="assets/letras/o-tragico-e-grandioso.json" data-titulo="O Trágico e Grandioso">
+              <li class="pl-item ativa" data-src="assets/audio/o-tragico-e-grandioso.mp3" data-letra="assets/letras/o-tragico-e-grandioso.json" data-titulo="O Trágico e Grandioso" data-id="o-tragico-e-grandioso">
                 <button class="pl-tocar" type="button" aria-label="Tocar O Trágico e Grandioso"><span class="pl-num">01</span><span class="pl-nome">O Trágico e Grandioso</span><small>Boom Bap · 2:35</small></button>
                 <a class="pl-baixar" href="assets/audio/o-tragico-e-grandioso.mp3" download aria-label="Baixar O Trágico e Grandioso (MP3)">Baixar</a>
               </li>
-              <li class="pl-item" data-src="assets/audio/perguntas-que-ficaram.mp3" data-letra="assets/letras/perguntas-que-ficaram.json" data-titulo="Perguntas Que Ficaram">
+              <li class="pl-item" data-src="assets/audio/perguntas-que-ficaram.mp3" data-letra="assets/letras/perguntas-que-ficaram.json" data-titulo="Perguntas Que Ficaram" data-id="perguntas-que-ficaram">
                 <button class="pl-tocar" type="button" aria-label="Tocar Perguntas Que Ficaram"><span class="pl-num">02</span><span class="pl-nome">Perguntas Que Ficaram</span><small>Rap · 5:45</small></button>
                 <a class="pl-baixar" href="assets/audio/perguntas-que-ficaram.mp3" download aria-label="Baixar Perguntas Que Ficaram (MP3)">Baixar</a>
               </li>
-              <li class="pl-item" data-src="assets/audio/preco.mp3" data-letra="assets/letras/preco.json" data-titulo="Preço">
+              <li class="pl-item" data-src="assets/audio/preco.mp3" data-letra="assets/letras/preco.json" data-titulo="Preço" data-id="preco">
                 <button class="pl-tocar" type="button" aria-label="Tocar Preço"><span class="pl-num">03</span><span class="pl-nome">Preço</span><small>Rap · inédita</small></button>
                 <a class="pl-baixar" href="assets/audio/preco.mp3" download aria-label="Baixar Preço (MP3)">Baixar</a>
               </li>
-              <li class="pl-item" data-src="assets/audio/mente-blindada.mp3" data-letra="assets/letras/mente-blindada.json" data-titulo="Mente Blindada (Prontos pra Arena)">
+              <li class="pl-item" data-src="assets/audio/mente-blindada.mp3" data-letra="assets/letras/mente-blindada.json" data-titulo="Mente Blindada (Prontos pra Arena)" data-id="mente-blindada">
                 <button class="pl-tocar" type="button" aria-label="Tocar Mente Blindada (Prontos pra Arena)"><span class="pl-num">04</span><span class="pl-nome">Mente Blindada (Prontos pra Arena)</span><small>Trap · inédita</small></button>
                 <a class="pl-baixar" href="assets/audio/mente-blindada.mp3" download aria-label="Baixar Mente Blindada (Prontos pra Arena) (MP3)">Baixar</a>
               </li>
-              <li class="pl-item" data-src="assets/audio/ceu-nao-e-o-limite.mp3" data-letra="assets/letras/ceu-nao-e-o-limite.json" data-titulo="Céu Não é o Limite">
+              <li class="pl-item" data-src="assets/audio/ceu-nao-e-o-limite.mp3" data-letra="assets/letras/ceu-nao-e-o-limite.json" data-titulo="Céu Não é o Limite" data-id="ceu-nao-e-o-limite">
                 <button class="pl-tocar" type="button" aria-label="Tocar Céu Não é o Limite"><span class="pl-num">05</span><span class="pl-nome">Céu Não é o Limite</span><small>Rap · 3:30</small></button>
                 <a class="pl-baixar" href="assets/audio/ceu-nao-e-o-limite.mp3" download aria-label="Baixar Céu Não é o Limite (MP3)">Baixar</a>
               </li>
-              <li class="pl-item" data-src="assets/audio/esse-nao-e-voce.mp3" data-letra="assets/letras/esse-nao-e-voce.json" data-titulo="Esse Não É Você">
+              <li class="pl-item" data-src="assets/audio/esse-nao-e-voce.mp3" data-letra="assets/letras/esse-nao-e-voce.json" data-titulo="Esse Não É Você" data-id="esse-nao-e-voce">
                 <button class="pl-tocar" type="button" aria-label="Tocar Esse Não É Você"><span class="pl-num">06</span><span class="pl-nome">Esse Não É Você</span><small>Nasceu de um sonho · 5:20</small></button>
                 <a class="pl-baixar" href="assets/audio/esse-nao-e-voce.mp3" download aria-label="Baixar Esse Não É Você (MP3)">Baixar</a>
               </li>
-              <li class="pl-item" data-src="assets/audio/miragem-virou-paisagem.mp3" data-letra="assets/letras/miragem-virou-paisagem.json" data-titulo="Miragem Virou Paisagem">
+              <li class="pl-item" data-src="assets/audio/miragem-virou-paisagem.mp3" data-letra="assets/letras/miragem-virou-paisagem.json" data-titulo="Miragem Virou Paisagem" data-id="miragem-virou-paisagem">
                 <button class="pl-tocar" type="button" aria-label="Tocar Miragem Virou Paisagem"><span class="pl-num">07</span><span class="pl-nome">Miragem Virou Paisagem</span><small>Rap · 6:00</small></button>
                 <a class="pl-baixar" href="assets/audio/miragem-virou-paisagem.mp3" download aria-label="Baixar Miragem Virou Paisagem (MP3)">Baixar</a>
               </li>
-              <li class="pl-item" data-src="assets/audio/olha-quem-eu-me-tornei.mp3" data-letra="assets/letras/olha-quem-eu-me-tornei.json" data-titulo="Olha Quem Eu Me Tornei">
+              <li class="pl-item" data-src="assets/audio/olha-quem-eu-me-tornei.mp3" data-letra="assets/letras/olha-quem-eu-me-tornei.json" data-titulo="Olha Quem Eu Me Tornei" data-id="olha-quem-eu-me-tornei">
                 <button class="pl-tocar" type="button" aria-label="Tocar Olha Quem Eu Me Tornei"><span class="pl-num">08</span><span class="pl-nome">Olha Quem Eu Me Tornei</span><small>Rap nacional · 5:12</small></button>
                 <a class="pl-baixar" href="assets/audio/olha-quem-eu-me-tornei.mp3" download aria-label="Baixar Olha Quem Eu Me Tornei (MP3)">Baixar</a>
               </li>
-              <li class="pl-item" data-src="assets/audio/palacio-de-ferrugem.mp3" data-letra="assets/letras/palacio-de-ferrugem.json" data-titulo="Palácio de Ferrugem">
+              <li class="pl-item" data-src="assets/audio/palacio-de-ferrugem.mp3" data-letra="assets/letras/palacio-de-ferrugem.json" data-titulo="Palácio de Ferrugem" data-id="palacio-de-ferrugem">
                 <button class="pl-tocar" type="button" aria-label="Tocar Palácio de Ferrugem"><span class="pl-num">09</span><span class="pl-nome">Palácio de Ferrugem</span><small>Poesia Boom Bap · 4:59</small></button>
                 <a class="pl-baixar" href="assets/audio/palacio-de-ferrugem.mp3" download aria-label="Baixar Palácio de Ferrugem (MP3)">Baixar</a>
               </li>
-              <li class="pl-item" data-src="assets/audio/pessoas-parte-2.mp3" data-letra="assets/letras/pessoas-parte-2.json" data-titulo="Pessoas (Parte 2)">
+              <li class="pl-item" data-src="assets/audio/pessoas-parte-2.mp3" data-letra="assets/letras/pessoas-parte-2.json" data-titulo="Pessoas (Parte 2)" data-id="pessoas-parte-2">
                 <button class="pl-tocar" type="button" aria-label="Tocar Pessoas (Parte 2)"><span class="pl-num">10</span><span class="pl-nome">Pessoas (Parte 2)</span><small>Rap · 2:27</small></button>
                 <a class="pl-baixar" href="assets/audio/pessoas-parte-2.mp3" download aria-label="Baixar Pessoas (Parte 2) (MP3)">Baixar</a>
               </li>
-              <li class="pl-item" data-src="assets/audio/barulho.mp3" data-letra="assets/letras/barulho.json" data-titulo="Barulho">
+              <li class="pl-item" data-src="assets/audio/barulho.mp3" data-letra="assets/letras/barulho.json" data-titulo="Barulho" data-id="barulho">
                 <button class="pl-tocar" type="button" aria-label="Tocar Barulho"><span class="pl-num">11</span><span class="pl-nome">Barulho</span><small>Boom Bap sujo · 3:21</small></button>
                 <a class="pl-baixar" href="assets/audio/barulho.mp3" download aria-label="Baixar Barulho (MP3)">Baixar</a>
               </li>
-              <li class="pl-item" data-src="assets/audio/no-escuro.mp3" data-letra="assets/letras/no-escuro.json" data-titulo="No Escuro">
+              <li class="pl-item" data-src="assets/audio/no-escuro.mp3" data-letra="assets/letras/no-escuro.json" data-titulo="No Escuro" data-id="no-escuro">
                 <button class="pl-tocar" type="button" aria-label="Tocar No Escuro"><span class="pl-num">12</span><span class="pl-nome">No Escuro</span><small>Boom Bap · inédita</small></button>
                 <a class="pl-baixar" href="assets/audio/no-escuro.mp3" download aria-label="Baixar No Escuro (MP3)">Baixar</a>
               </li>
