@@ -33,6 +33,7 @@ const BLOCO = `        <div class="player reveal" id="player" aria-label="Player
           <div class="letra-viva" id="letra-viva" aria-label="Letra sincronizada">
             <p class="letra-aviso">A letra acompanha a música enquanto ela toca.</p>
           </div>
+          <p class="playlist-rotulo">${FAIXAS.length} músicas · role a lista para ver todas</p>
           <ol class="playlist" id="playlist">
 ${lis}
           </ol>

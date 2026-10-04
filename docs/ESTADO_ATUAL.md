@@ -91,3 +91,11 @@
 - Ajustes pedidos por Guilherme (mesmo dia): molécula à direita um pouco acima do meio; navegação no canto superior esquerdo; molécula livre (7 átomos escuros ligados que se contorcem enquanto toca, parada quando pausa; laço de animação só roda tocando e com a aba visível).
 - WhatsApp pessoal (24) 99275-4537 no bloco de redes, em azul-escuro neon (wa.me/5524992754537), autorizado por Guilherme.
 - Só a molécula (sem o botão "Ouvir"): parada quando não toca; tocar nela inicia a música e mostra o mini painel; tocar música na lista também a faz mexer. Mini painel e painel de navegação somem sozinhos após ~5 s sem interação (no celular o hover "preso" do último toque é ignorado; foco de teclado mantém aberto).
+
+## 2026-10-04: player com letra e lista juntas + nome da música na tela de bloqueio
+
+- A lista de músicas rola dentro da própria caixa (rótulo "12 músicas · role a lista"); nome, controles, letra e lista cabem
+  numa tela (390 e 1366). Escolher música ou troca automática no fim da faixa rola só a lista até a faixa ativa, sem mover a página.
+- Media Session: tela de bloqueio/notificação mostra o nome da música (artista FAGUITAL, álbum com o nome completo) e a
+  capa nítida `assets/img/capa-musica-192.png`/`-512.png` (gerada do favicon); botões anterior/próxima trocam de faixa
+  (anterior volta ao início se passou de 4 s), play/pause e arrastar a barra funcionam.
