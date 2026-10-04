@@ -103,3 +103,7 @@
   aparelho; computador: WhatsApp ou copiar link. Mensagem: verso do momento (se tocando) + "Ouça \"Música\", de FAGUITAL:" +
   link próprio `https://faguital.com.br/musica/<id>/` (páginas geradas por `tools/player-20261002.js`, `noindex`, com
   og:title/descrição da música para a prévia do WhatsApp, redirecionam para `/?musica=<id>#player`, que abre com a música escolhida).
+- 2026-10-04: botão "Arquivo no GitHub" removido (pedido de Guilherme); o GitHub segue só nos dados estruturados (sameAs),
+  invisível. Bloco "Caminhos" centralizado. Estilo do cartão do WhatsApp (azul neon) e grade 2x2 das redes restaurados.
+- ATENÇÃO (lição): `tools/player-20261002.js` reescreve tudo em `styles.css` a partir de `/* 2026-10-02: player */`. Estilo novo
+  que não seja do player vai ANTES desse marcador (o estilo do WhatsApp de 02/10 tinha ido depois e foi apagado antes de publicar).
