@@ -224,6 +224,19 @@ html,body{overflow-x:clip}
 .som-botao.tocando .som-icone:after{animation:somBarra .9s .3s ease-in-out infinite}
 @keyframes somBarra{0%,100%{height:4px}50%{height:14px}}
 @media (prefers-reduced-motion:reduce){.som-botao.tocando .som-icone:before,.som-botao.tocando .som-icone:after{animation:none;height:12px}}
+/* 2026-10-04: Caminhos sem botão do GitHub: bloco centralizado em todas as larguras */
+.business-bridge{grid-template-columns:1fr;text-align:center}.business-bridge p{margin:8px auto 0;max-width:620px}
+/* 2026-10-04: WhatsApp pessoal em azul-escuro neon e redes em grade 2x2 (fora do trecho regenerado pelo player) */
+.social-links{grid-template-columns:repeat(2,minmax(0,1fr))}
+.social-card strong{white-space:nowrap}
+.social-whatsapp{border-color:rgba(77,124,255,.55);background:linear-gradient(135deg,rgba(40,70,200,.22),rgba(5,8,20,.92));box-shadow:0 0 0 1px rgba(77,124,255,.15),0 0 24px rgba(77,124,255,.18)}
+.social-whatsapp:hover{border-color:#6f95ff;background:linear-gradient(135deg,rgba(60,95,255,.3),rgba(5,8,20,.95));box-shadow:0 0 30px rgba(90,130,255,.35)}
+.social-whatsapp .social-icon{border-color:rgba(111,149,255,.6)}
+.social-whatsapp .social-icon svg{stroke:#7fa2ff}
+.social-whatsapp .social-icon svg path.social-dot{fill:#7fa2ff}
+.social-whatsapp .social-arrow{color:#7fa2ff}
+.social-whatsapp strong{color:#e3eaff;text-shadow:0 0 12px rgba(111,149,255,.45)}
+@media (max-width:900px){.social-links{grid-template-columns:1fr}}
 /* 2026-10-02: player */
 .musica-grid>.player{grid-column:2}
 .player{margin:0 0 28px;border:1px solid rgba(60,242,228,.4);background:radial-gradient(circle at 90% 0,rgba(60,242,228,.1),transparent 60%),rgba(7,10,14,.94)}
