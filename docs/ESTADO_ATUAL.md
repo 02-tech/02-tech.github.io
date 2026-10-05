@@ -107,3 +107,13 @@
   invisível. Bloco "Caminhos" centralizado. Estilo do cartão do WhatsApp (azul neon) e grade 2x2 das redes restaurados.
 - ATENÇÃO (lição): `tools/player-20261002.js` reescreve tudo em `styles.css` a partir de `/* 2026-10-02: player */`. Estilo novo
   que não seja do player vai ANTES desse marcador (o estilo do WhatsApp de 02/10 tinha ido depois e foi apagado antes de publicar).
+
+## 2026-10-04: página Sobre restaurada (CLAUDE/SITES principal, sessão 381bb779)
+
+- Guilherme achou o layout feio (fotos grandes, conteúdo grande embaixo). Causa: a regeneração do player
+  (	ools/player-20261002.js, que reescreve tudo depois de /* 2026-10-02: player */) tinha apagado em 02/10 (a170ade) o
+  estilo das "Perguntas diretas" e a regra .foto-larga da foto da família.
+- Restaurados ANTES do marcador. Fotos da trajetória como moldura de três também no celular (duas verticais lado a lado + a
+  da família larga e inteira). "Presença pública" com 3 perfis (Instagram, Facebook e YouTube @faguital, o mesmo já
+  publicado na página inicial), em 3 colunas no computador.
+- 	ools/testar-site.js: todos os testes ok (360 a 1920, sem rolagem horizontal, 0 erros). Commit local; push é do Guilherme.

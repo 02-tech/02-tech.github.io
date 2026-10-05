@@ -237,6 +237,20 @@ html,body{overflow-x:clip}
 .social-whatsapp .social-arrow{color:#7fa2ff}
 .social-whatsapp strong{color:#e3eaff;text-shadow:0 0 12px rgba(111,149,255,.45)}
 @media (max-width:900px){.social-links{grid-template-columns:1fr}}
+/* 2026-10-04: restaurado (tinha sido apagado pela regeneração do player): Perguntas diretas da página Sobre */
+.profile-faq h2{font-size:clamp(2.7rem,5vw,5.8rem);line-height:.92;letter-spacing:-.065em;margin:30px 0 0;font-weight:600}
+.profile-faq h2 span{font-style:normal;color:transparent;-webkit-text-stroke:1px rgba(242,246,247,.5)}
+.faq-lista{margin:50px 0 0;border-top:1px solid var(--line)}
+.faq-lista div{display:grid;grid-template-columns:minmax(220px,.8fr) 1.2fr;gap:30px;padding:26px 0;border-bottom:1px solid var(--line)}
+.faq-lista dt{color:#e8edef;font-weight:600;font-size:1.05rem}
+.faq-lista dd{margin:0;color:var(--muted);line-height:1.75}
+@media (max-width:900px){.faq-lista div{grid-template-columns:1fr;gap:10px}}
+/* 2026-10-04: Sobre com três perfis públicos (Instagram, Facebook, YouTube) lado a lado no computador */
+.profile-social .social-links{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media (max-width:900px){.profile-social .social-links{grid-template-columns:1fr}}
+/* 2026-10-04: fotos da trajetória como moldura de três: as duas verticais lado a lado (também no celular) e a da família larga, inteira */
+.trajetoria-fotos .foto-larga{grid-column:1/-1}.trajetoria-fotos .foto-larga img{aspect-ratio:auto;object-fit:contain}
+@media (max-width:640px){.trajetoria-fotos{grid-template-columns:1fr 1fr;gap:10px;margin-top:44px}.trajetoria-fotos figcaption{padding:10px 10px;font-size:.52rem;letter-spacing:.12em}}
 /* 2026-10-02: player */
 .musica-grid>.player{grid-column:2}
 .player{margin:0 0 28px;border:1px solid rgba(60,242,228,.4);background:radial-gradient(circle at 90% 0,rgba(60,242,228,.1),transparent 60%),rgba(7,10,14,.94)}
