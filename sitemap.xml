@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://faguital.com.br/</loc>
-    <lastmod>2026-10-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://faguital.com.br/sobre.html</loc>
-    <lastmod>2026-10-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
+  <url><loc>https://faguital.com.br/</loc><lastmod>2026-10-12</lastmod></url>
+  <url><loc>https://faguital.com.br/sobre.html</loc><lastmod>2026-10-12</lastmod></url>
+  <url><loc>https://faguital.com.br/frases/</loc><lastmod>2026-10-12</lastmod></url>
+  <url><loc>https://faguital.com.br/musica/o-tragico-e-grandioso/</loc><lastmod>2026-10-12</lastmod></url>
+  <url><loc>https://faguital.com.br/musica/perguntas-que-ficaram/</loc><lastmod>2026-10-12</lastmod></url>
+  <url><loc>https://faguital.com.br/musica/preco/</loc><lastmod>2026-10-12</lastmod></url>
+  <url><loc>https://faguital.com.br/musica/mente-blindada/</loc><lastmod>2026-10-12</lastmod></url>
+  <url><loc>https://faguital.com.br/musica/ceu-nao-e-o-limite/</loc><lastmod>2026-10-12</lastmod></url>
+  <url><loc>https://faguital.com.br/musica/esse-nao-e-voce/</loc><lastmod>2026-10-12</lastmod></url>
+  <url><loc>https://faguital.com.br/musica/miragem-virou-paisagem/</loc><lastmod>2026-10-12</lastmod></url>
+  <url><loc>https://faguital.com.br/musica/olha-quem-eu-me-tornei/</loc><lastmod>2026-10-12</lastmod></url>
+  <url><loc>https://faguital.com.br/musica/palacio-de-ferrugem/</loc><lastmod>2026-10-12</lastmod></url>
+  <url><loc>https://faguital.com.br/musica/pessoas-parte-2/</loc><lastmod>2026-10-12</lastmod></url>
+  <url><loc>https://faguital.com.br/musica/barulho/</loc><lastmod>2026-10-12</lastmod></url>
+  <url><loc>https://faguital.com.br/musica/no-escuro/</loc><lastmod>2026-10-12</lastmod></url>
 </urlset>

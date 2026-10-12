@@ -113,6 +113,13 @@
 - Guilherme achou o layout feio (fotos grandes, conteúdo grande embaixo). Causa: a regeneração do player
   (	ools/player-20261002.js, que reescreve tudo depois de /* 2026-10-02: player */) tinha apagado em 02/10 (a170ade) o
   estilo das "Perguntas diretas" e a regra .foto-larga da foto da família.
+
+## 2026-10-12: páginas indexáveis de letras
+
+- O gerador `tools/player-20261002.js` agora cria páginas indexáveis em `musica/<id>/`, com canonical própria, JSON-LD de `MusicComposition` e `MusicRecording`, letra aprovada e link para ouvir no player.
+- Letras completas: Perguntas Que Ficaram, Preço, Mente Blindada (Prontos pra Arena) e Esse Não É Você. As demais publicam apenas quatro destaques literais filtrados porque contêm referências pesadas, como morte, arma, sangue, fome, frio ou colapso.
+- Criado `frases/`, com os destaques ligados às páginas das músicas; `sitemap.xml`, `llms.txt` e os links visíveis da seção Música foram atualizados.
+- O compartilhamento mantém WhatsApp/cópia de link e o destino `/?musica=<id>#player`.
 - Restaurados ANTES do marcador. Fotos da trajetória como moldura de três também no celular (duas verticais lado a lado + a
   da família larga e inteira). "Presença pública" com 3 perfis (Instagram, Facebook e YouTube @faguital, o mesmo já
   publicado na página inicial), em 3 colunas no computador.

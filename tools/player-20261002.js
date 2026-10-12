@@ -17,6 +17,9 @@ const FAIXAS = [
   ["barulho", "Barulho", "Boom Bap sujo · 3:21", true],
   ["no-escuro", "No Escuro", "Boom Bap · inédita", true]
 ];
+const COMPLETAS = new Set(["perguntas-que-ficaram", "preco", "mente-blindada", "esse-nao-e-voce"]);
+const PESADOS = /morr|morte|morto|arma|tiro|bala|colaps|desabar|desmoron|caix[aã]o|sangue|suicid|fome|frio|desfaz|afogad/i;
+const DESTAQUES = {};
 
 // ---------- HTML ----------
 let s = fs.readFileSync(path.join(raiz, "index.html"), "utf8").replace(/\r\n/g, "\n");
@@ -41,6 +44,7 @@ const BLOCO = `        <div class="player reveal" id="player" aria-label="Player
 ${lis}
           </ol>
         </div>
+        <p class="musica-paginas">Leia os <a href="/frases/">trechos em destaque</a> e as páginas indexáveis das músicas: ${FAIXAS.map(([id, t]) => `<a href="/musica/${id}/">${t}</a>`).join(" · ")}.</p>
 `;
 let ini = s.indexOf('        <figure class="faixa-destaque reveal" id="tragico-e-grandioso">');
 if (ini >= 0) {
@@ -68,28 +72,33 @@ const MARCA = "/* 2026-10-02: player */";
 const k = c.indexOf(MARCA); if (k >= 0) c = c.slice(0, k);
 c += MARCA + "\n" + fs.readFileSync(path.join(__dirname, "player.css"), "utf8") + fs.readFileSync(path.join(__dirname, "flutuantes.css"), "utf8");
 fs.writeFileSync(path.join(raiz, "styles.css"), c);
-// ---------- página de link de cada música (prévia própria no WhatsApp; leva ao player com a música escolhida) ----------
+// ---------- páginas indexáveis de cada música, mantendo o link próprio usado no WhatsApp ----------
 const esc = (t) => String(t).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+const escJson = (v) => JSON.stringify(v).replace(/</g, "\\u003c");
+const dados = new Map();
 for (const [id, t, g2, l] of FAIXAS) {
-  let trecho = "";
-  if (l) {
-    const linhas = JSON.parse(fs.readFileSync(path.join(raiz, "assets", "letras", id + ".json"), "utf8")).linhas || [];
-    for (const x of linhas) { if ((trecho + " " + x.texto).trim().length > 110) break; trecho = (trecho + " " + x.texto).trim(); }
-  }
+  const linhas = JSON.parse(fs.readFileSync(path.join(raiz, "assets", "letras", id + ".json"), "utf8")).linhas || [];
+  const permitidas = linhas.filter((x) => !PESADOS.test(x.texto));
+  const destaques = (DESTAQUES[id] || permitidas.slice(0, 4).map((x) => x.texto)).filter(Boolean);
+  const letraCompleta = COMPLETAS.has(id) ? linhas.map((x) => x.texto) : null;
+  const trecho = destaques.join(" ").slice(0, 180);
   const url = "https://faguital.com.br/musica/" + id + "/";
   const destino = "/?musica=" + id + "#player";
   const desc = (trecho ? "“" + trecho + "” " : "") + "Ouça " + t + ", de FAGUITAL.";
+  const textoLetra = letraCompleta ? `<section class="letra-publicada"><h2>Letra</h2>${letraCompleta.map((x) => `<p>${esc(x)}</p>`).join("\n")}</section>` : `<section class="letra-publicada"><h2>Trechos em destaque</h2>${destaques.map((x) => `<blockquote>${esc(x)}</blockquote>`).join("\n")}<p class="nota-curadoria">Esta página publica apenas trechos selecionados da letra.</p></section>`;
+  const schema = {"@context":"https://schema.org","@graph":[{"@type":"MusicComposition","@id":url+"#composition","name":t,"composer":{"@id":"https://faguital.com.br/#person"},"lyrics":letraCompleta ? {"@type":"CreativeWork","text":letraCompleta.join("\n")} : {"@type":"CreativeWork","text":destaques.join("\n")},"inLanguage":"pt-BR"},{"@type":"MusicRecording","@id":url+"#recording","name":t,"byArtist":{"@id":"https://faguital.com.br/#person"},"recordingOf":{"@id":url+"#composition"},"url":url,"audio":{"@type":"AudioObject","contentUrl":"https://faguital.com.br/assets/audio/"+id+".mp3","encodingFormat":"audio/mpeg"}}]};
+  dados.set(id, { id, t, url, destaques, completa: !!letraCompleta });
   const pagina = `<!doctype html>
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>${esc(t)} · FAGUITAL</title>
+<title>${esc(t)} · FAGUITAL (letra)</title>
 <meta name="description" content="${esc(desc)}">
-<meta name="robots" content="noindex, follow">
-<link rel="canonical" href="https://faguital.com.br/">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="${url}">
 <meta property="og:type" content="music.song">
-<meta property="og:title" content="${esc(t)} · FAGUITAL">
+<meta property="og:title" content="${esc(t)} · FAGUITAL (letra)">
 <meta property="og:description" content="${esc(desc)}">
 <meta property="og:url" content="${url}">
 <meta property="og:site_name" content="FAGUITAL">
@@ -98,16 +107,24 @@ for (const [id, t, g2, l] of FAIXAS) {
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta http-equiv="refresh" content="0; url=${destino}">
+<script type="application/ld+json">${escJson(schema)}</script>
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<script>location.replace("${destino}");</script>
 </head>
 <body style="background:#05070b;color:#e6ecee;font-family:system-ui,sans-serif;padding:24px">
-<p><a href="${destino}" style="color:#3cf2e4">Ouvir ${esc(t)}, de FAGUITAL</a></p>
+<main class="pagina-musica"><p><a href="/" style="color:#3cf2e4">FAGUITAL</a></p><h1>${esc(t)} · FAGUITAL</h1><p>${esc(g2)}</p>${textoLetra}<p><a href="${destino}" style="color:#3cf2e4">Ouvir no player</a> · <a href="https://www.youtube.com/@faguital" style="color:#3cf2e4">YouTube oficial</a></p></main>
 </body>
 </html>
 `;
   fs.mkdirSync(path.join(raiz, "musica", id), { recursive: true });
   fs.writeFileSync(path.join(raiz, "musica", id, "index.html"), pagina);
 }
+const frases = [...dados.values()].flatMap((d) => d.destaques.map((texto) => ({ texto, titulo: d.t, url: d.url })));
+const frasesSchema = {"@context":"https://schema.org","@type":"CollectionPage","name":"Trechos de músicas de FAGUITAL","url":"https://faguital.com.br/frases/","mainEntity":frases.map((f) => ({"@type":"Quotation",text:f.texto,isPartOf:{"@type":"MusicRecording",name:f.titulo,url:f.url}}))};
+fs.mkdirSync(path.join(raiz, "frases"), { recursive: true });
+fs.writeFileSync(path.join(raiz, "frases", "index.html"), `<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Trechos de músicas · FAGUITAL</title><meta name="description" content="Trechos em destaque das músicas de FAGUITAL, ligados às suas páginas."><link rel="canonical" href="https://faguital.com.br/frases/"><script type="application/ld+json">${escJson(frasesSchema)}</script></head><body style="background:#05070b;color:#e6ecee;font-family:system-ui,sans-serif;padding:24px"><main class="pagina-musica"><p><a href="/" style="color:#3cf2e4">FAGUITAL</a></p><h1>Trechos de músicas</h1>${frases.map((f) => `<article><blockquote>${esc(f.texto)}</blockquote><p><a href="${f.url}" style="color:#3cf2e4">${esc(f.titulo)} · letra</a></p></article>`).join("\n")}</main></body></html>`);
+const urls = ["/", "/sobre.html", "/frases/", ...FAIXAS.map(([id]) => "/musica/" + id + "/")];
+fs.writeFileSync(path.join(raiz, "sitemap.xml"), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map((u) => `  <url><loc>https://faguital.com.br${u}</loc><lastmod>2026-10-12</lastmod></url>`).join("\n")}\n</urlset>\n`);
+let llms = fs.readFileSync(path.join(raiz, "llms.txt"), "utf8").replace(/\n## Trechos → música[\s\S]*?(?=\n##|$)/, "");
+llms += `\n## Trechos → música\n- Índice de trechos: https://faguital.com.br/frases/\n${frases.map((f) => `- “${f.texto}” → ${f.titulo}: ${f.url}`).join("\n")}\n`;
+fs.writeFileSync(path.join(raiz, "llms.txt"), llms);
 console.log("player aplicado:", FAIXAS.length, "faixas (com páginas de compartilhamento)");

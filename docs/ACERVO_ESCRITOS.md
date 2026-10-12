@@ -89,3 +89,7 @@ Legenda: NO SITE = publicado em faguital.com.br · ANALISADO = visto, ainda não
 | No Escuro (nome confirmado por Guilherme em 2026-10-02; arquivo original "No Jogo da Vida 2.0") | assets/audio/no-escuro.mp3 | áudio enviado, inédita; Guilherme liberou trocar o nome | oficial, sincronizada |
 
 Todas as faixas do canal estão no player; a lista "Também no YouTube" foi retirada (o canal segue em Sinais abertos).
+
+## Páginas indexáveis de letras (2026-10-12)
+
+O gerador passou a publicar páginas próprias para as 12 faixas. Letra completa: Perguntas Que Ficaram, Preço, Mente Blindada (Prontos pra Arena) e Esse Não É Você. As outras oito ficam somente com destaques literais filtrados, pois contêm referências pesadas ou inadequadas para publicação integral.
