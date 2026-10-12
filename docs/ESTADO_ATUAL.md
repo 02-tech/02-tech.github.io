@@ -124,3 +124,16 @@
   da família larga e inteira). "Presença pública" com 3 perfis (Instagram, Facebook e YouTube @faguital, o mesmo já
   publicado na página inicial), em 3 colunas no computador.
 - 	ools/testar-site.js: todos os testes ok (360 a 1920, sem rolagem horizontal, 0 erros). Commit local; push é do Guilherme.
+
+## 2026-10-12: clareza da apresentação artística (CODEX nuvem)
+
+- Autorização de Guilherme: resolver autonomamente as imprecisões observadas no Modo IA. Sessão fd2cb605631e; cópia cloud, fora da raiz Windows canônica.
+- Novo índice público /musica/: catálogo textual com quatro letras completas e oito páginas de trechos, sem cadastro; sitemap e links internos atualizados.
+- Página Sobre separa apresentação de projetos e produção artística; retirado o rótulo genérico “manifesto” do portfólio. FAQ visível e Schema descrevem fontes e temas das músicas.
+- Corrigida a frase “todas estão no YouTube”: o site oferece o catálogo, o canal oferece os vídeos disponíveis. Nenhuma distribuição adicional alegada.
+- Dados estruturados por faixa: crédito lyricist, sem assumir autoria da composição musical; lyrics nomeado como letra completa ou trechos, conforme o HTML. Letras e áudios não alterados.
+- Gerador do player: índice de links removido antes de recriar, evitando duplicação em novas execuções. Nova execução gera exatamente os mesmos arquivos.
+- Kit externo atualizado para não repetir a informação histórica de noindex/redirecionamento já superada.
+- Testes: sintaxe JS, JSON-LD, XML, 16 URLs de sitemap únicas e existentes, conteúdo lyrics correspondente ao HTML, uma lista de links no player e idempotência.
+- Search Console na sessão cloud abriu a página pública inicial, sem sessão autenticada reaproveitável. A sessão Edge local usada anteriormente não é compartilhada com esta nuvem. Continuidade em docs/MODO_IA_CONTINUIDADE_2026-10-12.md.
+- Resposta do Google não é editável pelo site; melhoria da fonte não comprova atualização imediata do Modo IA.

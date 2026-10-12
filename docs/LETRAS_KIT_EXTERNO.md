@@ -54,7 +54,7 @@ Crédito documental disponível: letra e direção de FAGUITAL, produção indep
 
 ## Descrições do YouTube prontas para copiar
 
-Usar no vídeo da gravação correspondente. Links de /musica/ são atalhos de compartilhamento existentes, não páginas de letras indexáveis: atualmente possuem noindex e redirecionamento. Descrições não garantem exibição de letras pelo Google. Não acrescentar “letra completa”, “versão limpa” ou “official lyric video” se o vídeo não corresponder. Trechos abaixo são transcrições literais; a apresentação é texto editorial novo. Para faixas com conteúdo integral pesado, somente o trecho foi incluído no kit, sem prometer que a gravação inteira é adequada à regra.
+Usar no vídeo da gravação correspondente. Atualização de 12/10 após o kit original: /musica/<id>/ agora contém páginas públicas indexáveis de letras ou trechos, com canonical própria. O acervo histórico de 04/10 descrevia os antigos atalhos noindex, substituídos pelo commit 13fb705. Descrições não garantem exibição de letras pelo Google. Não acrescentar “letra completa”, “versão limpa” ou “official lyric video” se o vídeo não corresponder. Trechos abaixo são transcrições literais; a apresentação é texto editorial novo. Para faixas com conteúdo integral pesado, somente o trecho foi incluído no kit, sem prometer que a gravação inteira é adequada à regra.
 
 ### Preço
 
@@ -530,7 +530,7 @@ Este exemplo identifica um trecho, não finge descrever letra completa. Nenhum H
 
 A galeria oficial de recursos da Pesquisa Google consultada não lista um rich result específico MusicComposition/lyrics. Schema válido não é garantia de letra no painel, indexação ou reconhecimento de entidade. Validar vocabulário no Schema Markup Validator; o Rich Results Test só cobre recursos suportados pelo Google.
 
-Para missão de implementação separada: conferir indexabilidade, status HTTP, canonical e conteúdo textual visível no HTML de uma página por faixa. O acervo registra /musica/<id>/ como noindex e redirecionamento: não tratar essas URLs como páginas de letra já prontas para SEO. Não mudar noindex, sitemap, player ou geradores nesta missão.
+Para missão de implementação separada: conferir indexabilidade, status HTTP, canonical e conteúdo textual visível no HTML de uma página por faixa. O registro histórico de noindex/redirecionamento foi superado pelo commit 13fb705 de 12/10: verificar as páginas atuais e o novo índice /musica/, sem assumir que o Google já as indexou. Não mudar noindex, sitemap, player ou geradores nesta missão.
 
 ## Fontes e limitações da pesquisa
 

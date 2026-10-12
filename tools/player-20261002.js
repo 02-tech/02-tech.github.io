@@ -23,6 +23,8 @@ const DESTAQUES = {};
 
 // ---------- HTML ----------
 let s = fs.readFileSync(path.join(raiz, "index.html"), "utf8").replace(/\r\n/g, "\n");
+// Remove o índice anterior antes de recriar, evitando duplicação ao regenerar.
+s = s.replace(/        <p class="musica-paginas">[\s\S]*?<\/p>\n/g, "");
 const lis = FAIXAS.map(([id, t, g, l], i) => `              <li class="pl-item${i === 0 ? " ativa" : ""}" data-src="assets/audio/${id}.mp3"${l ? ` data-letra="assets/letras/${id}.json"` : ""} data-titulo="${t}" data-id="${id}">
                 <button class="pl-tocar" type="button" aria-label="Tocar ${t}"><span class="pl-num">${String(i + 1).padStart(2, "0")}</span><span class="pl-nome">${t}</span><small>${g}</small></button>
                 <a class="pl-baixar" href="assets/audio/${id}.mp3" download aria-label="Baixar ${t} (MP3)">Baixar</a>
@@ -44,7 +46,7 @@ const BLOCO = `        <div class="player reveal" id="player" aria-label="Player
 ${lis}
           </ol>
         </div>
-        <p class="musica-paginas">Leia os <a href="/frases/">trechos em destaque</a> e as páginas indexáveis das músicas: ${FAIXAS.map(([id, t]) => `<a href="/musica/${id}/">${t}</a>`).join(" · ")}.</p>
+        <p class="musica-paginas">Leia as <a href="/musica/">letras e os trechos das músicas</a>, ou explore os <a href="/frases/">trechos em destaque</a>: ${FAIXAS.map(([id, t]) => `<a href="/musica/${id}/">${t}</a>`).join(" · ")}.</p>
 `;
 let ini = s.indexOf('        <figure class="faixa-destaque reveal" id="tragico-e-grandioso">');
 if (ini >= 0) {
@@ -84,21 +86,22 @@ for (const [id, t, g2, l] of FAIXAS) {
   const trecho = destaques.join(" ").slice(0, 180);
   const url = "https://faguital.com.br/musica/" + id + "/";
   const destino = "/?musica=" + id + "#player";
-  const desc = (trecho ? "“" + trecho + "” " : "") + "Ouça " + t + ", de FAGUITAL.";
-  const textoLetra = letraCompleta ? `<section class="letra-publicada"><h2>Letra</h2>${letraCompleta.map((x) => `<p>${esc(x)}</p>`).join("\n")}</section>` : `<section class="letra-publicada"><h2>Trechos em destaque</h2>${destaques.map((x) => `<blockquote>${esc(x)}</blockquote>`).join("\n")}<p class="nota-curadoria">Esta página publica apenas trechos selecionados da letra.</p></section>`;
-  const schema = {"@context":"https://schema.org","@graph":[{"@type":"MusicComposition","@id":url+"#composition","name":t,"composer":{"@id":"https://faguital.com.br/#person"},"lyrics":letraCompleta ? {"@type":"CreativeWork","text":letraCompleta.join("\n")} : {"@type":"CreativeWork","text":destaques.join("\n")},"inLanguage":"pt-BR"},{"@type":"MusicRecording","@id":url+"#recording","name":t,"byArtist":{"@id":"https://faguital.com.br/#person"},"recordingOf":{"@id":url+"#composition"},"url":url,"audio":{"@type":"AudioObject","contentUrl":"https://faguital.com.br/assets/audio/"+id+".mp3","encodingFormat":"audio/mpeg"}}]};
+  const rotulo = letraCompleta ? "Letra completa" : "Trechos da letra";
+  const desc = rotulo + " de " + t + ", de FAGUITAL (Guilherme Carvalho de Andrade). Leia no site oficial e ouça a gravação no player.";
+  const textoLetra = letraCompleta ? `<section class="letra-publicada"><h2>Letra completa</h2>${letraCompleta.map((x) => `<p>${esc(x)}</p>`).join("\n")}</section>` : `<section class="letra-publicada"><h2>Trechos em destaque</h2>${destaques.map((x) => `<blockquote>${esc(x)}</blockquote>`).join("\n")}<p class="nota-curadoria">Esta página publica apenas trechos selecionados da letra.</p></section>`;
+  const schema = {"@context":"https://schema.org","@graph":[{"@type":"MusicComposition","@id":url+"#composition","name":t,"lyricist":{"@type":"Person","@id":"https://faguital.com.br/#person","name":"Guilherme Carvalho de Andrade","alternateName":"FAGUITAL"},"lyrics":letraCompleta ? {"@type":"CreativeWork","name":"Letra completa de "+t,"inLanguage":"pt-BR","text":letraCompleta.join("\n")} : {"@type":"CreativeWork","name":"Trechos da letra de "+t,"inLanguage":"pt-BR","text":destaques.join("\n")},"inLanguage":"pt-BR"},{"@type":"MusicRecording","@id":url+"#recording","name":t,"byArtist":{"@id":"https://faguital.com.br/#person"},"recordingOf":{"@id":url+"#composition"},"url":url,"audio":{"@type":"AudioObject","contentUrl":"https://faguital.com.br/assets/audio/"+id+".mp3","encodingFormat":"audio/mpeg"}}]};
   dados.set(id, { id, t, url, destaques, completa: !!letraCompleta });
   const pagina = `<!doctype html>
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>${esc(t)} · FAGUITAL (letra)</title>
+<title>${esc(t)} · FAGUITAL (${letraCompleta ? "letra completa" : "trechos da letra"})</title>
 <meta name="description" content="${esc(desc)}">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="${url}">
 <meta property="og:type" content="music.song">
-<meta property="og:title" content="${esc(t)} · FAGUITAL (letra)">
+<meta property="og:title" content="${esc(t)} · FAGUITAL (${letraCompleta ? "letra completa" : "trechos da letra"})">
 <meta property="og:description" content="${esc(desc)}">
 <meta property="og:url" content="${url}">
 <meta property="og:site_name" content="FAGUITAL">
@@ -111,7 +114,7 @@ for (const [id, t, g2, l] of FAIXAS) {
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 </head>
 <body style="background:#05070b;color:#e6ecee;font-family:system-ui,sans-serif;padding:24px">
-<main class="pagina-musica"><p><a href="/" style="color:#3cf2e4">FAGUITAL</a></p><h1>${esc(t)} · FAGUITAL</h1><p>${esc(g2)}</p>${textoLetra}<p><a href="${destino}" style="color:#3cf2e4">Ouvir no player</a> · <a href="https://www.youtube.com/@faguital" style="color:#3cf2e4">YouTube oficial</a></p></main>
+<main class="pagina-musica"><p><a href="/" style="color:#3cf2e4">FAGUITAL</a></p><h1>${esc(t)} · FAGUITAL</h1><p>Letra de FAGUITAL, nome artístico de Guilherme Carvalho de Andrade. Publicação no site oficial do artista.</p><p>${esc(g2)}</p>${textoLetra}<p><a href="${destino}" style="color:#3cf2e4">Ouvir no player</a> · <a href="https://www.youtube.com/@faguital" style="color:#3cf2e4">YouTube oficial</a> · <a href="/musica/" style="color:#3cf2e4">Todas as letras e trechos</a></p></main>
 </body>
 </html>
 `;
@@ -122,7 +125,14 @@ const frases = [...dados.values()].flatMap((d) => d.destaques.map((texto) => ({ 
 const frasesSchema = {"@context":"https://schema.org","@type":"CollectionPage","name":"Trechos de músicas de FAGUITAL","url":"https://faguital.com.br/frases/","mainEntity":frases.map((f) => ({"@type":"Quotation",text:f.texto,isPartOf:{"@type":"MusicRecording",name:f.titulo,url:f.url}}))};
 fs.mkdirSync(path.join(raiz, "frases"), { recursive: true });
 fs.writeFileSync(path.join(raiz, "frases", "index.html"), `<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Trechos de músicas · FAGUITAL</title><meta name="description" content="Trechos em destaque das músicas de FAGUITAL, ligados às suas páginas."><link rel="canonical" href="https://faguital.com.br/frases/"><script type="application/ld+json">${escJson(frasesSchema)}</script></head><body style="background:#05070b;color:#e6ecee;font-family:system-ui,sans-serif;padding:24px"><main class="pagina-musica"><p><a href="/" style="color:#3cf2e4">FAGUITAL</a></p><h1>Trechos de músicas</h1>${frases.map((f) => `<article><blockquote>${esc(f.texto)}</blockquote><p><a href="${f.url}" style="color:#3cf2e4">${esc(f.titulo)} · letra</a></p></article>`).join("\n")}</main></body></html>`);
-const urls = ["/", "/sobre.html", "/frases/", ...FAIXAS.map(([id]) => "/musica/" + id + "/")];
+// Índice textual público: separa o catálogo artístico da apresentação dos projetos.
+const hubUrl = "https://faguital.com.br/musica/";
+const hubDesc = "Letras e trechos das músicas de FAGUITAL, nome artístico de Guilherme Carvalho de Andrade. Leia por faixa e ouça o catálogo no site oficial.";
+const hubSchema = {"@context":"https://schema.org","@type":"CollectionPage","@id":hubUrl+"#page","url":hubUrl,"name":"Músicas e letras de FAGUITAL","description":hubDesc,"inLanguage":"pt-BR","about":{"@type":"Person","@id":"https://faguital.com.br/#person","name":"Guilherme Carvalho de Andrade","alternateName":"FAGUITAL"},"mainEntity":{"@type":"ItemList","itemListElement":[...dados.values()].map((d,i)=>({"@type":"ListItem","position":i+1,"url":d.url,"name":d.t}))}};
+fs.writeFileSync(path.join(raiz,"musica","index.html"),`<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Músicas e letras de FAGUITAL | Site oficial</title><meta name="description" content="${esc(hubDesc)}"><meta name="robots" content="index, follow"><link rel="canonical" href="${hubUrl}"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><script type="application/ld+json">${escJson(hubSchema)}</script></head>
+<body style="background:#05070b;color:#e6ecee;font-family:system-ui,sans-serif;padding:24px"><main style="max-width:850px;margin:auto;line-height:1.7"><p><a href="/" style="color:#3cf2e4">Site oficial de FAGUITAL</a></p><h1>Músicas e letras de FAGUITAL</h1><p>FAGUITAL é o nome artístico de Guilherme Carvalho de Andrade, rapper e poeta de Petrópolis, no Rio de Janeiro. Este índice reúne as músicas de produção independente disponíveis no site oficial.</p><p>Identidade, tempo, aprendizado, ambição, relações pessoais e legado atravessam as faixas. Cada página permite ler o texto publicado e acessar a gravação no player.</p><h2>Onde ler as letras</h2><p>As letras e os trechos abaixo são públicos e podem ser lidos sem cadastro. Quatro faixas têm letra completa publicada. As demais mostram trechos selecionados, identificados em cada página. Essa seleção é editorial e considera o contexto de apresentação do site.</p><ul>${[...dados.values()].map(d=>`<li><a href="${d.url}" style="color:#3cf2e4">${esc(d.t)}</a> · ${d.completa ? "letra completa" : "trechos da letra"}</li>`).join("\n")}</ul><p><a href="/#player" style="color:#3cf2e4">Ouvir e baixar no player</a> · <a href="/frases/" style="color:#3cf2e4">Trechos em destaque</a> · <a href="https://www.youtube.com/@faguital" style="color:#3cf2e4">Vídeos no canal oficial</a></p><p>Letra e direção: FAGUITAL. Produção independente. A trajetória tecnológica e os projetos estão apresentados separadamente na <a href="/sobre.html" style="color:#3cf2e4">página Sobre</a>.</p></main></body></html>`);
+const urls = ["/", "/sobre.html", "/musica/", "/frases/", ...FAIXAS.map(([id]) => "/musica/" + id + "/")];
 fs.writeFileSync(path.join(raiz, "sitemap.xml"), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map((u) => `  <url><loc>https://faguital.com.br${u}</loc><lastmod>2026-10-12</lastmod></url>`).join("\n")}\n</urlset>\n`);
 let llms = fs.readFileSync(path.join(raiz, "llms.txt"), "utf8").replace(/\n## Trechos → música[\s\S]*?(?=\n##|$)/, "");
 llms += `\n## Trechos → música\n- Índice de trechos: https://faguital.com.br/frases/\n${frases.map((f) => `- “${f.texto}” → ${f.titulo}: ${f.url}`).join("\n")}\n`;
