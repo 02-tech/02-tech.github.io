@@ -251,6 +251,8 @@ html,body{overflow-x:clip}
 /* 2026-10-04: fotos da trajetória como moldura de três: as duas verticais lado a lado (também no celular) e a da família larga, inteira */
 .trajetoria-fotos .foto-larga{grid-column:1/-1}.trajetoria-fotos .foto-larga img{aspect-ratio:auto;object-fit:contain}
 @media (max-width:640px){.trajetoria-fotos{grid-template-columns:1fr 1fr;gap:10px;margin-top:44px}.trajetoria-fotos figcaption{padding:10px 10px;font-size:.52rem;letter-spacing:.12em}}
+/* 2026-10-12: páginas indexáveis de música */
+.musica-paginas{grid-column:1/-1;color:var(--muted);line-height:1.8;margin:8px 0 0}.musica-paginas a{color:var(--cyan);text-decoration:underline;text-underline-offset:3px}
 /* 2026-10-02: player */
 .musica-grid>.player{grid-column:2}
 .player{margin:0 0 28px;border:1px solid rgba(60,242,228,.4);background:radial-gradient(circle at 90% 0,rgba(60,242,228,.1),transparent 60%),rgba(7,10,14,.94)}
