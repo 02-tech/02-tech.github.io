@@ -2,3 +2,12 @@
 .DS_Store
 Thumbs.db
 .codex-remote-attachments/
+
+# Arquivos internos: ficam no repositorio privado 02-tech.github.io-interno, nunca neste (publico).
+CLAUDE.md
+AGENTS.md
+docs/
+tools/
+.claude/
+clientes/
+.git-interno/
