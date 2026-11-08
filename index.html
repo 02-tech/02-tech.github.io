@@ -26,6 +26,7 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="stylesheet" href="styles.css">
   <script src="app.js" defer></script>
+  <script src="livro/livro.js" defer></script>
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -384,6 +385,7 @@
       <a href="#universo">Universo</a>
       <a href="#experimentos">Experimentos</a>
       <a href="#musica">Música</a>
+      <a href="#livro">Livro</a>
       <a class="nav-cta" href="#frequencia">3 · 6 · 9</a>
     </nav>
   </header>
@@ -621,7 +623,7 @@
               <strong class="player-titulo" id="player-titulo">O Trágico e Grandioso</strong>
               <button class="player-compartilhar" id="player-compartilhar" type="button" aria-label="Compartilhar esta música"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="18" cy="5" r="2.6"/><circle cx="6" cy="12" r="2.6"/><circle cx="18" cy="19" r="2.6"/><path d="M8.3 10.8 15.7 6.3M8.3 13.2l7.4 4.5"/></svg><span>Compartilhar</span></button>
             </div>
-            <audio id="trilha" controls preload="auto" src="assets/audio/o-tragico-e-grandioso.mp3">Seu navegador não toca áudio. <a href="assets/audio/o-tragico-e-grandioso.mp3" download>Baixar a faixa</a>.</audio>
+            <audio id="trilha" controls preload="auto" playsinline src="assets/audio/o-tragico-e-grandioso.mp3">Seu navegador não toca áudio. <a href="assets/audio/o-tragico-e-grandioso.mp3" download>Baixar a faixa</a>.</audio>
           </div>
           <div class="letra-viva" id="letra-viva" aria-label="Letra sincronizada">
             <p class="letra-aviso">A letra acompanha a música enquanto ela toca.</p>
@@ -725,9 +727,47 @@
       </div>
     </section>
 
+    <section class="livro-section section-shell" id="livro" aria-labelledby="titulo-livro">
+      <p class="section-number reveal">07 · LIVRO</p>
+      <div class="livro-intro reveal">
+        <div>
+          <p class="livro-kicker">LITERATURA · HISTÓRIA PESSOAL · POESIA</p>
+          <h2 id="titulo-livro">A Essência<br><span>de FAGUITAL.</span></h2>
+        </div>
+        <div class="livro-intro-copy">
+          <p>Uma obra pessoal de histórias, poesias e reflexões. O livro cresce com o tempo: há 369 páginas previstas e 193 já escritas nesta edição.</p>
+          <p>Folheie aqui sem sair do fluxo da página. Para uma leitura mais imersiva, abra o modo de leitura quando quiser.</p>
+        </div>
+      </div>
+
+      <div class="livro-app reveal" id="livro-app" data-source="livro/fonte-essencia-v1.6.html" aria-label="Livro interativo A Essência de FAGUITAL">
+        <div class="livro-toolbar">
+          <div class="livro-id"><small>FAGUITAL · LIVRO 01</small><strong>A Essência de FAGUITAL</strong></div>
+          <button class="livro-fullscreen" id="livro-fullscreen" type="button" aria-label="Abrir modo de leitura em tela cheia">⛶ <span>Modo leitura</span></button>
+          <button class="livro-close" id="livro-close" type="button" aria-label="Fechar modo de leitura" hidden>× <span>Fechar</span></button>
+        </div>
+        <div class="livro-stage" id="livro-stage">
+          <div class="livro-volume" id="livro-volume" aria-live="polite">
+            <article class="livro-folha livro-capa" id="livro-folha">
+              <p class="livro-capa-topo">UMA OBRA DE FAGUITAL</p>
+              <div class="livro-capa-centro"><span class="livro-selo" aria-hidden="true"></span><h3>A Essência<br>de FAGUITAL</h3><p>Histórias, poesias e reflexões</p></div>
+              <div><strong>FAGUITAL</strong><small>EDIÇÃO DIGITAL · 2026</small></div>
+            </article>
+          </div>
+        </div>
+        <div class="livro-navigation" aria-label="Navegação do livro">
+          <button id="livro-prev" type="button" disabled>← Anterior</button>
+          <div><strong id="livro-current">Capa</strong><small id="livro-status">Livro fechado</small></div>
+          <button class="livro-next" id="livro-next" type="button">Próxima →</button>
+        </div>
+        <p class="livro-hint" id="livro-hint">Role a página normalmente. Para folhear, use os botões ou deslize na horizontal.</p>
+        <p class="livro-error" id="livro-error" role="status" hidden>Não foi possível carregar esta edição do livro.</p>
+      </div>
+    </section>
+
     <section class="contact section-shell" id="contato">
       <div class="contact-pulse" aria-hidden="true"><i></i><i></i><i></i></div>
-      <p class="section-number reveal">07 · SINAIS ABERTOS</p>
+      <p class="section-number reveal">08 · SINAIS ABERTOS</p>
       <h2 class="reveal">O universo continua<br><span>fora daqui.</span></h2>
       <p class="reveal">Fragmentos do processo, pensamentos e outras frequências também aparecem nas minhas redes.</p>
 
