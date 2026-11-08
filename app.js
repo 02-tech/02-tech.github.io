@@ -111,7 +111,7 @@ document.querySelector('#year').textContent = new Date().getFullYear();
   const itens = [...lista.querySelectorAll(".pl-item")];
   const CHAVE = "faguital-som";
   let mudo = false, atual = 0, linhas = [], ativa = -1;
-  let soando = false, carregando = false, ultimoTempo = -1, gestoUsado = false;
+  let soando = false, carregando = false, ultimoTempo = -1, gestoUsado = false, pausaPedida = false;
   try { mudo = localStorage.getItem(CHAVE) === "mudo"; } catch (e) { /* sem armazenamento */ }
   audio.volume = 0.7;
   audio.preload = "auto";
@@ -150,7 +150,7 @@ document.querySelector('#year').textContent = new Date().getFullYear();
   ["pointerdown", "pointermove", "keydown", "focusin", "wheel", "touchstart"].forEach((g) => mini.addEventListener(g, agendarSumir, { passive: true }));
   mini.querySelector(".mini-ant").addEventListener("click", () => { gestoUsado = true; selecionar(atual - 1, true); });
   mini.querySelector(".mini-prox").addEventListener("click", () => { gestoUsado = true; selecionar(atual + 1, true); });
-  mini.querySelector(".mini-play").addEventListener("click", () => { gestoUsado = true; if (soando) audio.pause(); else tocar(); });
+  mini.querySelector(".mini-play").addEventListener("click", () => { gestoUsado = true; if (soando) pausar(); else tocar(); });
   mini.querySelector(".mini-letra").addEventListener("click", () => abrirMini(false));
   document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !mini.hidden) { abrirMini(false); if (botao) botao.focus(); } });
   document.addEventListener("click", (e) => { if (!mini.hidden && !mini.contains(e.target) && !(botao && botao.contains(e.target))) abrirMini(false); });
@@ -212,12 +212,34 @@ document.querySelector('#year').textContent = new Date().getFullYear();
     painel.scrollTo({ top: el.offsetTop - painel.clientHeight / 2 + el.offsetHeight / 2, behavior: suave ? "smooth" : "auto" });
   };
 
+  const atualizarEstadoMidia = () => {
+    if (!("mediaSession" in navigator)) return;
+    navigator.mediaSession.playbackState = audio.paused ? "paused" : "playing";
+    if (!navigator.mediaSession.setPositionState || !Number.isFinite(audio.duration) || audio.duration <= 0) return;
+    try {
+      navigator.mediaSession.setPositionState({
+        duration: audio.duration,
+        playbackRate: audio.playbackRate,
+        position: Math.min(audio.currentTime, audio.duration)
+      });
+    } catch (e) { /* duração/posição ainda não disponível */ }
+  };
+
   const tocar = () => {
     mudo = false; salvar(); audio.muted = false;
+    pausaPedida = false;
+    // Alguns navegadores mantêm o playhead exatamente no fim. Nesse estado, play() pode
+    // resolver sem reiniciar o áudio ou disparar ended outra vez, deixando o player preso.
+    if (audio.ended || (Number.isFinite(audio.duration) && audio.duration > 0 && audio.currentTime >= audio.duration - 0.05)) {
+      audio.currentTime = 0;
+      ultimoTempo = -1;
+    }
     carregando = true; atualizar();
     const p = audio.play();
-    return p && p.catch ? p.catch(() => { carregando = false; atualizar(); }) : Promise.resolve();
+    return p && p.catch ? p.catch(() => { carregando = false; soando = false; atualizarEstadoMidia(); atualizar(); }) : Promise.resolve();
   };
+
+  const pausar = () => { pausaPedida = true; audio.pause(); };
 
   // faixa atual visível dentro da lista (rola só a lista, nunca a página)
   const mostrarNaLista = (li) => {
@@ -233,8 +255,8 @@ document.querySelector('#year').textContent = new Date().getFullYear();
       artist: "FAGUITAL",
       album: "Guilherme Carvalho de Andrade",
       artwork: [
-        { src: "assets/img/capa-musica-192.png", sizes: "192x192", type: "image/png" },
-        { src: "assets/img/capa-musica-512.png", sizes: "512x512", type: "image/png" }
+        { src: "/assets/img/capa-musica-192.png", sizes: "192x192", type: "image/png" },
+        { src: "/assets/img/capa-musica-512.png", sizes: "512x512", type: "image/png" }
       ]
     });
   };
@@ -283,7 +305,13 @@ document.querySelector('#year').textContent = new Date().getFullYear();
     atual = (i + itens.length) % itens.length;
     const li = itens[atual];
     itens.forEach((x) => x.classList.toggle("ativa", x === li));
-    if (audio.getAttribute("src") !== li.dataset.src) { soando = false; ultimoTempo = -1; audio.src = li.dataset.src; carregarLetra(li.dataset.letra); }
+    const srcSelecionada = new URL(li.dataset.src, document.baseURI).href;
+    if (audio.currentSrc !== srcSelecionada && audio.src !== srcSelecionada) {
+      soando = false; carregando = false; ultimoTempo = -1;
+      audio.src = li.dataset.src;
+      audio.load();
+      carregarLetra(li.dataset.letra);
+    }
     if (titulo) titulo.textContent = li.dataset.titulo;
     atualizarMidia(li);
     mostrarNaLista(li);
@@ -292,7 +320,7 @@ document.querySelector('#year').textContent = new Date().getFullYear();
 
   itens.forEach((li, i) => li.querySelector(".pl-tocar").addEventListener("click", () => {
     gestoUsado = true;
-    if (i === atual && soando) { audio.pause(); return; }
+    if (i === atual && soando) { pausar(); return; }
     selecionar(i, true);
   }));
   if (painel) painel.addEventListener("click", (e) => {
@@ -303,20 +331,28 @@ document.querySelector('#year').textContent = new Date().getFullYear();
   });
 
   // estado real da reprodução
-  audio.addEventListener("playing", () => { carregando = false; atualizar(); });
+  audio.addEventListener("playing", () => { carregando = false; atualizarEstadoMidia(); atualizar(); });
   audio.addEventListener("timeupdate", () => {
     if (!audio.paused && audio.currentTime !== ultimoTempo && audio.currentTime > 0) { if (!soando) { soando = true; carregando = false; atualizar(); } }
     ultimoTempo = audio.currentTime;
+    atualizarEstadoMidia();
     sincronizar();
   });
   audio.addEventListener("waiting", () => { if (!audio.paused) { carregando = true; atualizar(); } });
   audio.addEventListener("pause", () => {
     soando = false; carregando = false;
-    if (!audio.ended && !document.hidden) { mudo = true; salvar(); }
+    // Só uma pausa solicitada pelo visitante vira preferência persistente. Pausas do SO,
+    // interrupções de áudio ou suspensão da aba não devem desligar a música para sempre.
+    if (pausaPedida) { mudo = true; salvar(); }
+    pausaPedida = false;
+    atualizarEstadoMidia();
     atualizar();
   });
   audio.addEventListener("seeked", () => { ativa = -2; sincronizar(); });
-  audio.addEventListener("ended", () => { soando = false; selecionar(atual + 1, true); });
+  audio.addEventListener("ended", () => {
+    soando = false; carregando = false; ultimoTempo = -1;
+    selecionar(atual + 1, true);
+  });
   audio.addEventListener("volumechange", () => { if (audio.muted) soando = false; atualizar(); });
 
   // primeiro gesto em qualquer lugar garante o som (exceto se o visitante já silenciou antes)
@@ -385,7 +421,7 @@ document.querySelector('#year').textContent = new Date().getFullYear();
   if ("mediaSession" in navigator) {
     const acao = (nome, fn) => { try { navigator.mediaSession.setActionHandler(nome, fn); } catch (e) { /* ação não suportada */ } };
     acao("play", () => { gestoUsado = true; tocar(); });
-    acao("pause", () => audio.pause());
+    acao("pause", pausar);
     acao("previoustrack", () => { gestoUsado = true; if (audio.currentTime > 4) audio.currentTime = 0; else selecionar(atual - 1, true); });
     acao("nexttrack", () => { gestoUsado = true; selecionar(atual + 1, true); });
     acao("seekto", (d) => { if (d && typeof d.seekTime === "number") audio.currentTime = d.seekTime; });
