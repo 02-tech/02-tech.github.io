@@ -11,3 +11,6 @@ tools/
 .claude/
 clientes/
 .git-interno/
+
+# Backups locais de deploy: nunca publicar
+_backup/

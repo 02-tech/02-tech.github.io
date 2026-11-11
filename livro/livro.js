@@ -29,6 +29,12 @@
   let turning = false;
   let touchStart = null;
 
+  const INTRODUCTION = [
+    { kind: "introduction", roman: "APRESENTAÇÃO", sectionTitle: "Introdução", chapter: "A Essência de FAGUITAL", num: null, text: "Meu nome é Guilherme Carvalho de Andrade. FAGUITAL é a assinatura que escolhi para o que penso, escrevo, canto e construo.\n\nEstas páginas não foram feitas para simplificar quem eu sou. Elas registram o caminho de alguém que aprendeu cedo que nem tudo se explica, se escolhe ou se controla. O que estava ao meu alcance era observar por dentro, trabalhar, insistir e construir o que ainda não existia." },
+    { kind: "introduction", roman: "APRESENTAÇÃO", sectionTitle: "Por que escrevi", chapter: "A Essência de FAGUITAL", num: null, text: "Uma apresentação curta não comporta uma vida feita de trabalho, disciplina, projetos, música, relações e perguntas difíceis. Este livro comporta. Aqui estão a criança que desmontava objetos, o homem que decidiu aprender o que não dominava e a mente que não aceita resposta rasa.\n\nNo Exército Brasileiro recebi o Diploma Ao Mérito como consequência de cumprir o que devia ser feito. Sem vaidade e sem falsa modéstia: resultado exige postura, repetição e responsabilidade. Tempo e atrito mostram o caráter de cada um; o meu dever era fazer a minha parte. O restante desta história segue a mesma lógica." },
+    { kind: "introduction", roman: "APRESENTAÇÃO", sectionTitle: "Como seguir", chapter: "A Essência de FAGUITAL", num: null, text: "Você vai encontrar memórias, poesias e reflexões. Não procure uma versão polida, dócil ou definitiva. Há contradições, decisões, acertos, falhas e ambições que não cabem numa frase de apresentação.\n\nLeia na ordem se quiser acompanhar a formação dessa visão. Pare onde uma ideia exigir mais tempo. O que não se resolve de uma vez pede tempo; o que depende de mim recebe trabalho. O que está aqui não pede concordância: pede atenção." }
+  ];
+
   const escapeHTML = (value) => String(value ?? "").replace(/[&<>"']/g, (char) => ({
     "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
   })[char]);
@@ -50,7 +56,7 @@
     const title = page.sectionTitle ? `<h4>${escapeHTML(page.sectionTitle)}</h4>` : "";
     return `<div class="livro-pagina-topo"><span>A ESSÊNCIA DE FAGUITAL</span><span>${escapeHTML(page.roman)}</span></div>
       <div class="livro-pagina-corpo">${title}<p class="${poemClass.trim()}">${escapeHTML(page.text)}</p></div>
-      <div class="livro-pagina-rodape"><span>${escapeHTML(page.chapter)}</span><b>${String(page.num).padStart(3, "0")}</b></div>`;
+      <div class="livro-pagina-rodape"><span>${escapeHTML(page.chapter)}</span><b>${page.num === null ? "" : String(page.num).padStart(3, "0")}</b></div>`;
   }
 
   function constructionHTML() {
@@ -64,7 +70,7 @@
     const isConstruction = position === pages.length + 1;
     leaf.className = `livro-folha${isCover ? " livro-capa" : ""}${isConstruction ? " livro-folha-construcao" : ""}`;
     leaf.innerHTML = isCover ? coverHTML() : isConstruction ? constructionHTML() : pageHTML(pages[position - 1]);
-    current.textContent = isCover ? "Capa" : isConstruction ? "Próxima página" : `Página ${pages[position - 1].num} / 369`;
+    current.textContent = isCover ? "Capa" : isConstruction ? "Próxima página" : pages[position - 1].kind === "introduction" ? "Apresentação" : `Página ${pages[position - 1].num} / 369`;
     status.textContent = isCover ? "Livro fechado" : isConstruction ? "Em construção" : `${position} de ${pages.length} páginas escritas`;
     prev.disabled = isCover || turning;
     next.disabled = isConstruction || turning;
@@ -147,7 +153,8 @@
     })
     .then((source) => {
       const book = extractBook(source);
-      pages = book.pages.filter((page) => page.status === "written").slice(0, WRITTEN_PAGE_LIMIT);
+      const writtenPages = book.pages.filter((page) => page.status === "written").slice(0, WRITTEN_PAGE_LIMIT);
+      pages = [...INTRODUCTION, ...writtenPages];
       if (!pages.length) throw new Error("Nenhuma página escrita encontrada");
       next.disabled = false;
       render();
