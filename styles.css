@@ -340,6 +340,11 @@ html,body{overflow-x:clip}
 .compartilhar-menu a:first-child{border-top:0}
 .compartilhar-menu a:hover,.compartilhar-menu button:hover{color:var(--cyan)}
 @media (max-width:520px){.player-compartilhar span{display:none}.player-compartilhar{padding:8px}}
+/* 2026-11-12: player compacto embutido em cada página de letra (visível ao abrir, sem lista/letra sincronizada) */
+.player--pagina{margin:26px 0 32px;max-width:640px}
+.player--pagina .player-topo{padding:18px 20px}
+.player--pagina .player-titulo{margin:6px 0 14px;font-size:clamp(1.15rem,2.6vw,1.5rem)}
+@media (max-width:520px){.player--pagina .player-topo{padding:16px 16px}}
 /* ===== molécula (botão de música depois que a música começa): solta, sem moldura ===== */
 .som-botao .molecula-svg{display:none}
 .som-botao.molecula{width:84px;height:76px;min-height:0;padding:0;border:0;border-radius:0;background:none;box-shadow:none;backdrop-filter:none;justify-content:center}
