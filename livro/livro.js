@@ -7,7 +7,7 @@
    * entradas com status "written" do arquivo-fonte entram nesta edição.
    * Ao concluir novas folhas em fonte-essencia-v1.6.html, aumente este número.
    */
-  const WRITTEN_PAGE_LIMIT = 193;
+  const WRITTEN_PAGE_LIMIT = 197;
 
   const app = document.getElementById("livro-app");
   if (!app) return;
